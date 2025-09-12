@@ -2,6 +2,8 @@
 
 Features support list across different frameworks and libraries.
 
+{{APPS}}
+
 ## Test cases ({{TOTAL_CASES}})
 
 The following test cases are present in each of the solutions.

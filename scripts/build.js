@@ -17,9 +17,15 @@ const cases = fs.readdirSync(CASES_DIR)
 
 const APPS = [
   {
+    name: "Next.js",
+    site: "https://nextjs.org/",
     appDir: path.join(__dirname, "..", "apps", "nextjs", "src", "app", "cases"),
     processFile(fileFrom, fileTo) {
       fs.copyFileSync(fileFrom, fileTo);
+    },
+    cases: {
+      "01": true,
+      "02": true
     }
   }
 ];
@@ -37,6 +43,11 @@ function generateRepoReadme() {
   content = content.replace(/{{CASE_LIST}}/g, cases.map(c => {
     return `- [${c.id} - ${c.title}](./cases/${c.id})`;
   }).join('\n'));
+  content += '\n\n';
+  content += `| case | ${APPS.map(a => `[${a.name}](${a.site})`).join(' | ')} |\n`;
+  content += cases.map(c => {
+    return `| ${c.id} ${c.title} | ${APPS.map(a => a.cases[c.id] ? '✅' : '❌').join(' | ')} |`;
+  }).join('\n');
 
   fs.writeFileSync(path.join(__dirname, "..", "README.md"), content);
   console.log('Repository README.md generated successfully.');
