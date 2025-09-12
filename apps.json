@@ -1,0 +1,10 @@
+{
+  "Next.js": {
+    "site": "https://nextjs.org/",
+    "cases": {
+      "01": true,
+      "02": true,
+      "03": true
+    }
+  }
+}

@@ -14,21 +14,17 @@ const cases = fs.readdirSync(CASES_DIR)
       ...meta
     }
   });
+const APPS_META_DATA = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'apps.json'), 'utf-8'));
 
 const APPS = [
   {
     name: "Next.js",
-    site: "https://nextjs.org/",
     appDir: path.join(__dirname, "..", "apps", "nextjs", "src", "app", "cases"),
     processFile(fileFrom, fileTo) {
       fs.copyFileSync(fileFrom, fileTo);
-    },
-    cases: {
-      "01": true,
-      "02": true
     }
   }
-];
+].map((data) => ({ ...data, ...APPS_META_DATA[data.name] }));
 
 function moveCasesToTheApps() {
   APPS.forEach(({ app, appDir, processFile }) => {
