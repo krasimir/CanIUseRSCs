@@ -1,4 +1,4 @@
 {
   "title": "Rendering async component on the server",
-  "description": ""
+  "description": "Basic example of an async server component."
 }

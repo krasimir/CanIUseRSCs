@@ -2,7 +2,7 @@
 
 Features support list across different frameworks and libraries.
 
-{{APPS}}
+{{TABLE_OF_SUPPORT}}
 
 ## Test cases ({{TOTAL_CASES}})
 

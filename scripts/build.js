@@ -41,15 +41,18 @@ function generateRepoReadme() {
   let content = fs.readFileSync(readmePath, 'utf-8');
   content = content.replace(/{{TOTAL_CASES}}/g, cases.length.toString());
   content = content.replace(/{{CASE_LIST}}/g, cases.map(c => {
-    return `- [${c.id} - ${c.title}](./cases/${c.id})`;
+    return `- [${c.id} - ${c.title}](./cases/${c.id}) - ${c.description}`;
   }).join('\n'));
   content += '\n\n';
-  content += `| case | ${APPS.map(a => `[${a.name}](${a.site})`).join(' | ')} |\n`;
-  content += `| ---- | ${APPS.map(() => '---').join(' | ')} |\n`;
-  content += cases.map(c => {
-    return `| ${c.id} ${c.title} | ${APPS.map(a => a.cases[c.id] ? '✅' : '❌').join(' | ')} |`;
-  }).join('\n');
-  content += "\n";
+  let tableOfSupport = `| case | ${APPS.map(a => `[${a.name}](${a.site})`).join(' | ')} |\n`;
+  tableOfSupport += `| ---- | ${APPS.map(() => "---").join(" | ")} |\n`;
+  tableOfSupport += cases
+    .map((c) => {
+      return `| ${c.id} ${c.title} | ${APPS.map((a) => (a.cases[c.id] ? "✅" : "❌")).join(" | ")} |`;
+    })
+    .join("\n");
+  tableOfSupport += "\n";
+  content = content.replace(/{{TABLE_OF_SUPPORT}}/g, tableOfSupport);
 
   fs.writeFileSync(path.join(__dirname, "..", "README.md"), content);
   console.log('Repository README.md generated successfully.');

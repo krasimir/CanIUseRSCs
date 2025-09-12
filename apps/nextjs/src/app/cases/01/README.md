@@ -1,6 +1,6 @@
 # Rendering async component on the server
 
-
+Basic example of an async server component.
 
 ## Code
 
