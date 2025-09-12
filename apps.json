@@ -17,7 +17,7 @@
   "Forket": {
     "site": "https://github.com/krasimir/forket",
     "cases": {
-      "01": false,
+      "01": true,
       "02": false,
       "03": false,
       "04": false,
