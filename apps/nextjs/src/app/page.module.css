@@ -65,7 +65,7 @@
   display: inline-block;
   margin-right: 0.5rem;
 }
-.main button {
+.main button, .main input {
   padding: 0.4rem 1rem;
   font-size: 1rem;
 }
