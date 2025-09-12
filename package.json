@@ -1,0 +1,27 @@
+{
+  "name": "caniuserscs",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "Can I use React Server Components (RSCs). Support list across different frameworks and libraries.",
+  "scripts": {
+    "build": "node ./scripts/prepare-cases.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krasimir/CanIUseRSCs.git"
+  },
+  "author": "Krasimir Tsonev",
+  "license": "MIT",
+  "dependencies": {
+    "@swc/cli": "0.7.7",
+    "@swc/core": "1.12.1",
+    "react": "19.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.1"
+  },
+  "engines": {
+    "node": ">=14.8.0"
+  }
+}
