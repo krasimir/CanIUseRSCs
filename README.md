@@ -2,10 +2,10 @@
 
 Features support list across different frameworks and libraries.
 
-| case | [Next.js](https://nextjs.org/) | [Next.js](https://nextjs.org/) | [Next.js](https://nextjs.org/) | [Next.js](https://nextjs.org/) | [Next.js](https://nextjs.org/) | [Next.js](https://nextjs.org/) | [Next.js](https://nextjs.org/) | [Next.js](https://nextjs.org/) | [Next.js](https://nextjs.org/) | [Next.js](https://nextjs.org/) | [Next.js](https://nextjs.org/) | [Next.js](https://nextjs.org/) | [Next.js](https://nextjs.org/) | [Next.js](https://nextjs.org/) | [Next.js](https://nextjs.org/) | [Next.js](https://nextjs.org/) |
-| ---- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 01 Rendering async component on the server | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| 02 Mixing server and client components | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| case | [Next.js](https://nextjs.org/) |
+| ---- | --- |
+| 01 Rendering async component on the server | ✅ |
+| 02 Mixing server and client components | ✅ |
 
 
 ## Test cases (2)
