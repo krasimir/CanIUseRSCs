@@ -55,6 +55,16 @@
   border-radius: 4px;
   font-weight: 600;
 }
+.main a {
+  color: var(--foreground);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  cursor: pointer;
+}
+.main .case {
+  display: inline-block;
+  margin-right: 0.2rem;
+}
 
 .ctas {
   display: flex;

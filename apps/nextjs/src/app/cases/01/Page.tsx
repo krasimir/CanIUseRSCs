@@ -1,5 +1,5 @@
 import React from 'react';
 
-export default function Page() {
-  return <div>Page</div>;
+export default async function Page() {
+  return <div>SSR Async Page</div>;
 }

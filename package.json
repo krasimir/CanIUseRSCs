@@ -5,7 +5,7 @@
   "type": "module",
   "description": "Can I use React Server Components (RSCs). Support list across different frameworks and libraries.",
   "scripts": {
-    "build": "node ./scripts/prepare-cases.js"
+    "build": "node ./scripts/build.js"
   },
   "repository": {
     "type": "git",

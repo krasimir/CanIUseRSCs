@@ -2,8 +2,8 @@
 
 Can I use React Server Components (RSCs). Support list across different frameworks and libraries.
 
-## Test cases (1)
+## Test cases ({{TOTAL_CASES}})
 
 The following test cases are present in each of the solutions.
 
-- [01 - Rendering async component on the server](./cases/01)
+{{CASE_LIST}}
