@@ -39,10 +39,6 @@ function moveCasesToTheApps() {
 function generateRepoReadme() {
   const readmePath = path.join(__dirname, 'templates', 'repo.md');
   let content = fs.readFileSync(readmePath, 'utf-8');
-  content = content.replace(/{{TOTAL_CASES}}/g, cases.length.toString());
-  content = content.replace(/{{CASE_LIST}}/g, cases.map(c => {
-    return `- [${c.id} - ${c.title}](./cases/${c.id}) - ${c.description}`;
-  }).join('\n'));
   content += '\n\n';
   let tableOfSupport = `| Case | Framework / Library |\n`;
   tableOfSupport += `| ---- | ---- |\n`;

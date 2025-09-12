@@ -3,9 +3,3 @@
 Features support list across different frameworks and libraries.
 
 {{TABLE_OF_SUPPORT}}
-
-## Test cases ({{TOTAL_CASES}})
-
-The following test cases are present in each of the solutions.
-
-{{CASE_LIST}}
