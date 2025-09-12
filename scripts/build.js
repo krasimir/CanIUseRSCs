@@ -53,7 +53,7 @@ function generateCasesREADME() {
       .sort(f => f.endsWith("Page.tsx") ? -1 : 1)
       .map(f => {
         const fileContent = fs.readFileSync(f, "utf-8");
-        return "```typescript\n// " + f.replace(caseDir + '/' , "") + "\n" + fileContent + "\n```";
+        return "```typescript\n// " + f.replace(caseDir + '/' , "") + "\n\n" + fileContent + "\n```";
       })
       .join('\n\n'));
 
