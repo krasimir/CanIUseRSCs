@@ -1,6 +1,6 @@
-# CanIUseRSCs
+# Can I Use RSCs (React Server Components)
 
-Can I use React Server Components (RSCs). Support list across different frameworks and libraries.
+Features support list across different frameworks and libraries.
 
 ## Test cases (1)
 
