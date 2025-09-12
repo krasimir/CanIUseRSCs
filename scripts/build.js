@@ -43,11 +43,11 @@ function generateRepoReadme() {
 }
 function generateCasesREADME() {
   const readmePath = path.join(__dirname, "templates", "case.md");
-  let content = fs.readFileSync(readmePath, "utf-8");
+  let defaultContent = fs.readFileSync(readmePath, "utf-8");
   cases.forEach(c => {
     const caseDir = path.join(__dirname, "..", "cases", c.id);
     const files = getFiles(caseDir).filter(f => !f.endsWith("case.json") && !f.endsWith("README.md"));
-    content = content.replace(/{{TITLE}}/g, c.title);
+    let content = defaultContent.replace(/{{TITLE}}/g, c.title);
     content = content.replace(/{{DESCRIPTION}}/g, c.description);
     content = content.replace(/{{CODE}}/g, files.map(f => {
       const fileContent = fs.readFileSync(f, "utf-8");
