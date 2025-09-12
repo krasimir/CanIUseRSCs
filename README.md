@@ -11,6 +11,7 @@ Features support list across different frameworks and libraries.
 | (05) [Client component imports server function](./cases/05)<br />A client component imports server function and uses it. | ✅ [Next.js](https://nextjs.org/) |
 | (06) [Inlined server function (inside a server component)](./cases/06)<br />Creating a server function and pass it as a prop to client component | ✅ [Next.js](https://nextjs.org/) |
 | (07) [Server function used inside a form submit handler](./cases/07)<br />A server function is called inside a client component within a form submit handler to demonstrate server-side processing in response to a form submission. | ✅ [Next.js](https://nextjs.org/) |
+| (08) [Server function used as a from action](./cases/08)<br />A server function is used as the action for a form to demonstrate server-side processing in response to a form submission. | ✅ [Next.js](https://nextjs.org/) |
 
 
 
