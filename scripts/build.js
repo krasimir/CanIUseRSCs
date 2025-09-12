@@ -49,10 +49,13 @@ function generateCasesREADME() {
     const files = getFiles(caseDir).filter(f => !f.endsWith("case.json") && !f.endsWith("README.md"));
     let content = defaultContent.replace(/{{TITLE}}/g, c.title);
     content = content.replace(/{{DESCRIPTION}}/g, c.description);
-    content = content.replace(/{{CODE}}/g, files.map(f => {
-      const fileContent = fs.readFileSync(f, "utf-8");
-      return "```typescript\n" + fileContent + "\n```";
-    }).join('\n\n'));
+    content = content.replace(/{{CODE}}/g, files
+      .sort(f => f.endsWith("Page.tsx") ? -1 : 1)
+      .map(f => {
+        const fileContent = fs.readFileSync(f, "utf-8");
+        return "```typescript\n// " + f.replace(caseDir + '/' , "") + "\n" + fileContent + "\n```";
+      })
+      .join('\n\n'));
 
     fs.writeFileSync(path.join(caseDir, "README.md"), content);
     console.log(`Case ${c.id} README.md generated successfully.`);

@@ -5,6 +5,7 @@
 ## Code
 
 ```typescript
+// Page.tsx
 import React from 'react';
 
 export default async function Page() {
