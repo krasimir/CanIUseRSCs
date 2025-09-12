@@ -1,4 +1,4 @@
-# Server function used inside a form submit handler
+# Server Functions with Actions
 
 A server function is called inside a client component within a form submit handler to demonstrate server-side processing in response to a form submission.
 

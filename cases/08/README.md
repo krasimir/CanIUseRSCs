@@ -1,4 +1,4 @@
-# Server function used as a from action
+# Server Functions with useActionState
 
 A server function is used as the action for a form to demonstrate server-side processing in response to a form submission.
 

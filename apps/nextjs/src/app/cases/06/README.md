@@ -20,7 +20,6 @@ export default async function Page() {
 
 function EmptyNote() {
   async function createNoteAction() {
-    // Server Function
     "use server";
 
     return await db.notes.create();
