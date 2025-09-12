@@ -2,10 +2,14 @@
 
 Features support list across different frameworks and libraries.
 
-| Case | Description | Framework / Library |
-| ---- | ---- | ---- |
-| (01) [Rendering async component on the server](./cases/01) | Basic example of an async server component. | ✅ [Next.js](https://nextjs.org/) |
-| (02) [Mixing server and client components](./cases/02) | In this example we are passing server generated data as a child of a client component. | ✅ [Next.js](https://nextjs.org/) |
+| Case | Framework / Library |
+| ---- | ---- |
+| (01) [Rendering async component on the server](./cases/01)
+
+Basic example of an async server component. | ✅ [Next.js](https://nextjs.org/) |
+| (02) [Mixing server and client components](./cases/02)
+
+In this example we are passing server generated data as a child of a client component. | ✅ [Next.js](https://nextjs.org/) |
 
 
 ## Test cases (2)
