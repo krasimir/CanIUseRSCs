@@ -1,4 +1,4 @@
 {
   "title": "Mixing server and client components",
-  "description": "In this example we are passing server generated data as a child of a client component."
+  "description": "Passing server generated data as a child of a client component."
 }

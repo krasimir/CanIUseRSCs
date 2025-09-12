@@ -1,6 +1,6 @@
 # Mixing server and client components
 
-In this example we are passing server generated data as a child of a client component.
+Passing server generated data as a child of a client component.
 
 ## Code
 
