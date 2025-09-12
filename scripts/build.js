@@ -49,7 +49,7 @@ function generateRepoReadme() {
     .map((c) => {
       return `| (${c.id}) [${c.title}](./cases/${c.id})<br />${c.description} | ${APPS.map((a) => {
         return `${a.cases[c.id] ? "✅" : "❌"} [${a.name}](${a.site})`;
-      }).join("\n")} |`;
+      }).join("<br />")} |`;
     })
     .join("\n");
   tableOfSupport += "\n";
