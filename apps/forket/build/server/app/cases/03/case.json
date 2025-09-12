@@ -1,0 +1,4 @@
+{
+  "title": "Hydrating client component",
+  "description": "A client component that is hydrated on top of server-side rendered data."
+}

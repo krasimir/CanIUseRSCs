@@ -23,6 +23,13 @@ const APPS = [
     processFile(fileFrom, fileTo) {
       fs.copyFileSync(fileFrom, fileTo);
     }
+  },
+  {
+    name: "Forket",
+    appDir: path.join(__dirname, "..", "apps", "forket", "src", "app", "cases"),
+    processFile(fileFrom, fileTo) {
+      fs.copyFileSync(fileFrom, fileTo);
+    }
   }
 ].map((data) => ({ ...data, ...APPS_META_DATA[data.name] }));
 
