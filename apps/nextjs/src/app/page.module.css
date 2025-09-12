@@ -61,9 +61,9 @@
   text-underline-offset: 4px;
   cursor: pointer;
 }
-.main .case {
+.case {
   display: inline-block;
-  margin-right: 0.2rem;
+  margin-right: 0.5rem;
 }
 
 .ctas {

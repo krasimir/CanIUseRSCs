@@ -14,9 +14,13 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <h1>Can I Use RSCs 🤔 Next.js</h1>
-        {cases.map((caseId) => (
-          <Link href={`/case/${caseId}`} key={caseId} className="case">{caseId}</Link>
-        ))}
+        <div>
+          {cases.map((caseId) => (
+            <Link href={`/case/${caseId}`} key={caseId} className={styles.case}>
+              {caseId}
+            </Link>
+          ))}
+        </div>
       </main>
     </div>
   );
