@@ -45,9 +45,11 @@ function generateRepoReadme() {
   }).join('\n'));
   content += '\n\n';
   content += `| case | ${APPS.map(a => `[${a.name}](${a.site})`).join(' | ')} |\n`;
+  content += `| ---- | ${APPS.map(() => '---').join(' | ')} |\n`;
   content += cases.map(c => {
     return `| ${c.id} ${c.title} | ${APPS.map(a => a.cases[c.id] ? '✅' : '❌').join(' | ')} |`;
   }).join('\n');
+  content += "\n";
 
   fs.writeFileSync(path.join(__dirname, "..", "README.md"), content);
   console.log('Repository README.md generated successfully.');
