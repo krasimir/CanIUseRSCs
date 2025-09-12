@@ -2,10 +2,10 @@
 
 Features support list across different frameworks and libraries.
 
-| case | [Next.js](https://nextjs.org/) |
-| ---- | --- |
-| 01 Rendering async component on the server | ✅ |
-| 02 Mixing server and client components | ✅ |
+| Case | Framework / Library |
+| ---- | ---- |
+| (01) Rendering async component on the server | ✅ [Next.js](https://nextjs.org/) |
+| (02) Mixing server and client components | ✅ [Next.js](https://nextjs.org/) |
 
 
 ## Test cases (2)

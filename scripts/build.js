@@ -44,11 +44,13 @@ function generateRepoReadme() {
     return `- [${c.id} - ${c.title}](./cases/${c.id}) - ${c.description}`;
   }).join('\n'));
   content += '\n\n';
-  let tableOfSupport = `| case | ${APPS.map(a => `[${a.name}](${a.site})`).join(' | ')} |\n`;
-  tableOfSupport += `| ---- | ${APPS.map(() => "---").join(" | ")} |\n`;
+  let tableOfSupport = `| Case | Framework / Library |\n`;
+  tableOfSupport += `| ---- | ---- |\n`;
   tableOfSupport += cases
     .map((c) => {
-      return `| ${c.id} ${c.title} | ${APPS.map((a) => (a.cases[c.id] ? "✅" : "❌")).join(" | ")} |`;
+      return `| (${c.id}) ${c.title} | ${APPS.map((a) => {
+        return `${a.cases[c.id] ? "✅" : "❌"} [${a.name}](${a.site})`;
+      }).join("\n")} |`;
     })
     .join("\n");
   tableOfSupport += "\n";
