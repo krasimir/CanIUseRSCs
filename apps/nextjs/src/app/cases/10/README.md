@@ -1,6 +1,6 @@
 # Inspirational quote generator app
 
-An app that generates and displays inspirational quotes to motivate users. Little app from here https://react.dev/reference/rsc/use-client#how-use-client-marks-client-code
+An app that generates and displays inspirational quotes to motivate users. Little app from [here](https://react.dev/reference/rsc/use-client#how-use-client-marks-client-code). 
 
 ## Code
 

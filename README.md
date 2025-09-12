@@ -13,7 +13,7 @@ Features support list across different frameworks and libraries.
 | (07) [Server Functions with Actions](./cases/07)<br />A server function is called inside a client component within a form submit handler to demonstrate server-side processing in response to a form submission. | ✅ [Next.js](https://nextjs.org/) |
 | (08) [Server Functions with useActionState](./cases/08)<br />A server function is used as the action for a form to demonstrate server-side processing in response to a form submission. | ✅ [Next.js](https://nextjs.org/) |
 | (09) [Passing promise from server to client component](./cases/09)<br />A server component passes a promise to a client component which "awaits" it and renders the result. | ✅ [Next.js](https://nextjs.org/) |
-| (10) [Inspirational quote generator app](./cases/10)<br />An app that generates and displays inspirational quotes to motivate users. Little app from here https://react.dev/reference/rsc/use-client#how-use-client-marks-client-code | ✅ [Next.js](https://nextjs.org/) |
+| (10) [Inspirational quote generator app](./cases/10)<br />An app that generates and displays inspirational quotes to motivate users. Little app from [here](https://react.dev/reference/rsc/use-client#how-use-client-marks-client-code).  | ✅ [Next.js](https://nextjs.org/) |
 
 
 
