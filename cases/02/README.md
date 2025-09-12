@@ -6,6 +6,7 @@ In this example we are passing server generated data as a child of a client comp
 
 ```typescript
 // Page.tsx
+
 import React from "react";
 
 import db from "./db";
@@ -29,6 +30,7 @@ export default async function Page() {
 
 ```typescript
 // Expandable.tsx
+
 "use client";
 import React from "react";
 
@@ -44,6 +46,7 @@ export default function Expandable({ key, children }: { key: number; children: R
 
 ```typescript
 // db.ts
+
 const db = {
   notes: {
     getAll: async () => {
