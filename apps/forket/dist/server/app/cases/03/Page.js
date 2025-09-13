@@ -7,10 +7,10 @@ async function Page() {
   return /* @__PURE__ */ React.createElement("div", null, notes.map((note) => /* @__PURE__ */ React.createElement(ExpandableBoundary, { key: note.id }, /* @__PURE__ */ React.createElement("p", null, note.content))));
 }
 function ExpandableBoundary(props) {
-  const serializedProps = JSON.stringify(forketSerializeProps(props, "Expandable", "f_39"));
+  const serializedProps = JSON.stringify(forketSerializeProps(props, "Expandable", "f_41"));
   const children = props.children;
-  return /* @__PURE__ */ React.createElement(React.Fragment, null, children && /* @__PURE__ */ React.createElement("template", { type: "forket/children", id: "f_39", "data-c": "Expandable" }, children), /* @__PURE__ */ React.createElement("template", { type: "forket/start/f_39", "data-c": "Expandable" }), /* @__PURE__ */ React.createElement(Expandable, { ...props, children }), /* @__PURE__ */ React.createElement("template", { type: "forket/end/f_39", "data-c": "Expandable" }), /* @__PURE__ */ React.createElement("script", { id: "forket/init/f_39", dangerouslySetInnerHTML: {
-    __html: `$F_booter(document.currentScript, "f_39", "Expandable", ${JSON.stringify(serializedProps)});`
+  return /* @__PURE__ */ React.createElement(React.Fragment, null, children && /* @__PURE__ */ React.createElement("template", { type: "forket/children", id: "f_41", "data-c": "Expandable" }, children), /* @__PURE__ */ React.createElement("template", { type: "forket/start/f_41", "data-c": "Expandable" }), /* @__PURE__ */ React.createElement(Expandable, { ...props, children }), /* @__PURE__ */ React.createElement("template", { type: "forket/end/f_41", "data-c": "Expandable" }), /* @__PURE__ */ React.createElement("script", { id: "forket/init/f_41", dangerouslySetInnerHTML: {
+    __html: `$F_booter(document.currentScript, "f_41", "Expandable", ${JSON.stringify(serializedProps)});`
   } }));
 }
 export {

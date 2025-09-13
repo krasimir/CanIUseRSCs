@@ -13,17 +13,17 @@ export default async function Page() {
     </div>);
 }
 function CommentsBoundary(props) {
-    const serializedProps = JSON.stringify(forketSerializeProps(props, "Comments", "f_52"));
+    const serializedProps = JSON.stringify(forketSerializeProps(props, "Comments", "f_54"));
     const children = props.children;
     return (<>
-      {children && (<template type="forket/children" id="f_52" data-c="Comments">
+      {children && (<template type="forket/children" id="f_54" data-c="Comments">
           {children}
         </template>)}
-      <template type="forket/start/f_52" data-c="Comments"></template>
+      <template type="forket/start/f_54" data-c="Comments"></template>
       <Comments {...props} children={children}/>
-      <template type="forket/end/f_52" data-c="Comments"></template>
-      <script id="forket/init/f_52" dangerouslySetInnerHTML={{
-        __html: `$F_booter(document.currentScript, "f_52", "Comments", ${JSON.stringify(serializedProps)});`
+      <template type="forket/end/f_54" data-c="Comments"></template>
+      <script id="forket/init/f_54" dangerouslySetInnerHTML={{
+        __html: `$F_booter(document.currentScript, "f_54", "Comments", ${JSON.stringify(serializedProps)});`
     }}></script>
     </>);
 }

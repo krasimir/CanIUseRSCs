@@ -12,6 +12,7 @@ import Case08 from './cases/08/Page.js';
 import Case09 from './cases/09/Page.js';
 import Case10 from './cases/10/Page.js';
 import Case11 from './cases/11/Page.js';
+import Case12 from './cases/12/Page.js';
 import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);

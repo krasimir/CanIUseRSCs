@@ -2,13 +2,19 @@
 
 import React, { useState } from 'react';
 
-export default function Player({ tracks }) {
+export default function Player({ tracks, saveSelectedTrack }) {
+  const [currentTrack, setCurrentTrack] = useState();
   return (
     <div>
-      <h1>Music Player</h1>
+      <h1>Music Player {currentTrack ? `(${currentTrack})` : ""}</h1>
       {tracks.map((track, index) => (
-        <button key={index}>{track}</button>
+        <button key={index} onClick={() => setCurrentTrack(index + 1)}>
+          {track}
+        </button>
       ))}
+      <div>
+        {currentTrack && <button onClick={() => saveSelectedTrack(currentTrack)}>Save current track</button>}
+      </div>
     </div>
   );
 }

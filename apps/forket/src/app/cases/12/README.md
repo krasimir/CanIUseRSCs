@@ -1,6 +1,6 @@
 # Inlined server action to access variables in the near scope
 
-When we define a inlined server action inside a component, it should be able to access variables in the near scope.
+When we define a inlined server action inside a component, it should be able to access variables in the near scope. This means that the server function is aware of its surrounding context.
 
 ## Code
 
@@ -19,7 +19,11 @@ function getTracks() {
 
 export default async function Page() {
   const tracks = await getTracks();
-  return <Player tracks={tracks} />;
+  async function saveSelectedTrack(currentTrack) {
+    "use server";
+    console.log(`Selected track: ${currentTrack}/${tracks.length}`);
+  }
+  return <Player tracks={tracks} saveSelectedTrack={saveSelectedTrack}/>;
 }
 ```
 
@@ -30,13 +34,19 @@ export default async function Page() {
 
 import React, { useState } from 'react';
 
-export default function Player({ tracks }) {
+export default function Player({ tracks, saveSelectedTrack }) {
+  const [currentTrack, setCurrentTrack] = useState();
   return (
     <div>
-      <h1>Music Player</h1>
+      <h1>Music Player {currentTrack ? `(${currentTrack})` : ""}</h1>
       {tracks.map((track, index) => (
-        <button key={index}>{track}</button>
+        <button key={index} onClick={() => setCurrentTrack(index + 1)}>
+          {track}
+        </button>
       ))}
+      <div>
+        {currentTrack && <button onClick={() => saveSelectedTrack(currentTrack)}>Save current track</button>}
+      </div>
     </div>
   );
 }

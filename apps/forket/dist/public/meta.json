@@ -86,6 +86,17 @@
       ],
       "format": "cjs"
     },
+    "build/client/app/cases/12/Player.tsx": {
+      "bytes": 547,
+      "imports": [
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        }
+      ],
+      "format": "esm"
+    },
     "build/client/app/cases/11/Controls.tsx": {
       "bytes": 451,
       "imports": [
@@ -234,7 +245,7 @@
       "format": "esm"
     },
     "build/client/client.tsx": {
-      "bytes": 6572,
+      "bytes": 6639,
       "imports": [
         {
           "path": "node_modules/react-dom/client.js",
@@ -245,6 +256,11 @@
           "path": "node_modules/react/index.js",
           "kind": "import-statement",
           "original": "react"
+        },
+        {
+          "path": "build/client/app/cases/12/Player.tsx",
+          "kind": "import-statement",
+          "original": "./app/cases/12/Player.tsx"
         },
         {
           "path": "build/client/app/cases/11/Controls.tsx",
@@ -315,7 +331,7 @@
       "imports": [],
       "exports": [],
       "inputs": {},
-      "bytes": 894563
+      "bytes": 895793
     },
     "dist/public/bundle.js": {
       "imports": [],
@@ -347,7 +363,10 @@
           "bytesInOutput": 253
         },
         "build/client/client.tsx": {
-          "bytesInOutput": 5824
+          "bytesInOutput": 5840
+        },
+        "build/client/app/cases/12/Player.tsx": {
+          "bytesInOutput": 392
         },
         "build/client/app/cases/11/Controls.tsx": {
           "bytesInOutput": 422
@@ -389,7 +408,7 @@
           "bytesInOutput": 96
         }
       },
-      "bytes": 194702
+      "bytes": 195110
     }
   }
 }

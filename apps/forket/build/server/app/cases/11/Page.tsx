@@ -14,32 +14,32 @@ export default async function Page() {
     return <PlayerBoundary tracks={tracks}><ControlsBoundary/></PlayerBoundary>;
 }
 function PlayerBoundary(props) {
-    const serializedProps = JSON.stringify(forketSerializeProps(props, "Player", "f_55"));
+    const serializedProps = JSON.stringify(forketSerializeProps(props, "Player", "f_57"));
     const children = props.children;
     return (<>
-      {children && (<template type="forket/children" id="f_55" data-c="Player">
+      {children && (<template type="forket/children" id="f_57" data-c="Player">
           {children}
         </template>)}
-      <template type="forket/start/f_55" data-c="Player"></template>
+      <template type="forket/start/f_57" data-c="Player"></template>
       <Player {...props} children={children}/>
-      <template type="forket/end/f_55" data-c="Player"></template>
-      <script id="forket/init/f_55" dangerouslySetInnerHTML={{
-        __html: `$F_booter(document.currentScript, "f_55", "Player", ${JSON.stringify(serializedProps)});`
+      <template type="forket/end/f_57" data-c="Player"></template>
+      <script id="forket/init/f_57" dangerouslySetInnerHTML={{
+        __html: `$F_booter(document.currentScript, "f_57", "Player", ${JSON.stringify(serializedProps)});`
     }}></script>
     </>);
 }
 function ControlsBoundary(props) {
-    const serializedProps = JSON.stringify(forketSerializeProps(props, "Controls", "f_56"));
+    const serializedProps = JSON.stringify(forketSerializeProps(props, "Controls", "f_58"));
     const children = props.children;
     return (<>
-      {children && (<template type="forket/children" id="f_56" data-c="Controls">
+      {children && (<template type="forket/children" id="f_58" data-c="Controls">
           {children}
         </template>)}
-      <template type="forket/start/f_56" data-c="Controls"></template>
+      <template type="forket/start/f_58" data-c="Controls"></template>
       <Controls {...props} children={children}/>
-      <template type="forket/end/f_56" data-c="Controls"></template>
-      <script id="forket/init/f_56" dangerouslySetInnerHTML={{
-        __html: `$F_booter(document.currentScript, "f_56", "Controls", ${JSON.stringify(serializedProps)});`
+      <template type="forket/end/f_58" data-c="Controls"></template>
+      <script id="forket/init/f_58" dangerouslySetInnerHTML={{
+        __html: `$F_booter(document.currentScript, "f_58", "Controls", ${JSON.stringify(serializedProps)});`
     }}></script>
     </>);
 }

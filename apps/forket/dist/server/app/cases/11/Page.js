@@ -14,17 +14,17 @@ async function Page() {
   return /* @__PURE__ */ React.createElement(PlayerBoundary, { tracks }, /* @__PURE__ */ React.createElement(ControlsBoundary, null));
 }
 function PlayerBoundary(props) {
-  const serializedProps = JSON.stringify(forketSerializeProps(props, "Player", "f_55"));
+  const serializedProps = JSON.stringify(forketSerializeProps(props, "Player", "f_57"));
   const children = props.children;
-  return /* @__PURE__ */ React.createElement(React.Fragment, null, children && /* @__PURE__ */ React.createElement("template", { type: "forket/children", id: "f_55", "data-c": "Player" }, children), /* @__PURE__ */ React.createElement("template", { type: "forket/start/f_55", "data-c": "Player" }), /* @__PURE__ */ React.createElement(Player, { ...props, children }), /* @__PURE__ */ React.createElement("template", { type: "forket/end/f_55", "data-c": "Player" }), /* @__PURE__ */ React.createElement("script", { id: "forket/init/f_55", dangerouslySetInnerHTML: {
-    __html: `$F_booter(document.currentScript, "f_55", "Player", ${JSON.stringify(serializedProps)});`
+  return /* @__PURE__ */ React.createElement(React.Fragment, null, children && /* @__PURE__ */ React.createElement("template", { type: "forket/children", id: "f_57", "data-c": "Player" }, children), /* @__PURE__ */ React.createElement("template", { type: "forket/start/f_57", "data-c": "Player" }), /* @__PURE__ */ React.createElement(Player, { ...props, children }), /* @__PURE__ */ React.createElement("template", { type: "forket/end/f_57", "data-c": "Player" }), /* @__PURE__ */ React.createElement("script", { id: "forket/init/f_57", dangerouslySetInnerHTML: {
+    __html: `$F_booter(document.currentScript, "f_57", "Player", ${JSON.stringify(serializedProps)});`
   } }));
 }
 function ControlsBoundary(props) {
-  const serializedProps = JSON.stringify(forketSerializeProps(props, "Controls", "f_56"));
+  const serializedProps = JSON.stringify(forketSerializeProps(props, "Controls", "f_58"));
   const children = props.children;
-  return /* @__PURE__ */ React.createElement(React.Fragment, null, children && /* @__PURE__ */ React.createElement("template", { type: "forket/children", id: "f_56", "data-c": "Controls" }, children), /* @__PURE__ */ React.createElement("template", { type: "forket/start/f_56", "data-c": "Controls" }), /* @__PURE__ */ React.createElement(Controls, { ...props, children }), /* @__PURE__ */ React.createElement("template", { type: "forket/end/f_56", "data-c": "Controls" }), /* @__PURE__ */ React.createElement("script", { id: "forket/init/f_56", dangerouslySetInnerHTML: {
-    __html: `$F_booter(document.currentScript, "f_56", "Controls", ${JSON.stringify(serializedProps)});`
+  return /* @__PURE__ */ React.createElement(React.Fragment, null, children && /* @__PURE__ */ React.createElement("template", { type: "forket/children", id: "f_58", "data-c": "Controls" }, children), /* @__PURE__ */ React.createElement("template", { type: "forket/start/f_58", "data-c": "Controls" }), /* @__PURE__ */ React.createElement(Controls, { ...props, children }), /* @__PURE__ */ React.createElement("template", { type: "forket/end/f_58", "data-c": "Controls" }), /* @__PURE__ */ React.createElement("script", { id: "forket/init/f_58", dangerouslySetInnerHTML: {
+    __html: `$F_booter(document.currentScript, "f_58", "Controls", ${JSON.stringify(serializedProps)});`
   } }));
 }
 export {

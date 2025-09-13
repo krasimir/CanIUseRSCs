@@ -11,17 +11,17 @@ export default async function Page() {
     </div>);
 }
 function ExpandableBoundary(props) {
-    const serializedProps = JSON.stringify(forketSerializeProps(props, "Expandable", "f_39"));
+    const serializedProps = JSON.stringify(forketSerializeProps(props, "Expandable", "f_41"));
     const children = props.children;
     return (<>
-      {children && (<template type="forket/children" id="f_39" data-c="Expandable">
+      {children && (<template type="forket/children" id="f_41" data-c="Expandable">
           {children}
         </template>)}
-      <template type="forket/start/f_39" data-c="Expandable"></template>
+      <template type="forket/start/f_41" data-c="Expandable"></template>
       <Expandable {...props} children={children}/>
-      <template type="forket/end/f_39" data-c="Expandable"></template>
-      <script id="forket/init/f_39" dangerouslySetInnerHTML={{
-        __html: `$F_booter(document.currentScript, "f_39", "Expandable", ${JSON.stringify(serializedProps)});`
+      <template type="forket/end/f_41" data-c="Expandable"></template>
+      <script id="forket/init/f_41" dangerouslySetInnerHTML={{
+        __html: `$F_booter(document.currentScript, "f_41", "Expandable", ${JSON.stringify(serializedProps)});`
     }}></script>
     </>);
 }

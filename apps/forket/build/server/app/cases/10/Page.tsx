@@ -12,32 +12,32 @@ export default async function Page() {
     </div>);
 }
 function FancyTextBoundary(props) {
-    const serializedProps = JSON.stringify(forketSerializeProps(props, "FancyText", "f_53"));
+    const serializedProps = JSON.stringify(forketSerializeProps(props, "FancyText", "f_55"));
     const children = props.children;
     return (<>
-      {children && (<template type="forket/children" id="f_53" data-c="FancyText">
+      {children && (<template type="forket/children" id="f_55" data-c="FancyText">
           {children}
         </template>)}
-      <template type="forket/start/f_53" data-c="FancyText"></template>
+      <template type="forket/start/f_55" data-c="FancyText"></template>
       <FancyText {...props} children={children}/>
-      <template type="forket/end/f_53" data-c="FancyText"></template>
-      <script id="forket/init/f_53" dangerouslySetInnerHTML={{
-        __html: `$F_booter(document.currentScript, "f_53", "FancyText", ${JSON.stringify(serializedProps)});`
+      <template type="forket/end/f_55" data-c="FancyText"></template>
+      <script id="forket/init/f_55" dangerouslySetInnerHTML={{
+        __html: `$F_booter(document.currentScript, "f_55", "FancyText", ${JSON.stringify(serializedProps)});`
     }}></script>
     </>);
 }
 function InspirationGeneratorBoundary(props) {
-    const serializedProps = JSON.stringify(forketSerializeProps(props, "InspirationGenerator", "f_54"));
+    const serializedProps = JSON.stringify(forketSerializeProps(props, "InspirationGenerator", "f_56"));
     const children = props.children;
     return (<>
-      {children && (<template type="forket/children" id="f_54" data-c="InspirationGenerator">
+      {children && (<template type="forket/children" id="f_56" data-c="InspirationGenerator">
           {children}
         </template>)}
-      <template type="forket/start/f_54" data-c="InspirationGenerator"></template>
+      <template type="forket/start/f_56" data-c="InspirationGenerator"></template>
       <InspirationGenerator {...props} children={children}/>
-      <template type="forket/end/f_54" data-c="InspirationGenerator"></template>
-      <script id="forket/init/f_54" dangerouslySetInnerHTML={{
-        __html: `$F_booter(document.currentScript, "f_54", "InspirationGenerator", ${JSON.stringify(serializedProps)});`
+      <template type="forket/end/f_56" data-c="InspirationGenerator"></template>
+      <script id="forket/init/f_56" dangerouslySetInnerHTML={{
+        __html: `$F_booter(document.currentScript, "f_56", "InspirationGenerator", ${JSON.stringify(serializedProps)});`
     }}></script>
     </>);
 }

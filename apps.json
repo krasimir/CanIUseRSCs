@@ -12,7 +12,8 @@
       "08": true,
       "09": true,
       "10": true,
-      "11": true
+      "11": true,
+      "12": true
     }
   },
   "Forket": {
@@ -28,7 +29,8 @@
       "08": true,
       "09": true,
       "10": true,
-      "11": false
+      "11": false,
+      "12": false
     }
   }
 }
