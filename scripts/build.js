@@ -2,6 +2,8 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from "url";
 
+import { transformForketFile, setupForket } from "./vendors/forket.js";
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const CASES_DIR = path.join(__dirname, '..', 'cases');
@@ -27,15 +29,17 @@ const APPS = [
   {
     name: "Forket",
     appDir: path.join(__dirname, "..", "apps", "forket", "src", "app", "cases"),
-    processFile(fileFrom, fileTo) {
-      fs.copyFileSync(fileFrom, fileTo);
-    }
+    processFile: transformForketFile,
+    setup: setupForket
   }
 ].map((data) => ({ ...data, ...APPS_META_DATA[data.name] }));
 
 function moveCasesToTheApps() {
-  APPS.forEach(({ app, appDir, processFile }) => {
+  APPS.forEach(({ app, appDir, processFile, setup }) => {
     copyFolder(CASES_DIR, appDir, processFile);
+    if (setup) {
+      setup(cases);
+    }
     console.log(`Cases copied to "${appDir.replace(path.dirname(__dirname), "")}".`);
   });
 }

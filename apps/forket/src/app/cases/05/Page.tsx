@@ -1,12 +1,8 @@
 import React from "react";
-
-import LikeButton from "./LikeButton";
-import { getLikeCount } from "./actions";
-
+import LikeButton from "./LikeButton.js";
+import { getLikeCount } from "./actions.js";
 export default function Page() {
-  return (
-    <div>
+    return (<div>
       <LikeButton initialCount={getLikeCount()}/>
-    </div>
-  );
+    </div>);
 }

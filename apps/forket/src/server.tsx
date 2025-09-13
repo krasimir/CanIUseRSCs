@@ -3,7 +3,6 @@ import path from "path";
 import http from "http";
 import express from "express";
 import { fileURLToPath } from "url";
-import bodyParser from "body-parser";
 import Forket from "forket";
 
 import App from './app/App.js';
@@ -16,7 +15,6 @@ const app = express();
 
 const server = http.createServer(app);
 
-app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, "..", "public")));
 
 Forket().then((forket) => {

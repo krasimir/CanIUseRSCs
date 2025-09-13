@@ -2,6 +2,19 @@ import React from 'react';
 import fs from "fs";
 import path from "path";
 
+// <case_imports>
+import Case01 from './cases/01/Page.js';
+import Case02 from './cases/02/Page.js';
+import Case03 from './cases/03/Page.js';
+import Case04 from './cases/04/Page.js';
+import Case05 from './cases/05/Page.js';
+import Case06 from './cases/06/Page.js';
+import Case07 from './cases/07/Page.js';
+import Case08 from './cases/08/Page.js';
+import Case09 from './cases/09/Page.js';
+import Case10 from './cases/10/Page.js';
+// </case_imports>
+
 import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -45,6 +58,7 @@ export default async function App({ request }) {
       </head>
       <body>
         <main>{page}</main>
+        <script src="/bundle.js" />
       </body>
     </html>
   );

@@ -1,11 +1,7 @@
 import React from "react";
-
-import UpdateName from "./UpdateName";
-
+import UpdateName from "./UpdateName.js";
 export default async function Page() {
-  return (
-    <div>
-      <UpdateName />
-    </div>
-  );
+    return (<div>
+      <UpdateName/>
+    </div>);
 }

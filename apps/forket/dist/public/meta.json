@@ -1,0 +1,357 @@
+{
+  "inputs": {
+    "node_modules/scheduler/cjs/scheduler.production.js": {
+      "bytes": 10346,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/scheduler/index.js": {
+      "bytes": 194,
+      "imports": [
+        {
+          "path": "node_modules/scheduler/cjs/scheduler.production.js",
+          "kind": "require-call",
+          "original": "./cjs/scheduler.production.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/react/cjs/react.production.js": {
+      "bytes": 16856,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/react/index.js": {
+      "bytes": 186,
+      "imports": [
+        {
+          "path": "node_modules/react/cjs/react.production.js",
+          "kind": "require-call",
+          "original": "./cjs/react.production.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/react-dom/cjs/react-dom.production.js": {
+      "bytes": 6655,
+      "imports": [
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "require-call",
+          "original": "react"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/react-dom/index.js": {
+      "bytes": 1359,
+      "imports": [
+        {
+          "path": "node_modules/react-dom/cjs/react-dom.production.js",
+          "kind": "require-call",
+          "original": "./cjs/react-dom.production.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/react-dom/cjs/react-dom-client.production.js": {
+      "bytes": 508988,
+      "imports": [
+        {
+          "path": "node_modules/scheduler/index.js",
+          "kind": "require-call",
+          "original": "scheduler"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "require-call",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react-dom/index.js",
+          "kind": "require-call",
+          "original": "react-dom"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/react-dom/client.js": {
+      "bytes": 1373,
+      "imports": [
+        {
+          "path": "node_modules/react-dom/cjs/react-dom-client.production.js",
+          "kind": "require-call",
+          "original": "./cjs/react-dom-client.production.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "build/client/app/cases/10/inspirations.ts": {
+      "bytes": 196,
+      "imports": [],
+      "format": "esm"
+    },
+    "build/client/app/cases/10/FancyText.tsx": {
+      "bytes": 230,
+      "imports": [
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        }
+      ],
+      "format": "esm"
+    },
+    "build/client/app/cases/10/InspirationGenerator.tsx": {
+      "bytes": 523,
+      "imports": [
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "build/client/app/cases/10/inspirations.ts",
+          "kind": "import-statement",
+          "original": "./inspirations.js"
+        },
+        {
+          "path": "build/client/app/cases/10/FancyText.tsx",
+          "kind": "import-statement",
+          "original": "./FancyText.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "build/client/app/cases/09/Comments.tsx": {
+      "bytes": 231,
+      "imports": [
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        }
+      ],
+      "format": "esm"
+    },
+    "build/client/app/cases/08/UpdateName.tsx": {
+      "bytes": 719,
+      "imports": [
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        }
+      ],
+      "format": "esm"
+    },
+    "build/client/app/cases/07/UpdateMyName.tsx": {
+      "bytes": 1022,
+      "imports": [
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        }
+      ],
+      "format": "esm"
+    },
+    "build/client/app/cases/06/Button.tsx": {
+      "bytes": 233,
+      "imports": [
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        }
+      ],
+      "format": "esm"
+    },
+    "build/client/app/cases/05/LikeButton.tsx": {
+      "bytes": 696,
+      "imports": [
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        }
+      ],
+      "format": "esm"
+    },
+    "build/client/app/cases/04/LikeButton.tsx": {
+      "bytes": 585,
+      "imports": [
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        }
+      ],
+      "format": "esm"
+    },
+    "build/client/app/cases/03/Expandable.tsx": {
+      "bytes": 288,
+      "imports": [
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        }
+      ],
+      "format": "esm"
+    },
+    "build/client/app/cases/02/Expandable.tsx": {
+      "bytes": 200,
+      "imports": [
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        }
+      ],
+      "format": "esm"
+    },
+    "build/client/client.tsx": {
+      "bytes": 6436,
+      "imports": [
+        {
+          "path": "node_modules/react-dom/client.js",
+          "kind": "import-statement",
+          "original": "react-dom/client"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "build/client/app/cases/10/InspirationGenerator.tsx",
+          "kind": "import-statement",
+          "original": "./app/cases/10/InspirationGenerator.tsx"
+        },
+        {
+          "path": "build/client/app/cases/10/FancyText.tsx",
+          "kind": "import-statement",
+          "original": "./app/cases/10/FancyText.tsx"
+        },
+        {
+          "path": "build/client/app/cases/09/Comments.tsx",
+          "kind": "import-statement",
+          "original": "./app/cases/09/Comments.tsx"
+        },
+        {
+          "path": "build/client/app/cases/08/UpdateName.tsx",
+          "kind": "import-statement",
+          "original": "./app/cases/08/UpdateName.tsx"
+        },
+        {
+          "path": "build/client/app/cases/07/UpdateMyName.tsx",
+          "kind": "import-statement",
+          "original": "./app/cases/07/UpdateMyName.tsx"
+        },
+        {
+          "path": "build/client/app/cases/06/Button.tsx",
+          "kind": "import-statement",
+          "original": "./app/cases/06/Button.tsx"
+        },
+        {
+          "path": "build/client/app/cases/05/LikeButton.tsx",
+          "kind": "import-statement",
+          "original": "./app/cases/05/LikeButton.tsx"
+        },
+        {
+          "path": "build/client/app/cases/04/LikeButton.tsx",
+          "kind": "import-statement",
+          "original": "./app/cases/04/LikeButton.tsx"
+        },
+        {
+          "path": "build/client/app/cases/03/Expandable.tsx",
+          "kind": "import-statement",
+          "original": "./app/cases/03/Expandable.tsx"
+        },
+        {
+          "path": "build/client/app/cases/02/Expandable.tsx",
+          "kind": "import-statement",
+          "original": "./app/cases/02/Expandable.tsx"
+        }
+      ],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    "dist/public/bundle.js.map": {
+      "imports": [],
+      "exports": [],
+      "inputs": {},
+      "bytes": 892780
+    },
+    "dist/public/bundle.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "build/client/client.tsx",
+      "inputs": {
+        "node_modules/scheduler/cjs/scheduler.production.js": {
+          "bytesInOutput": 3780
+        },
+        "node_modules/scheduler/index.js": {
+          "bytesInOutput": 51
+        },
+        "node_modules/react/cjs/react.production.js": {
+          "bytesInOutput": 7513
+        },
+        "node_modules/react/index.js": {
+          "bytesInOutput": 51
+        },
+        "node_modules/react-dom/cjs/react-dom.production.js": {
+          "bytesInOutput": 3343
+        },
+        "node_modules/react-dom/index.js": {
+          "bytesInOutput": 253
+        },
+        "node_modules/react-dom/cjs/react-dom-client.production.js": {
+          "bytesInOutput": 168003
+        },
+        "node_modules/react-dom/client.js": {
+          "bytesInOutput": 253
+        },
+        "build/client/client.tsx": {
+          "bytesInOutput": 5792
+        },
+        "build/client/app/cases/10/InspirationGenerator.tsx": {
+          "bytesInOutput": 331
+        },
+        "build/client/app/cases/10/inspirations.ts": {
+          "bytesInOutput": 180
+        },
+        "build/client/app/cases/10/FancyText.tsx": {
+          "bytesInOutput": 177
+        },
+        "build/client/app/cases/09/Comments.tsx": {
+          "bytesInOutput": 148
+        },
+        "build/client/app/cases/08/UpdateName.tsx": {
+          "bytesInOutput": 536
+        },
+        "build/client/app/cases/07/UpdateMyName.tsx": {
+          "bytesInOutput": 583
+        },
+        "build/client/app/cases/06/Button.tsx": {
+          "bytesInOutput": 159
+        },
+        "build/client/app/cases/05/LikeButton.tsx": {
+          "bytesInOutput": 412
+        },
+        "build/client/app/cases/04/LikeButton.tsx": {
+          "bytesInOutput": 336
+        },
+        "build/client/app/cases/03/Expandable.tsx": {
+          "bytesInOutput": 186
+        },
+        "build/client/app/cases/02/Expandable.tsx": {
+          "bytesInOutput": 96
+        }
+      },
+      "bytes": 194007
+    }
+  }
+}

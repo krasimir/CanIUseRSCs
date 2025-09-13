@@ -1,18 +1,11 @@
 import React from "react";
-
-import db from "./db";
-import Expandable from "./Expandable";
-
+import db from "./db.js";
+import Expandable from "./Expandable.js";
 export default async function Page() {
-  const notes = await db.notes.getAll();
-
-  return (
-    <div>
-      {notes.map((note) => (
-        <Expandable key={note.id}>
+    const notes = await db.notes.getAll();
+    return (<div>
+      {notes.map((note)=>(<Expandable key={note.id}>
           <p>{note.content}</p>
-        </Expandable>
-      ))}
-    </div>
-  );
+        </Expandable>))}
+    </div>);
 }
