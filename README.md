@@ -14,6 +14,7 @@ Features support list across different frameworks and libraries.
 | (08) [Server Functions with useActionState](./cases/08)<br />A server function is used as the action for a form to demonstrate server-side processing in response to a form submission. | ✅ [Next.js](https://nextjs.org/)<br />✅ [Forket](https://github.com/krasimir/forket) |
 | (09) [Passing promise from server to client component](./cases/09)<br />A server component passes a promise to a client component which "awaits" it and renders the result. | ✅ [Next.js](https://nextjs.org/)<br />✅ [Forket](https://github.com/krasimir/forket) |
 | (10) [Inspirational quote generator app](./cases/10)<br />An app that generates and displays inspirational quotes to motivate users. Little app from [here](https://react.dev/reference/rsc/use-client#how-use-client-marks-client-code).  | ✅ [Next.js](https://nextjs.org/)<br />✅ [Forket](https://github.com/krasimir/forket) |
+| (11) [Nested Client Components](./cases/11)<br />A test case for nested client components | ✅ [Next.js](https://nextjs.org/)<br />❌ [Forket](https://github.com/krasimir/forket) |
 
 
 

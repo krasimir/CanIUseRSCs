@@ -86,6 +86,28 @@
       ],
       "format": "cjs"
     },
+    "build/client/app/cases/11/Controls.tsx": {
+      "bytes": 451,
+      "imports": [
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        }
+      ],
+      "format": "esm"
+    },
+    "build/client/app/cases/11/Player.tsx": {
+      "bytes": 280,
+      "imports": [
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        }
+      ],
+      "format": "esm"
+    },
     "build/client/app/cases/10/inspirations.ts": {
       "bytes": 196,
       "imports": [],
@@ -212,7 +234,7 @@
       "format": "esm"
     },
     "build/client/client.tsx": {
-      "bytes": 6436,
+      "bytes": 6572,
       "imports": [
         {
           "path": "node_modules/react-dom/client.js",
@@ -223,6 +245,16 @@
           "path": "node_modules/react/index.js",
           "kind": "import-statement",
           "original": "react"
+        },
+        {
+          "path": "build/client/app/cases/11/Controls.tsx",
+          "kind": "import-statement",
+          "original": "./app/cases/11/Controls.tsx"
+        },
+        {
+          "path": "build/client/app/cases/11/Player.tsx",
+          "kind": "import-statement",
+          "original": "./app/cases/11/Player.tsx"
         },
         {
           "path": "build/client/app/cases/10/InspirationGenerator.tsx",
@@ -283,7 +315,7 @@
       "imports": [],
       "exports": [],
       "inputs": {},
-      "bytes": 892780
+      "bytes": 894563
     },
     "dist/public/bundle.js": {
       "imports": [],
@@ -315,7 +347,13 @@
           "bytesInOutput": 253
         },
         "build/client/client.tsx": {
-          "bytesInOutput": 5792
+          "bytesInOutput": 5824
+        },
+        "build/client/app/cases/11/Controls.tsx": {
+          "bytesInOutput": 422
+        },
+        "build/client/app/cases/11/Player.tsx": {
+          "bytesInOutput": 241
         },
         "build/client/app/cases/10/InspirationGenerator.tsx": {
           "bytesInOutput": 331
@@ -351,7 +389,7 @@
           "bytesInOutput": 96
         }
       },
-      "bytes": 194007
+      "bytes": 194702
     }
   }
 }

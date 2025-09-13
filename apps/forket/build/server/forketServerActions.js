@@ -1,20 +1,20 @@
-import { updateUsername as f_61 } from "./app/cases/08/actions.ts";
-import { updateMyName as f_60 } from "./app/cases/07/actions.ts";
-import { createNoteAction as f_59 } from "./app/cases/06/Page.tsx";
-import { getLikeCount as f_58 } from "./app/cases/05/actions.ts";
-import { incrementLike as f_57 } from "./app/cases/05/actions.ts";
-import { getLikeCount as f_56 } from "./app/cases/04/actions.ts";
-import { incrementLike as f_55 } from "./app/cases/04/actions.ts";
+import { updateUsername as f_66 } from "./app/cases/08/actions.ts";
+import { updateMyName as f_65 } from "./app/cases/07/actions.ts";
+import { createNoteAction as f_64 } from "./app/cases/06/Page.tsx";
+import { getLikeCount as f_63 } from "./app/cases/05/actions.ts";
+import { incrementLike as f_62 } from "./app/cases/05/actions.ts";
+import { getLikeCount as f_61 } from "./app/cases/04/actions.ts";
+import { incrementLike as f_60 } from "./app/cases/04/actions.ts";
 import FormDataFallback from 'form-data';
 import multer from "multer";
 const actions = {
-    $FSA_f_37_incrementLike: f_55,
-    $FSA_f_38_getLikeCount: f_56,
-    $FSA_f_52_incrementLike: f_57,
-    $FSA_f_41_getLikeCount: f_58,
-    $FSA_f_43_createNoteAction: f_59,
-    $FSA_f_53_updateMyName: f_60,
-    $FSA_f_54_updateUsername: f_61
+    $FSA_f_40_incrementLike: f_60,
+    $FSA_f_41_getLikeCount: f_61,
+    $FSA_f_57_incrementLike: f_62,
+    $FSA_f_44_getLikeCount: f_63,
+    $FSA_f_46_createNoteAction: f_64,
+    $FSA_f_58_updateMyName: f_65,
+    $FSA_f_59_updateUsername: f_66
 };
 const fromDataHandler = multer({
     storage: multer.memoryStorage()

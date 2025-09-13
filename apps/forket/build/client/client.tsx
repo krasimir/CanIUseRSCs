@@ -1,26 +1,30 @@
 "use client";
 import ReactDomClient from "react-dom/client";
 import React from "react";
-import f_51 from "./app/cases/10/InspirationGenerator.tsx";
-import f_50 from "./app/cases/10/FancyText.tsx";
-import f_49 from "./app/cases/09/Comments.tsx";
-import f_48 from "./app/cases/08/UpdateName.tsx";
-import f_46 from "./app/cases/07/UpdateMyName.tsx";
-import f_44 from "./app/cases/06/Button.tsx";
-import f_42 from "./app/cases/05/LikeButton.tsx";
-import f_39 from "./app/cases/04/LikeButton.tsx";
-import f_36 from "./app/cases/03/Expandable.tsx";
-import f_35 from "./app/cases/02/Expandable.tsx";
-window.$f_35 = f_35;
-window.$f_36 = f_36;
+import f_56 from "./app/cases/11/Controls.tsx";
+import f_55 from "./app/cases/11/Player.tsx";
+import f_54 from "./app/cases/10/InspirationGenerator.tsx";
+import f_53 from "./app/cases/10/FancyText.tsx";
+import f_52 from "./app/cases/09/Comments.tsx";
+import f_51 from "./app/cases/08/UpdateName.tsx";
+import f_49 from "./app/cases/07/UpdateMyName.tsx";
+import f_47 from "./app/cases/06/Button.tsx";
+import f_45 from "./app/cases/05/LikeButton.tsx";
+import f_42 from "./app/cases/04/LikeButton.tsx";
+import f_39 from "./app/cases/03/Expandable.tsx";
+import f_38 from "./app/cases/02/Expandable.tsx";
+window.$f_38 = f_38;
 window.$f_39 = f_39;
 window.$f_42 = f_42;
-window.$f_44 = f_44;
-window.$f_46 = f_46;
-window.$f_48 = f_48;
+window.$f_45 = f_45;
+window.$f_47 = f_47;
 window.$f_49 = f_49;
-window.$f_50 = f_50;
 window.$f_51 = f_51;
+window.$f_52 = f_52;
+window.$f_53 = f_53;
+window.$f_54 = f_54;
+window.$f_55 = f_55;
+window.$f_56 = f_56;
 
 /* FORKET CLIENT */
 // @ts-ignore
