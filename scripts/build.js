@@ -35,7 +35,7 @@ const APPS = [
     setup: setupForket
   },
   {
-    name: "@vitejs/plugin-rsc",
+    name: "Vite",
     appDir: path.join(__dirname, "..", "apps", "vite", "src", "cases"),
     processFile(fileFrom, fileTo) {
       fs.copyFileSync(fileFrom, fileTo);
