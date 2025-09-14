@@ -41,10 +41,24 @@ const APPS = [
     },
     setup: setupVite
   }
-].map((data) => ({ ...data, ...APPS_META_DATA[data.name] }));
+]
+  .map((data) => {
+    data = {
+      ...data,
+      ...APPS_META_DATA[data.name]
+    };
+    let success = Object.keys(data.cases)
+      .map((caseId) => data.cases[caseId])
+      .filter(Boolean).length;
+    return {
+      ...data,
+      coverage: ((success / Object.keys(data.cases).length) * 100).toFixed(0),
+    };
+  })
+  .sort((a, b) => b.coverage - a.coverage);
 
 function moveCasesToTheApps() {
-  APPS.forEach(({ app, appDir, processFile, setup }) => {
+  APPS.forEach(({ appDir, processFile, setup }) => {
     copyFolder(CASES_DIR, appDir, processFile);
     if (setup) {
       setup(cases);
@@ -55,19 +69,10 @@ function moveCasesToTheApps() {
 function generateRepoReadme() {
   const readmePath = path.join(__dirname, 'templates', 'repo.md');
   let content = fs.readFileSync(readmePath, 'utf-8');
-  let appsList = APPS.map(app => {
-    let success = Object.keys(app.cases)
-      .map((caseId) => app.cases[caseId])
-      .filter(Boolean).length;
-    return {
-      coverage: ((success / Object.keys(app.cases).length) * 100).toFixed(0),
-      ...app
-    }
-  }).sort((a, b) => b.coverage - a.coverage);
 
   let genericInfo = '';
   genericInfo += `There are **${cases.length}** test cases in total. You can see them all in the table below. Testing against the following frameworks/libraries:\n\n`;
-  genericInfo += appsList.map((a) => `- [${a.name}](${a.site}) (${a.coverage}% support)`).join("\n");
+  genericInfo += APPS.map((a) => `- [${a.name}](${a.site}) (${a.coverage}% support)`).join("\n");
   content = content.replace(/{{GENERIC_INFO}}/g, genericInfo);
 
   let tableOfSupport = `| Case | Framework / Library |\n`;
