@@ -3,6 +3,7 @@ import path from 'path';
 import { fileURLToPath } from "url";
 
 import { transformForketFile, setupForket } from "./vendors/forket.js";
+import { setupVite } from './vendors/vite.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -37,7 +38,8 @@ const APPS = [
     appDir: path.join(__dirname, "..", "apps", "vite", "src", "cases"),
     processFile(fileFrom, fileTo) {
       fs.copyFileSync(fileFrom, fileTo);
-    }
+    },
+    setup: setupVite
   }
 ].map((data) => ({ ...data, ...APPS_META_DATA[data.name] }));
 

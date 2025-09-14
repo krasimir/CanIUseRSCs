@@ -36,18 +36,18 @@
   "@vitejs/plugin-rsc": {
     "site": "https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-rsc/README.md",
     "cases": {
-      "01": false,
-      "02": false,
-      "03": false,
-      "04": false,
-      "05": false,
-      "06": false,
-      "07": false,
-      "08": false,
-      "09": false,
-      "10": false,
-      "11": false,
-      "12": false
+      "01": true,
+      "02": true,
+      "03": true,
+      "04": true,
+      "05": true,
+      "06": true,
+      "07": true,
+      "08": true,
+      "09": true,
+      "10": true,
+      "11": true,
+      "12": true
     }
   }
 }

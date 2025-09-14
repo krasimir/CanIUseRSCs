@@ -34,8 +34,8 @@ export default function UpdateMyName() {
   const submitAction = async () => {
     startTransition(async () => {
       const response = await updateMyName(name);
+      alert("Response from updateName:" + JSON.stringify(response));
       if (response.error) {
-        alert("Response from updateName:" + JSON.stringify(response));
         setError(response.error);
       } else {
         setError(null);

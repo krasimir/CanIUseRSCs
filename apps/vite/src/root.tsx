@@ -1,8 +1,43 @@
-import './index.css' // css import is automatically injected in exported server components
-import viteLogo from '/vite.svg'
-import { getServerCounter, updateServerCounter } from './action.tsx'
-import reactLogo from './assets/react.svg'
-import { ClientCounter } from './client.tsx'
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+
+import './index.css'
+
+// <case_imports>
+import Case01 from './cases/01/Page';
+import Case02 from './cases/02/Page';
+import Case03 from './cases/03/Page';
+import Case04 from './cases/04/Page';
+import Case05 from './cases/05/Page';
+import Case06 from './cases/06/Page';
+import Case07 from './cases/07/Page';
+import Case08 from './cases/08/Page';
+import Case09 from './cases/09/Page';
+import Case10 from './cases/10/Page';
+import Case11 from './cases/11/Page';
+import Case12 from './cases/12/Page';
+
+const routes = {
+  '/case/01': Case01,
+  '/case/02': Case02,
+  '/case/03': Case03,
+  '/case/04': Case04,
+  '/case/05': Case05,
+  '/case/06': Case06,
+  '/case/07': Case07,
+  '/case/08': Case08,
+  '/case/09': Case09,
+  '/case/10': Case10,
+  '/case/11': Case11,
+  '/case/12': Case12,
+}
+// </case_imports>
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const cases = fs.readdirSync(path.join(__dirname, "cases")).filter((name) => !name.startsWith("."));
 
 export function Root(props: { url: URL }) {
   return (
@@ -21,51 +56,21 @@ export function Root(props: { url: URL }) {
 }
 
 function App(props: { url: URL }) {
+  const Case = routes[props.url.pathname as keyof typeof routes];
+  let pageContent = null;
+  if (Case) {
+    pageContent = <Case />;
+  }
   return (
     <div id="root">
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a
-          href="https://react.dev/reference/rsc/server-components"
-          target="_blank"
-        >
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + RSC</h1>
+      {!pageContent && <h1>Can I Use RSCs 🤔 Vite</h1>}
       <div className="card">
-        <ClientCounter />
+        {pageContent ? pageContent : cases.map((caseId) => (
+          <a href={`/case/${caseId}`} key={caseId} className="case">
+            {caseId}
+          </a>
+        ))}
       </div>
-      <div className="card">
-        <form action={updateServerCounter.bind(null, 1)}>
-          <button>Server Counter: {getServerCounter()}</button>
-        </form>
-      </div>
-      <div className="card">Request URL: {props.url?.href}</div>
-      <ul className="read-the-docs">
-        <li>
-          Edit <code>src/client.tsx</code> to test client HMR.
-        </li>
-        <li>
-          Edit <code>src/root.tsx</code> to test server HMR.
-        </li>
-        <li>
-          Visit{' '}
-          <a href="?__rsc" target="_blank">
-            <code>?__rsc</code>
-          </a>{' '}
-          to view RSC stream payload.
-        </li>
-        <li>
-          Visit{' '}
-          <a href="?__nojs" target="_blank">
-            <code>?__nojs</code>
-          </a>{' '}
-          to test server action without js enabled.
-        </li>
-      </ul>
     </div>
-  )
+  );
 }
