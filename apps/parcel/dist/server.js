@@ -9,8 +9,6 @@ require("./client/02.2a1cdab5.js");
 require("./client/02.33dfaf62.js");
 require("./server/03.d8b14e93.js");
 require("./client/03.2f85c920.js");
-require("./server/04.6948636f.js");
-require("./client/04.f7b515ce.js");
 require("./server/05.0ed10355.js");
 require("./client/05.c1a7e096.js");
 require("./server/06.62234c25.js");
@@ -27,6 +25,8 @@ require("./server/11.d8ba36d6.js");
 require("./client/11.a7479cd1.js");
 require("./server/12.941a4943.js");
 require("./client/12.c7047aec.js");
+require("./server/04.6948636f.js");
+require("./client/04.f7b515ce.js");
 // modules are defined as an array
 // [ module function, map of requires ]
 //
@@ -694,13 +694,9 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     }
 }
 
-},{}],"1J6tB":[function(require,module,exports,__globalThis) {
+},{}],"7khTm":[function(require,module,exports,__globalThis) {
 var _serverEdge = require("react-server-dom-parcel/server.edge");
 (0, _serverEdge.registerServerActions)({
-    "akuTv": [
-        "server/04.6948636f.js",
-        "server/Home.a2d3ead3.js"
-    ],
     "cizKY": [
         "server/05.0ed10355.js",
         "server/Home.a2d3ead3.js"
@@ -716,13 +712,17 @@ var _serverEdge = require("react-server-dom-parcel/server.edge");
     "6cXDh": [
         "server/08.973f5b5c.js",
         "server/Home.a2d3ead3.js"
+    ],
+    "akuTv": [
+        "server/04.6948636f.js",
+        "server/Home.a2d3ead3.js"
     ]
 });
 if (typeof AsyncLocalStorage === "undefined") try {
-    globalThis.AsyncLocalStorage = require("b10bcbdb659864ac").AsyncLocalStorage;
+    globalThis.AsyncLocalStorage = require("e6ab3282b659b8bc").AsyncLocalStorage;
 } catch  {}
 
-},{"react-server-dom-parcel/server.edge":"hqfUu","b10bcbdb659864ac":"node:async_hooks"}],"hqfUu":[function(require,module,exports,__globalThis) {
+},{"react-server-dom-parcel/server.edge":"hqfUu","e6ab3282b659b8bc":"node:async_hooks"}],"hqfUu":[function(require,module,exports,__globalThis) {
 'use strict';
 var s;
 s = require("9e2afbe5095d2f94");
@@ -3799,39 +3799,23 @@ const routes = {
 // </case_imports>
 const app = (0, _expressDefault.default)();
 app.use((0, _expressDefault.default).static('dist'));
-app.get('/', async (req, res)=>{
-    await (0, _node.renderRequest)(req, res, /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _home.Home), {}, void 0, false, {
-        fileName: "src/server.tsx",
-        lineNumber: 41,
-        columnNumber: 33
-    }, undefined), {
-        component: (0, _home.Home)
-    });
-});
 app.get("/case/:id", async (req, res)=>{
-    const id = req.params.id;
-    const Case = routes[id];
-    if (Case) return await (0, _node.renderRequest)(req, res, /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Case, {}, void 0, false, {
+    let Case = routes[req.params.id];
+    return await (0, _node.renderRequest)(req, res, /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Case, {}, void 0, false, {
         fileName: "src/server.tsx",
-        lineNumber: 47,
-        columnNumber: 42
+        lineNumber: 42,
+        columnNumber: 40
     }, undefined), {
         component: Case
     });
-    await (0, _node.renderRequest)(req, res, /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _home.Home), {}, void 0, false, {
-        fileName: "src/server.tsx",
-        lineNumber: 49,
-        columnNumber: 33
-    }, undefined), {
-        component: (0, _home.Home)
-    });
 });
-app.post('/', async (req, res)=>{
-    let id = req.get('rsc-action-id');
+app.post("/case/:id", async (req, res)=>{
+    let id = req.get("rsc-action-id");
+    let Case = routes[req.params.id];
     let { result } = await (0, _node.callAction)(req, id);
-    let root = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _home.Home), {}, void 0, false, {
+    let root = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Case, {}, void 0, false, {
         fileName: "src/server.tsx",
-        lineNumber: 55,
+        lineNumber: 48,
         columnNumber: 19
     }, undefined);
     if (id) root = {
@@ -3839,13 +3823,22 @@ app.post('/', async (req, res)=>{
         root
     };
     await (0, _node.renderRequest)(req, res, root, {
+        component: Case
+    });
+});
+app.get("/", async (req, res)=>{
+    await (0, _node.renderRequest)(req, res, /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _home.Home), {}, void 0, false, {
+        fileName: "src/server.tsx",
+        lineNumber: 56,
+        columnNumber: 33
+    }, undefined), {
         component: (0, _home.Home)
     });
 });
 app.listen(3001);
 console.log('Server listening on port 3001');
 
-},{"react/jsx-dev-runtime":"2EKVj","express":"express","@parcel/rsc/node":"1HnYz","@parcel/transformer-js/src/esmodule-helpers.js":"7GQ4w","./Home":"8Y8Rm","./cases/01":"8Kbyq","./cases/02":"7YW0g","./cases/03":"3KjxG","./cases/04":"4TdZX","./cases/05":"3yJbJ","./cases/06":"3FsiI","./cases/07":"jXwNH","./cases/08":"28Ejx","./cases/09":"kBCmf","./cases/10":"ElOBG","./cases/11":"3DyBD","./cases/12":"gkaIQ"}],"2EKVj":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"2EKVj","express":"express","@parcel/rsc/node":"1HnYz","@parcel/transformer-js/src/esmodule-helpers.js":"7GQ4w","./Home":"8Y8Rm","./cases/01":"8Kbyq","./cases/02":"7YW0g","./cases/03":"3KjxG","./cases/05":"3yJbJ","./cases/06":"3FsiI","./cases/07":"jXwNH","./cases/08":"28Ejx","./cases/09":"kBCmf","./cases/10":"ElOBG","./cases/11":"3DyBD","./cases/12":"gkaIQ","./cases/04":"4TdZX"}],"2EKVj":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("518ec8f286a92083");
 
@@ -4566,24 +4559,7 @@ let resources = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("link", {
 let res = (0, _rscHelpers.createResourcesProxy)(originalModule, false, resources, bootstrapScript);
 module.exports = res;
 
-},{"react/jsx-dev-runtime":"2EKVj","@parcel/runtime-rsc/rsc-helpers":"8RIod","d2HUA":"d2HUA"}],"4TdZX":[function(require,module,exports,__globalThis) {
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _rscHelpers = require("@parcel/runtime-rsc/rsc-helpers");
-let bootstrapScript = "Promise.all([import(\"/client/server.52f2cb8a.js\"),import(\"/client/Home.d80a9732.js\"),import(\"/client/02.33dfaf62.js\"),import(\"/client/04.f7b515ce.js\")]).then(()=>parcelRequireedff(\"4w9XE\"))";
-let originalModule = module.bundle.root("czGF7");
-let resources = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("link", {
-    rel: "stylesheet",
-    href: "/client/04.edf0ad82.css",
-    precedence: "default"
-}, void 0, false, {
-    fileName: "src/runtime-a06ebf9e1eab0e24.jsx",
-    lineNumber: 4,
-    columnNumber: 17
-}, undefined);
-let res = (0, _rscHelpers.createResourcesProxy)(originalModule, false, resources, bootstrapScript);
-module.exports = res;
-
-},{"react/jsx-dev-runtime":"2EKVj","@parcel/runtime-rsc/rsc-helpers":"8RIod","czGF7":"czGF7"}],"3yJbJ":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"2EKVj","@parcel/runtime-rsc/rsc-helpers":"8RIod","d2HUA":"d2HUA"}],"3yJbJ":[function(require,module,exports,__globalThis) {
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _rscHelpers = require("@parcel/runtime-rsc/rsc-helpers");
 let bootstrapScript = "Promise.all([import(\"/client/server.52f2cb8a.js\"),import(\"/client/Home.d80a9732.js\"),import(\"/client/02.33dfaf62.js\"),import(\"/client/05.c1a7e096.js\")]).then(()=>parcelRequireedff(\"4w9XE\"))";
@@ -4719,6 +4695,23 @@ let resources = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("link", {
 let res = (0, _rscHelpers.createResourcesProxy)(originalModule, false, resources, bootstrapScript);
 module.exports = res;
 
-},{"react/jsx-dev-runtime":"2EKVj","@parcel/runtime-rsc/rsc-helpers":"8RIod","4Qijd":"4Qijd"}]},["aHviM","1J6tB","59cc1"], "59cc1", "parcelRequireedff", {}, "./", "/")
+},{"react/jsx-dev-runtime":"2EKVj","@parcel/runtime-rsc/rsc-helpers":"8RIod","4Qijd":"4Qijd"}],"4TdZX":[function(require,module,exports,__globalThis) {
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _rscHelpers = require("@parcel/runtime-rsc/rsc-helpers");
+let bootstrapScript = "Promise.all([import(\"/client/server.52f2cb8a.js\"),import(\"/client/Home.d80a9732.js\"),import(\"/client/02.33dfaf62.js\"),import(\"/client/04.f7b515ce.js\")]).then(()=>parcelRequireedff(\"4w9XE\"))";
+let originalModule = module.bundle.root("czGF7");
+let resources = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("link", {
+    rel: "stylesheet",
+    href: "/client/04.edf0ad82.css",
+    precedence: "default"
+}, void 0, false, {
+    fileName: "src/runtime-a06ebf9e1eab0e24.jsx",
+    lineNumber: 4,
+    columnNumber: 17
+}, undefined);
+let res = (0, _rscHelpers.createResourcesProxy)(originalModule, false, resources, bootstrapScript);
+module.exports = res;
+
+},{"react/jsx-dev-runtime":"2EKVj","@parcel/runtime-rsc/rsc-helpers":"8RIod","czGF7":"czGF7"}]},["aHviM","7khTm","59cc1"], "59cc1", "parcelRequireedff", {}, "./", "/")
 
 //# sourceMappingURL=server.js.map

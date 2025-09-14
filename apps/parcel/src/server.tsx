@@ -37,26 +37,23 @@ const app = express();
 
 app.use(express.static('dist'));
 
-app.get('/', async (req, res) => {
-  await renderRequest(req, res, <Home />, {component: Home});
-});
 app.get("/case/:id", async (req, res) => {
-  const id = req.params.id;
-  const Case = routes[id];
-  if (Case) {
-    return await renderRequest(req, res, <Case />, {component: Case});
+  let Case = routes[req.params.id];
+  return await renderRequest(req, res, <Case />, { component: Case });
+});
+app.post("/case/:id", async (req, res) => {
+  let id = req.get("rsc-action-id");
+  let Case = routes[req.params.id];
+  let { result } = await callAction(req, id);
+  let root: any = <Case />;
+  if (id) {
+    root = { result, root };
   }
-  await renderRequest(req, res, <Home />, { component: Home });
+  await renderRequest(req, res, root, { component: Case });
 });
 
-app.post('/', async (req, res) => {
-  let id = req.get('rsc-action-id');
-  let {result} = await callAction(req, id);
-  let root: any = <Home />;
-  if (id) {
-    root = {result, root};
-  }
-  await renderRequest(req, res, root, {component: Home});
+app.get("/", async (req, res) => {
+  await renderRequest(req, res, <Home />, { component: Home });
 });
 
 app.listen(3001);

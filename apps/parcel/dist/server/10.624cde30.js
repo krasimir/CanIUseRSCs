@@ -3842,7 +3842,7 @@ function Copyright({ year }) {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
         className: "small",
         children: [
-            "\xa9\uFE0F ",
+            "\xa9 ",
             year
         ]
     }, void 0, true, {

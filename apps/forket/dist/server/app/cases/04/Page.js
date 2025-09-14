@@ -2,8 +2,8 @@ import forketSerializeProps from "forket/lib/utils/serializeProps.js";
 import React from "react";
 import LikeButton from "./LikeButton.js";
 import { getLikeCount } from "./actions.js";
-function Page() {
-  return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement(LikeButtonBoundary, { initialCount: getLikeCount(), incrementLike: "$FSA_f_42_incrementLike" }));
+async function Page() {
+  return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement(LikeButtonBoundary, { initialCount: await getLikeCount(), incrementLike: "$FSA_f_42_incrementLike" }));
 }
 function LikeButtonBoundary(props) {
   const serializedProps = JSON.stringify(forketSerializeProps(props, "LikeButton", "f_44"));

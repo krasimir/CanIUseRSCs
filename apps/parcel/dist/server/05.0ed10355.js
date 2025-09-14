@@ -733,10 +733,10 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _likeButton = require("./LikeButton");
 var _likeButtonDefault = parcelHelpers.interopDefault(_likeButton);
 var _actions = require("./actions");
-function Page() {
+async function Page() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _likeButtonDefault.default), {
-            initialCount: (0, _actions.getLikeCount)()
+            initialCount: await (0, _actions.getLikeCount)()
         }, void 0, false, {
             fileName: "src/cases/05/Page.tsx",
             lineNumber: 9,

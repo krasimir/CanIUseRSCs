@@ -2,9 +2,9 @@ import forketSerializeProps from "forket/lib/utils/serializeProps.js";
 import React from "react";
 import LikeButton from "./LikeButton.js";
 import { getLikeCount, incrementLike } from "./actions.js";
-export default function Page() {
+export default async function Page() {
     return (<div>
-      <LikeButtonBoundary initialCount={getLikeCount()} incrementLike={"$FSA_f_42_incrementLike"}/>
+      <LikeButtonBoundary initialCount={await getLikeCount()} incrementLike={"$FSA_f_42_incrementLike"}/>
     </div>);
 }
 function LikeButtonBoundary(props) {

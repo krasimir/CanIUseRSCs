@@ -733,7 +733,7 @@ $RefreshReg$(_c, "InspirationGenerator");
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 exports.default = [
-    "Don\u2019t let yesterday take up too much of today.\u201D \u2014 Will Rogers",
+    "Don't let yesterday take up too much of today.",
     "Ambition is putting a ladder against the sky.",
     "A joy that's shared is a joy made double."
 ];
