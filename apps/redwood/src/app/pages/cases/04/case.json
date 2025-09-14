@@ -1,0 +1,4 @@
+{
+  "title": "Passing server function to client component",
+  "description": "A client component receives a server function as a prop and calls it."
+}

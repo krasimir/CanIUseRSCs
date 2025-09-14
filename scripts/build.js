@@ -7,6 +7,7 @@ import { setupVite } from './vendors/vite.js';
 import { transformParcelFile, setupParcel } from "./vendors/parcel.js";
 import { setupReactRouter } from './vendors/react-router.js'
 import { setupWaku } from './vendors/waku.js'
+import { setupRedwood } from './vendors/redwood.js'
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -65,6 +66,14 @@ const APPS = [
       fs.copyFileSync(fileFrom, fileTo);
     },
     setup: setupWaku
+  },
+  {
+    name: "RedwoodSDK",
+    appDir: path.join(__dirname, "..", "apps", "redwood", "src", "app", "pages", "cases"),
+    processFile(fileFrom, fileTo) {
+      fs.copyFileSync(fileFrom, fileTo);
+    },
+    setup: setupRedwood
   }
 ]
   .map((data) => {

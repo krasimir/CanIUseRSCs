@@ -1,0 +1,4 @@
+{
+  "title": "Inlined server function (inside a server component)",
+  "description": "Creating a server function and pass it as a prop to client component"
+}

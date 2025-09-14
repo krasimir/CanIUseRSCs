@@ -106,5 +106,23 @@
       "11": true,
       "12": true
     }
+  },
+  "RedwoodSDK": {
+    "site": "https://docs.rwsdk.com/",
+    "description": "A full-stack React framework",
+    "cases": {
+      "01": true,
+      "02": true,
+      "03": true,
+      "04": true,
+      "05": true,
+      "06": false,
+      "07": true,
+      "08": true,
+      "09": true,
+      "10": true,
+      "11": true,
+      "12": false
+    }
   }
 }
