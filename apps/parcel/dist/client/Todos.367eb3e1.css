@@ -1,0 +1,62 @@
+body {
+  color-scheme: light dark;
+  font-family: system-ui;
+}
+
+form {
+  flex-direction: column;
+  grid-template-columns: auto 1fr;
+  gap: 8px;
+  max-width: 400px;
+  display: grid;
+}
+
+label {
+  display: contents;
+}
+
+main {
+  gap: 32px;
+  display: flex;
+}
+
+.todo-column {
+  width: 250px;
+}
+
+header {
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 250px;
+  padding: 8px 40px 8px 8px;
+  display: flex;
+}
+
+.todo-list {
+  border-right: 1px solid gray;
+  max-width: 250px;
+  padding: 0 32px 0 0;
+  list-style: none;
+
+  & li {
+    accent-color: light-dark(#000, #fff);
+    border-radius: 8px;
+    gap: 8px;
+    padding: 8px;
+    display: flex;
+
+    & a {
+      color: inherit;
+      width: 100%;
+      text-decoration: none;
+    }
+
+    &[data-selected] {
+      color: light-dark(#ddd, #222);
+      accent-color: light-dark(#fff, #000);
+      background-color: light-dark(#222, #ddd);
+    }
+  }
+}
+/*# sourceMappingURL=Todos.367eb3e1.css.map */

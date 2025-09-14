@@ -4,6 +4,7 @@ import { fileURLToPath } from "url";
 
 import { transformForketFile, setupForket } from "./vendors/forket.js";
 import { setupVite } from './vendors/vite.js';
+import { setupParcel } from './vendors/parcel.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -40,6 +41,14 @@ const APPS = [
       fs.copyFileSync(fileFrom, fileTo);
     },
     setup: setupVite
+  },
+  {
+    name: "Parcel",
+    appDir: path.join(__dirname, "..", "apps", "parcel", "src", "cases"),
+    processFile(fileFrom, fileTo) {
+      fs.copyFileSync(fileFrom, fileTo);
+    },
+    setup: setupParcel
   }
 ]
   .map((data) => {
@@ -52,7 +61,7 @@ const APPS = [
       .filter(Boolean).length;
     return {
       ...data,
-      coverage: ((success / Object.keys(data.cases).length) * 100).toFixed(0),
+      coverage: ((success / Object.keys(data.cases).length) * 100).toFixed(0)
     };
   })
   .sort((a, b) => b.coverage - a.coverage);
