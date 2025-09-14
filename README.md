@@ -25,7 +25,7 @@ Edit `./app.json` and `APPS` array in `./scripts/build.js`. Use the `Next.js` de
 
 ## RSCs support per case
 
-| Case | Framework / Library                     |
+| Case | Framework / Library &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
 | ---- | ---- |
 | (01) [Rendering async component on the server](./cases/01)<br />Basic example of an async server component. | ✅ [Next.js](https://nextjs.org/)<br />✅ [@vitejs/plugin-rsc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-rsc/README.md)<br />✅ [Parcel](https://parceljs.org/recipes/rsc/)<br />✅ [Forket](https://github.com/krasimir/forket) |
 | (02) [Mixing server and client components](./cases/02)<br />Passing server generated data as a child of a client component. | ✅ [Next.js](https://nextjs.org/)<br />✅ [@vitejs/plugin-rsc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-rsc/README.md)<br />✅ [Parcel](https://parceljs.org/recipes/rsc/)<br />✅ [Forket](https://github.com/krasimir/forket) |
