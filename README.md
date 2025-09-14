@@ -2,11 +2,13 @@
 
 Features support list across different frameworks and libraries.
 
+---
+
 There are **12** test cases in total. You can see them all in the table below. Testing against the following frameworks/libraries:
 
-- [Next.js](https://nextjs.org/) (100.00% support)
-- [@vitejs/plugin-rsc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-rsc/README.md) (100.00% support)
-- [Forket](https://github.com/krasimir/forket) (83.33% support)
+- [Next.js](https://nextjs.org/) (100% support)
+- [@vitejs/plugin-rsc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-rsc/README.md) (100% support)
+- [Forket](https://github.com/krasimir/forket) (83% support)
 
 ---
 
