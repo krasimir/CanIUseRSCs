@@ -4,18 +4,18 @@ import {renderRequest, callAction} from '@parcel/rsc/node';
 import { Home } from './Home';
 
 // <case_imports>
-import Case01 from './cases/01/Page';
-import Case02 from './cases/02/Page';
-import Case03 from './cases/03/Page';
-import Case04 from './cases/04/Page';
-import Case05 from './cases/05/Page';
-import Case06 from './cases/06/Page';
-import Case07 from './cases/07/Page';
-import Case08 from './cases/08/Page';
-import Case09 from './cases/09/Page';
-import Case10 from './cases/10/Page';
-import Case11 from './cases/11/Page';
-import Case12 from './cases/12/Page';
+import Case01 from './cases/01';
+import Case02 from './cases/02';
+import Case03 from './cases/03';
+import Case04 from './cases/04';
+import Case05 from './cases/05';
+import Case06 from './cases/06';
+import Case07 from './cases/07';
+import Case08 from './cases/08';
+import Case09 from './cases/09';
+import Case10 from './cases/10';
+import Case11 from './cases/11';
+import Case12 from './cases/12';
 
 const routes = {
   '01': Case01,
@@ -44,14 +44,7 @@ app.get("/case/:id", async (req, res) => {
   const id = req.params.id;
   const Case = routes[id];
   if (Case) {
-    return await renderRequest(
-      req,
-      res,
-      <Home>
-        <Case />
-      </Home>,
-      { component: Case }
-    );
+    return await renderRequest(req, res, <Case />, {component: Case});
   }
   await renderRequest(req, res, <Home />, { component: Home });
 });

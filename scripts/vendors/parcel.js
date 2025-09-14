@@ -11,7 +11,7 @@ export async function setupParcel(cases) {
   let homeContent = fs.readFileSync(Home, "utf-8");
   let serverContent = fs.readFileSync(Server, "utf-8");
 
-  const imports = cases.map((c) => `import Case${c.id} from './cases/${c.id}/Page';`).join("\n");
+  const imports = cases.map((c) => `import Case${c.id} from './cases/${c.id}';`).join("\n");
   const mapping = cases.map((c) => `  '${c.id}': Case${c.id},`).join("\n");
   const casesList = cases.map((c) => c.id);
 
@@ -30,4 +30,34 @@ export async function setupParcel(cases) {
 
   fs.writeFileSync(Home, homeContent);
   fs.writeFileSync(Server, serverContent);
+}
+
+export function transformParcelFile(from, to) {
+  if (from.endsWith('Page.tsx')) {
+    const content = fs.readFileSync(from, 'utf-8');
+    const indexContent = `"use server-entry";
+
+import '../../client';
+import '../../styles.css';
+import Page from './Page';
+
+export default async function Component() {
+  return (
+    <html>
+      <head>
+        <title>Parcel / RSCs</title>
+      </head>
+      <body>
+        <main>
+          <Page />
+        </main>
+      </body>
+    </html>
+  );
+}`;
+    fs.writeFileSync(path.join(path.dirname(to), "index.tsx"), indexContent);
+    fs.copyFileSync(from, to);
+  } else {
+    fs.copyFileSync(from, to);
+  }
 }

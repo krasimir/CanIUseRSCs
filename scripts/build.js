@@ -4,7 +4,7 @@ import { fileURLToPath } from "url";
 
 import { transformForketFile, setupForket } from "./vendors/forket.js";
 import { setupVite } from './vendors/vite.js';
-import { setupParcel } from './vendors/parcel.js';
+import { transformParcelFile, setupParcel } from "./vendors/parcel.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -45,9 +45,7 @@ const APPS = [
   {
     name: "Parcel",
     appDir: path.join(__dirname, "..", "apps", "parcel", "src", "cases"),
-    processFile(fileFrom, fileTo) {
-      fs.copyFileSync(fileFrom, fileTo);
-    },
+    processFile: transformParcelFile,
     setup: setupParcel
   }
 ]
@@ -79,8 +77,9 @@ function generateRepoReadme() {
   const readmePath = path.join(__dirname, 'templates', 'repo.md');
   let content = fs.readFileSync(readmePath, 'utf-8');
 
+  content = content.replace(/{{NUM_OF_CASES}}/g, cases.length.toString());
+
   let genericInfo = '';
-  genericInfo += `There are **${cases.length}** test cases in total. You can see them all in the table below. Testing against the following frameworks/libraries:\n\n`;
   genericInfo += APPS.map((a) => `- [${a.name}](${a.site}) (${a.coverage}% support)`).join("\n");
   content = content.replace(/{{GENERIC_INFO}}/g, genericInfo);
 

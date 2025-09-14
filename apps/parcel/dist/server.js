@@ -1,7 +1,32 @@
 require("./client/server.d7b4b64c.js");
-require("./client/server.babb4f0a.js");
+require("./client/server.52f2cb8a.js");
 require("./server/Home.22701db4.js");
-require("./client/Home.ac06185c.js");
+require("./server/Home.a2d3ead3.js");
+require("./client/Home.d80a9732.js");
+require("./server/01.f7f516d6.js");
+require("./server/02.43f35e78.js");
+require("./client/02.2a1cdab5.js");
+require("./client/02.33dfaf62.js");
+require("./server/03.d8b14e93.js");
+require("./client/03.2f85c920.js");
+require("./server/04.6948636f.js");
+require("./client/04.f7b515ce.js");
+require("./server/05.0ed10355.js");
+require("./client/05.c1a7e096.js");
+require("./server/06.62234c25.js");
+require("./client/06.ff1b97f6.js");
+require("./server/07.fb48a019.js");
+require("./client/07.dc3e9f61.js");
+require("./server/08.973f5b5c.js");
+require("./client/08.20b7e5da.js");
+require("./server/09.0bf64868.js");
+require("./client/09.142ac48f.js");
+require("./server/10.624cde30.js");
+require("./client/10.f1fd9691.js");
+require("./server/11.d8ba36d6.js");
+require("./client/11.a7479cd1.js");
+require("./server/12.941a4943.js");
+require("./client/12.c7047aec.js");
 // modules are defined as an array
 // [ module function, map of requires ]
 //
@@ -669,35 +694,35 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     }
 }
 
-},{}],"e5HVK":[function(require,module,exports,__globalThis) {
+},{}],"1J6tB":[function(require,module,exports,__globalThis) {
 var _serverEdge = require("react-server-dom-parcel/server.edge");
 (0, _serverEdge.registerServerActions)({
-    "cizKY": [
-        "server.js",
-        "server/Home.22701db4.js"
-    ],
-    "eLWxV": [
-        "server.js",
-        "server/Home.22701db4.js"
-    ],
-    "6cXDh": [
-        "server.js",
-        "server/Home.22701db4.js"
-    ],
     "akuTv": [
-        "server.js",
-        "server/Home.22701db4.js"
+        "server/04.6948636f.js",
+        "server/Home.a2d3ead3.js"
+    ],
+    "cizKY": [
+        "server/05.0ed10355.js",
+        "server/Home.a2d3ead3.js"
     ],
     "kjZ8e": [
-        "server.js",
-        "server/Home.22701db4.js"
+        "server/05.0ed10355.js",
+        "server/Home.a2d3ead3.js"
+    ],
+    "eLWxV": [
+        "server/07.fb48a019.js",
+        "server/Home.a2d3ead3.js"
+    ],
+    "6cXDh": [
+        "server/08.973f5b5c.js",
+        "server/Home.a2d3ead3.js"
     ]
 });
 if (typeof AsyncLocalStorage === "undefined") try {
-    globalThis.AsyncLocalStorage = require("db87b8ce8a1e421b").AsyncLocalStorage;
+    globalThis.AsyncLocalStorage = require("b10bcbdb659864ac").AsyncLocalStorage;
 } catch  {}
 
-},{"react-server-dom-parcel/server.edge":"hqfUu","db87b8ce8a1e421b":"node:async_hooks"}],"hqfUu":[function(require,module,exports,__globalThis) {
+},{"react-server-dom-parcel/server.edge":"hqfUu","b10bcbdb659864ac":"node:async_hooks"}],"hqfUu":[function(require,module,exports,__globalThis) {
 'use strict';
 var s;
 s = require("9e2afbe5095d2f94");
@@ -3733,43 +3758,43 @@ var _expressDefault = parcelHelpers.interopDefault(_express);
 var _node = require("@parcel/rsc/node");
 var _home = require("./Home");
 // <case_imports>
-var _page = require("./cases/01/Page");
-var _pageDefault = parcelHelpers.interopDefault(_page);
-var _page1 = require("./cases/02/Page");
-var _pageDefault1 = parcelHelpers.interopDefault(_page1);
-var _page2 = require("./cases/03/Page");
-var _pageDefault2 = parcelHelpers.interopDefault(_page2);
-var _page3 = require("./cases/04/Page");
-var _pageDefault3 = parcelHelpers.interopDefault(_page3);
-var _page4 = require("./cases/05/Page");
-var _pageDefault4 = parcelHelpers.interopDefault(_page4);
-var _page5 = require("./cases/06/Page");
-var _pageDefault5 = parcelHelpers.interopDefault(_page5);
-var _page6 = require("./cases/07/Page");
-var _pageDefault6 = parcelHelpers.interopDefault(_page6);
-var _page7 = require("./cases/08/Page");
-var _pageDefault7 = parcelHelpers.interopDefault(_page7);
-var _page8 = require("./cases/09/Page");
-var _pageDefault8 = parcelHelpers.interopDefault(_page8);
-var _page9 = require("./cases/10/Page");
-var _pageDefault9 = parcelHelpers.interopDefault(_page9);
-var _page10 = require("./cases/11/Page");
-var _pageDefault10 = parcelHelpers.interopDefault(_page10);
-var _page11 = require("./cases/12/Page");
-var _pageDefault11 = parcelHelpers.interopDefault(_page11);
+var _01 = require("./cases/01");
+var _01Default = parcelHelpers.interopDefault(_01);
+var _02 = require("./cases/02");
+var _02Default = parcelHelpers.interopDefault(_02);
+var _03 = require("./cases/03");
+var _03Default = parcelHelpers.interopDefault(_03);
+var _04 = require("./cases/04");
+var _04Default = parcelHelpers.interopDefault(_04);
+var _05 = require("./cases/05");
+var _05Default = parcelHelpers.interopDefault(_05);
+var _06 = require("./cases/06");
+var _06Default = parcelHelpers.interopDefault(_06);
+var _07 = require("./cases/07");
+var _07Default = parcelHelpers.interopDefault(_07);
+var _08 = require("./cases/08");
+var _08Default = parcelHelpers.interopDefault(_08);
+var _09 = require("./cases/09");
+var _09Default = parcelHelpers.interopDefault(_09);
+var _10 = require("./cases/10");
+var _10Default = parcelHelpers.interopDefault(_10);
+var _11 = require("./cases/11");
+var _11Default = parcelHelpers.interopDefault(_11);
+var _12 = require("./cases/12");
+var _12Default = parcelHelpers.interopDefault(_12);
 const routes = {
-    '01': (0, _pageDefault.default),
-    '02': (0, _pageDefault1.default),
-    '03': (0, _pageDefault2.default),
-    '04': (0, _pageDefault3.default),
-    '05': (0, _pageDefault4.default),
-    '06': (0, _pageDefault5.default),
-    '07': (0, _pageDefault6.default),
-    '08': (0, _pageDefault7.default),
-    '09': (0, _pageDefault8.default),
-    '10': (0, _pageDefault9.default),
-    '11': (0, _pageDefault10.default),
-    '12': (0, _pageDefault11.default)
+    '01': (0, _01Default.default),
+    '02': (0, _02Default.default),
+    '03': (0, _03Default.default),
+    '04': (0, _04Default.default),
+    '05': (0, _05Default.default),
+    '06': (0, _06Default.default),
+    '07': (0, _07Default.default),
+    '08': (0, _08Default.default),
+    '09': (0, _09Default.default),
+    '10': (0, _10Default.default),
+    '11': (0, _11Default.default),
+    '12': (0, _12Default.default)
 };
 // </case_imports>
 const app = (0, _expressDefault.default)();
@@ -3786,22 +3811,16 @@ app.get('/', async (req, res)=>{
 app.get("/case/:id", async (req, res)=>{
     const id = req.params.id;
     const Case = routes[id];
-    if (Case) return await (0, _node.renderRequest)(req, res, /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _home.Home), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Case, {}, void 0, false, {
-            fileName: "src/server.tsx",
-            lineNumber: 51,
-            columnNumber: 9
-        }, undefined)
-    }, void 0, false, {
+    if (Case) return await (0, _node.renderRequest)(req, res, /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Case, {}, void 0, false, {
         fileName: "src/server.tsx",
-        lineNumber: 50,
-        columnNumber: 7
+        lineNumber: 47,
+        columnNumber: 42
     }, undefined), {
         component: Case
     });
     await (0, _node.renderRequest)(req, res, /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _home.Home), {}, void 0, false, {
         fileName: "src/server.tsx",
-        lineNumber: 56,
+        lineNumber: 49,
         columnNumber: 33
     }, undefined), {
         component: (0, _home.Home)
@@ -3812,7 +3831,7 @@ app.post('/', async (req, res)=>{
     let { result } = await (0, _node.callAction)(req, id);
     let root = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _home.Home), {}, void 0, false, {
         fileName: "src/server.tsx",
-        lineNumber: 62,
+        lineNumber: 55,
         columnNumber: 19
     }, undefined);
     if (id) root = {
@@ -3826,7 +3845,7 @@ app.post('/', async (req, res)=>{
 app.listen(3001);
 console.log('Server listening on port 3001');
 
-},{"react/jsx-dev-runtime":"2EKVj","express":"express","@parcel/rsc/node":"1HnYz","@parcel/transformer-js/src/esmodule-helpers.js":"7GQ4w","./Home":"4ceTL","./cases/01/Page":"97ujF","./cases/02/Page":"gjfzw","./cases/03/Page":"d9A8T","./cases/04/Page":"k58NW","./cases/05/Page":"2ZSs8","./cases/06/Page":"iR0y2","./cases/07/Page":"dKx4M","./cases/08/Page":"f3lAz","./cases/09/Page":"kGxhP","./cases/10/Page":"cMcTL","./cases/11/Page":"c1BvN","./cases/12/Page":"d63H8"}],"2EKVj":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"2EKVj","express":"express","@parcel/rsc/node":"1HnYz","@parcel/transformer-js/src/esmodule-helpers.js":"7GQ4w","./Home":"8Y8Rm","./cases/01":"8Kbyq","./cases/02":"7YW0g","./cases/03":"3KjxG","./cases/04":"4TdZX","./cases/05":"3yJbJ","./cases/06":"3FsiI","./cases/07":"jXwNH","./cases/08":"28Ejx","./cases/09":"kBCmf","./cases/10":"ElOBG","./cases/11":"3DyBD","./cases/12":"gkaIQ"}],"2EKVj":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("518ec8f286a92083");
 
@@ -4396,17 +4415,17 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"4ceTL":[function(require,module,exports,__globalThis) {
+},{}],"8Y8Rm":[function(require,module,exports,__globalThis) {
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _rscHelpers = require("@parcel/runtime-rsc/rsc-helpers");
-let bootstrapScript = "Promise.all([import(\"/client/server.babb4f0a.js\"),import(\"/client/Home.ac06185c.js\")]).then(()=>parcelRequireedff(\"4w9XE\"))";
+let bootstrapScript = "Promise.all([import(\"/client/server.52f2cb8a.js\"),import(\"/client/Home.d80a9732.js\")]).then(()=>parcelRequireedff(\"4w9XE\"))";
 let originalModule = module.bundle.root("ksQlA");
 let resources = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("link", {
     rel: "stylesheet",
     href: "/client/Home.5843c506.css",
     precedence: "default"
 }, void 0, false, {
-    fileName: "src/runtime-bfe79fdfc46fde9f.jsx",
+    fileName: "src/runtime-0616cc0ba926a80a.jsx",
     lineNumber: 4,
     columnNumber: 17
 }, undefined);
@@ -4496,744 +4515,210 @@ function waitForCSS(url) {
     });
 }
 
-},{"react/jsx-dev-runtime":"2EKVj","@parcel/transformer-js/src/esmodule-helpers.js":"7GQ4w"}],"97ujF":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>Page);
+},{"react/jsx-dev-runtime":"2EKVj","@parcel/transformer-js/src/esmodule-helpers.js":"7GQ4w"}],"8Kbyq":[function(require,module,exports,__globalThis) {
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-async function Page() {
-    await new Promise((resolve)=>setTimeout(resolve, 1000));
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: "SSR Async Page"
-    }, void 0, false, {
-        fileName: "src/cases/01/Page.tsx",
-        lineNumber: 5,
-        columnNumber: 10
-    }, this);
-}
+var _rscHelpers = require("@parcel/runtime-rsc/rsc-helpers");
+let bootstrapScript = "Promise.all([import(\"/client/server.52f2cb8a.js\"),import(\"/client/Home.d80a9732.js\")]).then(()=>parcelRequireedff(\"4w9XE\"))";
+let originalModule = module.bundle.root("7aOU3");
+let resources = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("link", {
+    rel: "stylesheet",
+    href: "/client/01.772d74d9.css",
+    precedence: "default"
+}, void 0, false, {
+    fileName: "src/runtime-956a0d7b5d7514a6.jsx",
+    lineNumber: 4,
+    columnNumber: 17
+}, undefined);
+let res = (0, _rscHelpers.createResourcesProxy)(originalModule, false, resources, bootstrapScript);
+module.exports = res;
 
-},{"react/jsx-dev-runtime":"2EKVj","react":"1C1YF","@parcel/transformer-js/src/esmodule-helpers.js":"7GQ4w"}],"gjfzw":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>Page);
+},{"react/jsx-dev-runtime":"2EKVj","@parcel/runtime-rsc/rsc-helpers":"8RIod","7aOU3":"7aOU3"}],"7YW0g":[function(require,module,exports,__globalThis) {
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _db = require("./db");
-var _dbDefault = parcelHelpers.interopDefault(_db);
-var _expandable = require("./Expandable");
-var _expandableDefault = parcelHelpers.interopDefault(_expandable);
-async function Page() {
-    const notes = await (0, _dbDefault.default).notes.getAll();
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: notes.map((note)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _expandableDefault.default), {
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    children: note.content
-                }, void 0, false, {
-                    fileName: "src/cases/02/Page.tsx",
-                    lineNumber: 13,
-                    columnNumber: 11
-                }, this)
-            }, note.id, false, {
-                fileName: "src/cases/02/Page.tsx",
-                lineNumber: 12,
-                columnNumber: 9
-            }, this))
-    }, void 0, false, {
-        fileName: "src/cases/02/Page.tsx",
-        lineNumber: 10,
-        columnNumber: 5
-    }, this);
-}
+var _rscHelpers = require("@parcel/runtime-rsc/rsc-helpers");
+let bootstrapScript = "Promise.all([import(\"/client/server.52f2cb8a.js\"),import(\"/client/Home.d80a9732.js\"),import(\"/client/02.2a1cdab5.js\"),import(\"/client/02.33dfaf62.js\")]).then(()=>parcelRequireedff(\"4w9XE\"))";
+let originalModule = module.bundle.root("2NGnC");
+let resources = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("link", {
+    rel: "stylesheet",
+    href: "/client/02.aa07e3d0.css",
+    precedence: "default"
+}, void 0, false, {
+    fileName: "src/runtime-16e29b5e987915eb.jsx",
+    lineNumber: 4,
+    columnNumber: 17
+}, undefined);
+let res = (0, _rscHelpers.createResourcesProxy)(originalModule, false, resources, bootstrapScript);
+module.exports = res;
 
-},{"react/jsx-dev-runtime":"2EKVj","react":"1C1YF","./db":"hK7Py","./Expandable":"bi0F0","@parcel/transformer-js/src/esmodule-helpers.js":"7GQ4w"}],"hK7Py":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-const db = {
-    notes: {
-        getAll: async ()=>{
-            await new Promise((resolve)=>setTimeout(resolve, 1000));
-            return [
-                {
-                    id: 1,
-                    content: "Note 1"
-                },
-                {
-                    id: 2,
-                    content: "Note 2"
-                },
-                {
-                    id: 3,
-                    content: "Note 3"
-                }
-            ];
-        }
-    }
-};
-exports.default = db;
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"7GQ4w"}],"bi0F0":[function(require,module,exports,__globalThis) {
-var _serverEdge = require("react-server-dom-parcel/server.edge");
-exports["default"] = (0, _serverEdge.createClientReference)("f2nBm", "default", [
-    "client/server.d7b4b64c.js",
-    "client/server.babb4f0a.js"
-]);
-exports.__esModule = true;
-
-},{"react-server-dom-parcel/server.edge":"hqfUu"}],"d9A8T":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>Page);
+},{"react/jsx-dev-runtime":"2EKVj","@parcel/runtime-rsc/rsc-helpers":"8RIod","2NGnC":"2NGnC"}],"3KjxG":[function(require,module,exports,__globalThis) {
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _db = require("./db");
-var _dbDefault = parcelHelpers.interopDefault(_db);
-var _expandable = require("./Expandable");
-var _expandableDefault = parcelHelpers.interopDefault(_expandable);
-async function Page() {
-    const notes = await (0, _dbDefault.default).notes.getAll();
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: notes.map((note)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _expandableDefault.default), {
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    children: note.content
-                }, void 0, false, {
-                    fileName: "src/cases/03/Page.tsx",
-                    lineNumber: 13,
-                    columnNumber: 11
-                }, this)
-            }, note.id, false, {
-                fileName: "src/cases/03/Page.tsx",
-                lineNumber: 12,
-                columnNumber: 9
-            }, this))
-    }, void 0, false, {
-        fileName: "src/cases/03/Page.tsx",
-        lineNumber: 10,
-        columnNumber: 5
-    }, this);
-}
+var _rscHelpers = require("@parcel/runtime-rsc/rsc-helpers");
+let bootstrapScript = "Promise.all([import(\"/client/server.52f2cb8a.js\"),import(\"/client/Home.d80a9732.js\"),import(\"/client/02.33dfaf62.js\"),import(\"/client/03.2f85c920.js\")]).then(()=>parcelRequireedff(\"4w9XE\"))";
+let originalModule = module.bundle.root("d2HUA");
+let resources = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("link", {
+    rel: "stylesheet",
+    href: "/client/03.34737b6d.css",
+    precedence: "default"
+}, void 0, false, {
+    fileName: "src/runtime-19e8ac72577fbc1c.jsx",
+    lineNumber: 4,
+    columnNumber: 17
+}, undefined);
+let res = (0, _rscHelpers.createResourcesProxy)(originalModule, false, resources, bootstrapScript);
+module.exports = res;
 
-},{"react/jsx-dev-runtime":"2EKVj","react":"1C1YF","./db":"5ckeF","./Expandable":"2hdAq","@parcel/transformer-js/src/esmodule-helpers.js":"7GQ4w"}],"5ckeF":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-const db = {
-    notes: {
-        getAll: async ()=>{
-            await new Promise((resolve)=>setTimeout(resolve, 1000));
-            return [
-                {
-                    id: 1,
-                    content: "Note 1"
-                },
-                {
-                    id: 2,
-                    content: "Note 2"
-                },
-                {
-                    id: 3,
-                    content: "Note 3"
-                }
-            ];
-        }
-    }
-};
-exports.default = db;
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"7GQ4w"}],"2hdAq":[function(require,module,exports,__globalThis) {
-var _serverEdge = require("react-server-dom-parcel/server.edge");
-exports["default"] = (0, _serverEdge.createClientReference)("jaSwN", "default", [
-    "client/server.d7b4b64c.js",
-    "client/server.babb4f0a.js"
-]);
-exports.__esModule = true;
-
-},{"react-server-dom-parcel/server.edge":"hqfUu"}],"k58NW":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>Page);
+},{"react/jsx-dev-runtime":"2EKVj","@parcel/runtime-rsc/rsc-helpers":"8RIod","d2HUA":"d2HUA"}],"4TdZX":[function(require,module,exports,__globalThis) {
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _likeButton = require("./LikeButton");
-var _likeButtonDefault = parcelHelpers.interopDefault(_likeButton);
-var _actions = require("./actions");
-function Page() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _likeButtonDefault.default), {
-            initialCount: (0, _actions.getLikeCount)(),
-            incrementLike: (0, _actions.incrementLike)
-        }, void 0, false, {
-            fileName: "src/cases/04/Page.tsx",
-            lineNumber: 9,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
-        fileName: "src/cases/04/Page.tsx",
-        lineNumber: 8,
-        columnNumber: 5
-    }, this);
-}
+var _rscHelpers = require("@parcel/runtime-rsc/rsc-helpers");
+let bootstrapScript = "Promise.all([import(\"/client/server.52f2cb8a.js\"),import(\"/client/Home.d80a9732.js\"),import(\"/client/02.33dfaf62.js\"),import(\"/client/04.f7b515ce.js\")]).then(()=>parcelRequireedff(\"4w9XE\"))";
+let originalModule = module.bundle.root("czGF7");
+let resources = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("link", {
+    rel: "stylesheet",
+    href: "/client/04.edf0ad82.css",
+    precedence: "default"
+}, void 0, false, {
+    fileName: "src/runtime-a06ebf9e1eab0e24.jsx",
+    lineNumber: 4,
+    columnNumber: 17
+}, undefined);
+let res = (0, _rscHelpers.createResourcesProxy)(originalModule, false, resources, bootstrapScript);
+module.exports = res;
 
-},{"react/jsx-dev-runtime":"2EKVj","react":"1C1YF","./LikeButton":"79Boq","./actions":"avIzx","@parcel/transformer-js/src/esmodule-helpers.js":"7GQ4w"}],"79Boq":[function(require,module,exports,__globalThis) {
-var _serverEdge = require("react-server-dom-parcel/server.edge");
-exports["default"] = (0, _serverEdge.createClientReference)("lND5j", "default", [
-    "client/server.d7b4b64c.js",
-    "client/server.babb4f0a.js"
-]);
-exports.__esModule = true;
-
-},{"react-server-dom-parcel/server.edge":"hqfUu"}],"avIzx":[function(require,module,exports,__globalThis) {
-var _serverEdge = require("react-server-dom-parcel/server.edge");
-let originalModule = module.bundle.root("akuTv");
-for(let key in originalModule)Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: ()=>{
-        let value = originalModule[key];
-        if (typeof value === 'function' && !value.$$typeof) (0, _serverEdge.registerServerReference)(value, "akuTv", key);
-        return value;
-    }
-});
-exports.__esModule = true;
-
-},{"react-server-dom-parcel/server.edge":"hqfUu","akuTv":"akuTv"}],"akuTv":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "incrementLike", ()=>incrementLike);
-parcelHelpers.export(exports, "getLikeCount", ()=>getLikeCount);
-"use server";
-let likeCount = 0;
-async function incrementLike() {
-    likeCount++;
-    return likeCount;
-}
-async function getLikeCount() {
-    return likeCount;
-}
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"7GQ4w"}],"2ZSs8":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>Page);
+},{"react/jsx-dev-runtime":"2EKVj","@parcel/runtime-rsc/rsc-helpers":"8RIod","czGF7":"czGF7"}],"3yJbJ":[function(require,module,exports,__globalThis) {
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _likeButton = require("./LikeButton");
-var _likeButtonDefault = parcelHelpers.interopDefault(_likeButton);
-var _actions = require("./actions");
-function Page() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _likeButtonDefault.default), {
-            initialCount: (0, _actions.getLikeCount)()
-        }, void 0, false, {
-            fileName: "src/cases/05/Page.tsx",
-            lineNumber: 9,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
-        fileName: "src/cases/05/Page.tsx",
-        lineNumber: 8,
-        columnNumber: 5
-    }, this);
-}
+var _rscHelpers = require("@parcel/runtime-rsc/rsc-helpers");
+let bootstrapScript = "Promise.all([import(\"/client/server.52f2cb8a.js\"),import(\"/client/Home.d80a9732.js\"),import(\"/client/02.33dfaf62.js\"),import(\"/client/05.c1a7e096.js\")]).then(()=>parcelRequireedff(\"4w9XE\"))";
+let originalModule = module.bundle.root("iwGfj");
+let resources = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("link", {
+    rel: "stylesheet",
+    href: "/client/05.a28ce404.css",
+    precedence: "default"
+}, void 0, false, {
+    fileName: "src/runtime-e4a4283a694a521e.jsx",
+    lineNumber: 4,
+    columnNumber: 17
+}, undefined);
+let res = (0, _rscHelpers.createResourcesProxy)(originalModule, false, resources, bootstrapScript);
+module.exports = res;
 
-},{"react/jsx-dev-runtime":"2EKVj","react":"1C1YF","./LikeButton":"1OPqX","./actions":"6SZHr","@parcel/transformer-js/src/esmodule-helpers.js":"7GQ4w"}],"1OPqX":[function(require,module,exports,__globalThis) {
-var _serverEdge = require("react-server-dom-parcel/server.edge");
-exports["default"] = (0, _serverEdge.createClientReference)("d5RuO", "default", [
-    "client/server.d7b4b64c.js",
-    "client/server.babb4f0a.js"
-]);
-exports.__esModule = true;
-
-},{"react-server-dom-parcel/server.edge":"hqfUu"}],"6SZHr":[function(require,module,exports,__globalThis) {
-var _serverEdge = require("react-server-dom-parcel/server.edge");
-let originalModule = module.bundle.root("kjZ8e");
-for(let key in originalModule)Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: ()=>{
-        let value = originalModule[key];
-        if (typeof value === 'function' && !value.$$typeof) (0, _serverEdge.registerServerReference)(value, "kjZ8e", key);
-        return value;
-    }
-});
-exports.__esModule = true;
-
-},{"react-server-dom-parcel/server.edge":"hqfUu","kjZ8e":"kjZ8e"}],"kjZ8e":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "incrementLike", ()=>incrementLike);
-parcelHelpers.export(exports, "getLikeCount", ()=>getLikeCount);
-"use server";
-let likeCount = 0;
-async function incrementLike() {
-    likeCount++;
-    return likeCount;
-}
-async function getLikeCount() {
-    return likeCount;
-}
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"7GQ4w"}],"iR0y2":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>Page);
+},{"react/jsx-dev-runtime":"2EKVj","@parcel/runtime-rsc/rsc-helpers":"8RIod","iwGfj":"iwGfj"}],"3FsiI":[function(require,module,exports,__globalThis) {
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _db = require("./db");
-var _dbDefault = parcelHelpers.interopDefault(_db);
-var _button = require("./Button");
-var _buttonDefault = parcelHelpers.interopDefault(_button);
-async function Page() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(EmptyNote, {}, void 0, false, {
-        fileName: "src/cases/06/Page.tsx",
-        lineNumber: 8,
-        columnNumber: 5
-    }, this);
-}
-function EmptyNote() {
-    async function createNoteAction() {
-        "use server";
-        return await (0, _dbDefault.default).notes.create();
-    }
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonDefault.default), {
-        onClick: createNoteAction
-    }, void 0, false, {
-        fileName: "src/cases/06/Page.tsx",
-        lineNumber: 19,
-        columnNumber: 10
-    }, this);
-}
+var _rscHelpers = require("@parcel/runtime-rsc/rsc-helpers");
+let bootstrapScript = "Promise.all([import(\"/client/server.52f2cb8a.js\"),import(\"/client/Home.d80a9732.js\"),import(\"/client/02.33dfaf62.js\"),import(\"/client/06.ff1b97f6.js\")]).then(()=>parcelRequireedff(\"4w9XE\"))";
+let originalModule = module.bundle.root("2wOtU");
+let resources = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("link", {
+    rel: "stylesheet",
+    href: "/client/06.5fd3fd0e.css",
+    precedence: "default"
+}, void 0, false, {
+    fileName: "src/runtime-45d75ee5051266cd.jsx",
+    lineNumber: 4,
+    columnNumber: 17
+}, undefined);
+let res = (0, _rscHelpers.createResourcesProxy)(originalModule, false, resources, bootstrapScript);
+module.exports = res;
 
-},{"react/jsx-dev-runtime":"2EKVj","react":"1C1YF","./db":"7D53J","./Button":"56LjP","@parcel/transformer-js/src/esmodule-helpers.js":"7GQ4w"}],"7D53J":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-const db = {
-    notes: {
-        create: async ()=>{
-            await new Promise((resolve)=>setTimeout(resolve, 1000));
-            return {
-                ok: true
-            };
-        }
-    }
-};
-exports.default = db;
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"7GQ4w"}],"56LjP":[function(require,module,exports,__globalThis) {
-var _serverEdge = require("react-server-dom-parcel/server.edge");
-exports["default"] = (0, _serverEdge.createClientReference)("926n7", "default", [
-    "client/server.d7b4b64c.js",
-    "client/server.babb4f0a.js"
-]);
-exports.__esModule = true;
-
-},{"react-server-dom-parcel/server.edge":"hqfUu"}],"dKx4M":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>Page);
+},{"react/jsx-dev-runtime":"2EKVj","@parcel/runtime-rsc/rsc-helpers":"8RIod","2wOtU":"2wOtU"}],"jXwNH":[function(require,module,exports,__globalThis) {
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _updateMyName = require("./UpdateMyName");
-var _updateMyNameDefault = parcelHelpers.interopDefault(_updateMyName);
-async function Page() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _updateMyNameDefault.default), {}, void 0, false, {
-        fileName: "src/cases/07/Page.tsx",
-        lineNumber: 6,
-        columnNumber: 10
-    }, this);
-}
+var _rscHelpers = require("@parcel/runtime-rsc/rsc-helpers");
+let bootstrapScript = "Promise.all([import(\"/client/server.52f2cb8a.js\"),import(\"/client/Home.d80a9732.js\"),import(\"/client/02.33dfaf62.js\"),import(\"/client/07.dc3e9f61.js\")]).then(()=>parcelRequireedff(\"4w9XE\"))";
+let originalModule = module.bundle.root("9VYQM");
+let resources = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("link", {
+    rel: "stylesheet",
+    href: "/client/07.e9c44e8d.css",
+    precedence: "default"
+}, void 0, false, {
+    fileName: "src/runtime-b20c7f3b5543a787.jsx",
+    lineNumber: 4,
+    columnNumber: 17
+}, undefined);
+let res = (0, _rscHelpers.createResourcesProxy)(originalModule, false, resources, bootstrapScript);
+module.exports = res;
 
-},{"react/jsx-dev-runtime":"2EKVj","react":"1C1YF","./UpdateMyName":"2sWA4","@parcel/transformer-js/src/esmodule-helpers.js":"7GQ4w"}],"2sWA4":[function(require,module,exports,__globalThis) {
-var _serverEdge = require("react-server-dom-parcel/server.edge");
-exports["default"] = (0, _serverEdge.createClientReference)("3EHlt", "default", [
-    "client/server.d7b4b64c.js",
-    "client/server.babb4f0a.js"
-]);
-exports.__esModule = true;
-
-},{"react-server-dom-parcel/server.edge":"hqfUu"}],"f3lAz":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>Page);
+},{"react/jsx-dev-runtime":"2EKVj","@parcel/runtime-rsc/rsc-helpers":"8RIod","9VYQM":"9VYQM"}],"28Ejx":[function(require,module,exports,__globalThis) {
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _updateName = require("./UpdateName");
-var _updateNameDefault = parcelHelpers.interopDefault(_updateName);
-async function Page() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _updateNameDefault.default), {}, void 0, false, {
-            fileName: "src/cases/08/Page.tsx",
-            lineNumber: 8,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
-        fileName: "src/cases/08/Page.tsx",
-        lineNumber: 7,
-        columnNumber: 5
-    }, this);
-}
+var _rscHelpers = require("@parcel/runtime-rsc/rsc-helpers");
+let bootstrapScript = "Promise.all([import(\"/client/server.52f2cb8a.js\"),import(\"/client/Home.d80a9732.js\"),import(\"/client/02.33dfaf62.js\"),import(\"/client/08.20b7e5da.js\")]).then(()=>parcelRequireedff(\"4w9XE\"))";
+let originalModule = module.bundle.root("R9XSL");
+let resources = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("link", {
+    rel: "stylesheet",
+    href: "/client/08.2cfb003c.css",
+    precedence: "default"
+}, void 0, false, {
+    fileName: "src/runtime-2991bc7616e08fba.jsx",
+    lineNumber: 4,
+    columnNumber: 17
+}, undefined);
+let res = (0, _rscHelpers.createResourcesProxy)(originalModule, false, resources, bootstrapScript);
+module.exports = res;
 
-},{"react/jsx-dev-runtime":"2EKVj","react":"1C1YF","./UpdateName":"j3hQy","@parcel/transformer-js/src/esmodule-helpers.js":"7GQ4w"}],"j3hQy":[function(require,module,exports,__globalThis) {
-var _serverEdge = require("react-server-dom-parcel/server.edge");
-exports["default"] = (0, _serverEdge.createClientReference)("9mgHt", "default", [
-    "client/server.d7b4b64c.js",
-    "client/server.babb4f0a.js"
-]);
-exports.__esModule = true;
-
-},{"react-server-dom-parcel/server.edge":"hqfUu"}],"kGxhP":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>Page);
+},{"react/jsx-dev-runtime":"2EKVj","@parcel/runtime-rsc/rsc-helpers":"8RIod","R9XSL":"R9XSL"}],"kBCmf":[function(require,module,exports,__globalThis) {
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _db = require("./db");
-var _dbDefault = parcelHelpers.interopDefault(_db);
-var _comments = require("./Comments");
-var _commentsDefault = parcelHelpers.interopDefault(_comments);
-async function Page() {
-    const note = await (0, _dbDefault.default).notes.get(42);
-    const commentsPromise = (0, _dbDefault.default).comments.get(note.id);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            note.title,
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Suspense), {
-                fallback: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    children: "Loading Comments..."
-                }, void 0, false, {
-                    fileName: "src/cases/09/Page.tsx",
-                    lineNumber: 13,
-                    columnNumber: 27
-                }, void 0),
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _commentsDefault.default), {
-                    commentsPromise: commentsPromise
-                }, void 0, false, {
-                    fileName: "src/cases/09/Page.tsx",
-                    lineNumber: 14,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "src/cases/09/Page.tsx",
-                lineNumber: 13,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "src/cases/09/Page.tsx",
-        lineNumber: 11,
-        columnNumber: 5
-    }, this);
-}
+var _rscHelpers = require("@parcel/runtime-rsc/rsc-helpers");
+let bootstrapScript = "Promise.all([import(\"/client/server.52f2cb8a.js\"),import(\"/client/Home.d80a9732.js\"),import(\"/client/02.33dfaf62.js\"),import(\"/client/09.142ac48f.js\")]).then(()=>parcelRequireedff(\"4w9XE\"))";
+let originalModule = module.bundle.root("f3qqH");
+let resources = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("link", {
+    rel: "stylesheet",
+    href: "/client/09.b0d6c3fc.css",
+    precedence: "default"
+}, void 0, false, {
+    fileName: "src/runtime-3a944fc600a4eb7f.jsx",
+    lineNumber: 4,
+    columnNumber: 17
+}, undefined);
+let res = (0, _rscHelpers.createResourcesProxy)(originalModule, false, resources, bootstrapScript);
+module.exports = res;
 
-},{"react/jsx-dev-runtime":"2EKVj","react":"1C1YF","./db":"ebGtU","./Comments":"cK4Vg","@parcel/transformer-js/src/esmodule-helpers.js":"7GQ4w"}],"ebGtU":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-const db = {
-    notes: {
-        async get (id) {
-            await new Promise((r)=>setTimeout(r, 1000));
-            return {
-                id,
-                title: "Some note"
-            };
-        }
-    },
-    comments: {
-        async get (id) {
-            await new Promise((r)=>setTimeout(r, 1000));
-            return [
-                {
-                    id: 1,
-                    noteId: id,
-                    content: "First comment"
-                },
-                {
-                    id: 2,
-                    noteId: id,
-                    content: "Second comment"
-                }
-            ];
-        }
-    }
-};
-exports.default = db;
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"7GQ4w"}],"cK4Vg":[function(require,module,exports,__globalThis) {
-var _serverEdge = require("react-server-dom-parcel/server.edge");
-exports["default"] = (0, _serverEdge.createClientReference)("V2lA6", "default", [
-    "client/server.d7b4b64c.js",
-    "client/server.babb4f0a.js"
-]);
-exports.__esModule = true;
-
-},{"react-server-dom-parcel/server.edge":"hqfUu"}],"cMcTL":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>Page);
+},{"react/jsx-dev-runtime":"2EKVj","@parcel/runtime-rsc/rsc-helpers":"8RIod","f3qqH":"f3qqH"}],"ElOBG":[function(require,module,exports,__globalThis) {
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _fancyText = require("./FancyText");
-var _fancyTextDefault = parcelHelpers.interopDefault(_fancyText);
-var _inspirationGenerator = require("./InspirationGenerator");
-var _inspirationGeneratorDefault = parcelHelpers.interopDefault(_inspirationGenerator);
-var _copyright = require("./Copyright");
-var _copyrightDefault = parcelHelpers.interopDefault(_copyright);
-async function Page() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fancyTextDefault.default), {
-                title: true,
-                text: "Get Inspired App"
-            }, void 0, false, {
-                fileName: "src/cases/10/Page.tsx",
-                lineNumber: 10,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _inspirationGeneratorDefault.default), {
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _copyrightDefault.default), {
-                    year: 2025
-                }, void 0, false, {
-                    fileName: "src/cases/10/Page.tsx",
-                    lineNumber: 12,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "src/cases/10/Page.tsx",
-                lineNumber: 11,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "src/cases/10/Page.tsx",
-        lineNumber: 9,
-        columnNumber: 5
-    }, this);
-}
+var _rscHelpers = require("@parcel/runtime-rsc/rsc-helpers");
+let bootstrapScript = "Promise.all([import(\"/client/server.52f2cb8a.js\"),import(\"/client/Home.d80a9732.js\"),import(\"/client/02.33dfaf62.js\"),import(\"/client/10.f1fd9691.js\")]).then(()=>parcelRequireedff(\"4w9XE\"))";
+let originalModule = module.bundle.root("4mpJc");
+let resources = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("link", {
+    rel: "stylesheet",
+    href: "/client/10.20bb6828.css",
+    precedence: "default"
+}, void 0, false, {
+    fileName: "src/runtime-15f75db726d31ad1.jsx",
+    lineNumber: 4,
+    columnNumber: 17
+}, undefined);
+let res = (0, _rscHelpers.createResourcesProxy)(originalModule, false, resources, bootstrapScript);
+module.exports = res;
 
-},{"react/jsx-dev-runtime":"2EKVj","react":"1C1YF","./FancyText":"2uOp2","./InspirationGenerator":"hS6Vf","./Copyright":"5LaEK","@parcel/transformer-js/src/esmodule-helpers.js":"7GQ4w"}],"2uOp2":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>FancyText);
+},{"react/jsx-dev-runtime":"2EKVj","@parcel/runtime-rsc/rsc-helpers":"8RIod","4mpJc":"4mpJc"}],"3DyBD":[function(require,module,exports,__globalThis) {
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-function FancyText({ title, text }) {
-    return title ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-        className: "fancy title",
-        children: text
-    }, void 0, false, {
-        fileName: "src/cases/10/FancyText.tsx",
-        lineNumber: 4,
-        columnNumber: 18
-    }, this) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-        className: "fancy cursive",
-        children: text
-    }, void 0, false, {
-        fileName: "src/cases/10/FancyText.tsx",
-        lineNumber: 4,
-        columnNumber: 60
-    }, this);
-}
+var _rscHelpers = require("@parcel/runtime-rsc/rsc-helpers");
+let bootstrapScript = "Promise.all([import(\"/client/server.52f2cb8a.js\"),import(\"/client/Home.d80a9732.js\"),import(\"/client/02.33dfaf62.js\"),import(\"/client/11.a7479cd1.js\")]).then(()=>parcelRequireedff(\"4w9XE\"))";
+let originalModule = module.bundle.root("jTo2e");
+let resources = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("link", {
+    rel: "stylesheet",
+    href: "/client/11.1c897d76.css",
+    precedence: "default"
+}, void 0, false, {
+    fileName: "src/runtime-c967100a5e917408.jsx",
+    lineNumber: 4,
+    columnNumber: 17
+}, undefined);
+let res = (0, _rscHelpers.createResourcesProxy)(originalModule, false, resources, bootstrapScript);
+module.exports = res;
 
-},{"react/jsx-dev-runtime":"2EKVj","react":"1C1YF","@parcel/transformer-js/src/esmodule-helpers.js":"7GQ4w"}],"hS6Vf":[function(require,module,exports,__globalThis) {
-var _serverEdge = require("react-server-dom-parcel/server.edge");
-exports["default"] = (0, _serverEdge.createClientReference)("9ZTzz", "default", [
-    "client/server.d7b4b64c.js",
-    "client/server.babb4f0a.js"
-]);
-exports.__esModule = true;
-
-},{"react-server-dom-parcel/server.edge":"hqfUu"}],"5LaEK":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>Copyright);
+},{"react/jsx-dev-runtime":"2EKVj","@parcel/runtime-rsc/rsc-helpers":"8RIod","jTo2e":"jTo2e"}],"gkaIQ":[function(require,module,exports,__globalThis) {
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-function Copyright({ year }) {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-        className: "small",
-        children: [
-            "\xa9\uFE0F ",
-            year
-        ]
-    }, void 0, true, {
-        fileName: "src/cases/10/Copyright.tsx",
-        lineNumber: 4,
-        columnNumber: 10
-    }, this);
-}
+var _rscHelpers = require("@parcel/runtime-rsc/rsc-helpers");
+let bootstrapScript = "Promise.all([import(\"/client/server.52f2cb8a.js\"),import(\"/client/Home.d80a9732.js\"),import(\"/client/02.33dfaf62.js\"),import(\"/client/12.c7047aec.js\")]).then(()=>parcelRequireedff(\"4w9XE\"))";
+let originalModule = module.bundle.root("4Qijd");
+let resources = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("link", {
+    rel: "stylesheet",
+    href: "/client/12.a15688a5.css",
+    precedence: "default"
+}, void 0, false, {
+    fileName: "src/runtime-d5e200470f244886.jsx",
+    lineNumber: 4,
+    columnNumber: 17
+}, undefined);
+let res = (0, _rscHelpers.createResourcesProxy)(originalModule, false, resources, bootstrapScript);
+module.exports = res;
 
-},{"react/jsx-dev-runtime":"2EKVj","react":"1C1YF","@parcel/transformer-js/src/esmodule-helpers.js":"7GQ4w"}],"c1BvN":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>Page);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _player = require("./Player");
-var _playerDefault = parcelHelpers.interopDefault(_player);
-var _controls = require("./Controls");
-var _controlsDefault = parcelHelpers.interopDefault(_controls);
-function getTracks() {
-    return new Promise((resolve)=>setTimeout(()=>resolve([
-                'Track 1',
-                'Track 2',
-                'Track 3'
-            ]), 1000));
-}
-async function Page() {
-    const tracks = await getTracks();
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _playerDefault.default), {
-        tracks: tracks,
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _controlsDefault.default), {}, void 0, false, {
-            fileName: "src/cases/11/Page.tsx",
-            lineNumber: 14,
-            columnNumber: 34
-        }, this)
-    }, void 0, false, {
-        fileName: "src/cases/11/Page.tsx",
-        lineNumber: 14,
-        columnNumber: 10
-    }, this);
-}
-
-},{"react/jsx-dev-runtime":"2EKVj","react":"1C1YF","./Player":"hRRAX","./Controls":"ibsg9","@parcel/transformer-js/src/esmodule-helpers.js":"7GQ4w"}],"hRRAX":[function(require,module,exports,__globalThis) {
-var _serverEdge = require("react-server-dom-parcel/server.edge");
-exports["default"] = (0, _serverEdge.createClientReference)("fyQLv", "default", [
-    "client/server.d7b4b64c.js",
-    "client/server.babb4f0a.js"
-]);
-exports.__esModule = true;
-
-},{"react-server-dom-parcel/server.edge":"hqfUu"}],"ibsg9":[function(require,module,exports,__globalThis) {
-var _serverEdge = require("react-server-dom-parcel/server.edge");
-exports["default"] = (0, _serverEdge.createClientReference)("d4yPi", "default", [
-    "client/server.d7b4b64c.js",
-    "client/server.babb4f0a.js"
-]);
-exports.__esModule = true;
-
-},{"react-server-dom-parcel/server.edge":"hqfUu"}],"d63H8":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>Page);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _player = require("./Player");
-var _playerDefault = parcelHelpers.interopDefault(_player);
-function getTracks() {
-    return new Promise((resolve)=>setTimeout(()=>resolve([
-                'Track 1',
-                'Track 2',
-                'Track 3'
-            ]), 1000));
-}
-async function Page() {
-    const tracks = await getTracks();
-    async function saveSelectedTrack(currentTrack) {
-        "use server";
-        console.log(`Selected track: ${currentTrack}/${tracks.length}`);
-    }
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _playerDefault.default), {
-        tracks: tracks,
-        saveSelectedTrack: saveSelectedTrack
-    }, void 0, false, {
-        fileName: "src/cases/12/Page.tsx",
-        lineNumber: 17,
-        columnNumber: 10
-    }, this);
-}
-
-},{"react/jsx-dev-runtime":"2EKVj","react":"1C1YF","./Player":"jA8ki","@parcel/transformer-js/src/esmodule-helpers.js":"7GQ4w"}],"jA8ki":[function(require,module,exports,__globalThis) {
-var _serverEdge = require("react-server-dom-parcel/server.edge");
-exports["default"] = (0, _serverEdge.createClientReference)("aneTR", "default", [
-    "client/server.d7b4b64c.js",
-    "client/server.babb4f0a.js"
-]);
-exports.__esModule = true;
-
-},{"react-server-dom-parcel/server.edge":"hqfUu"}],"cizKY":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "incrementLike", ()=>incrementLike);
-parcelHelpers.export(exports, "getLikeCount", ()=>getLikeCount);
-"use server";
-let likeCount = 0;
-async function incrementLike() {
-    likeCount++;
-    return likeCount;
-}
-async function getLikeCount() {
-    return likeCount;
-}
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"7GQ4w"}],"eLWxV":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "updateMyName", ()=>updateMyName);
-var _db = require("./db");
-var _dbDefault = parcelHelpers.interopDefault(_db);
-"use server";
-async function updateMyName(name) {
-    if (!name) return {
-        error: "Name is required"
-    };
-    return await (0, _dbDefault.default).users.updateName(name);
-}
-
-},{"./db":"433Qc","@parcel/transformer-js/src/esmodule-helpers.js":"7GQ4w"}],"433Qc":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-const db = {
-    users: {
-        updateName: async (name)=>{
-            await new Promise((resolve)=>setTimeout(resolve, 2000));
-            return {
-                ok: true
-            };
-        }
-    }
-};
-exports.default = db;
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"7GQ4w"}],"6cXDh":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "updateUsername", ()=>updateUsername);
-var _db = require("./db");
-var _dbDefault = parcelHelpers.interopDefault(_db);
-"use server";
-async function updateUsername(currentState, formData) {
-    if (!formData.get("name")) return {
-        error: "Name is required"
-    };
-    return await (0, _dbDefault.default).users.updateName(formData.get("name"));
-}
-
-},{"./db":"hWTMu","@parcel/transformer-js/src/esmodule-helpers.js":"7GQ4w"}],"hWTMu":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-const db = {
-    users: {
-        updateName: async (name)=>{
-            await new Promise((resolve)=>setTimeout(resolve, 2000));
-            return {
-                ok: true
-            };
-        }
-    }
-};
-exports.default = db;
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"7GQ4w"}]},["aHviM","e5HVK","59cc1"], "59cc1", "parcelRequireedff", {}, "./", "/")
+},{"react/jsx-dev-runtime":"2EKVj","@parcel/runtime-rsc/rsc-helpers":"8RIod","4Qijd":"4Qijd"}]},["aHviM","1J6tB","59cc1"], "59cc1", "parcelRequireedff", {}, "./", "/")
 
 //# sourceMappingURL=server.js.map
