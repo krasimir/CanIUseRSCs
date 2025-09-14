@@ -4,11 +4,11 @@ Features support list across different frameworks and libraries.
 
 There are **12** test cases in total. You can see them all in the table below. Testing against the following frameworks/libraries:
 
-- [Next.js](https://nextjs.org/) (100% support)
-- [Vite](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-rsc/README.md) (100% support)
-- [Forket](https://github.com/krasimir/forket) (83% support)
-- [Parcel](https://parceljs.org/recipes/rsc/) (83% support)
-- [ReactRouter](https://remix.run/blog/rsc-preview) (83% support)
+- [Next.js](https://nextjs.org/) (100% support) - Stable version of Next.js with full support for React Server Components.
+- [Vite](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-rsc/README.md) (100% support) - Official Vite plugin for React Server Components. Framework agnostic.
+- [Forket](https://github.com/krasimir/forket) (83% support) - A framework agnostic library that produces server and client version of your code. Plugable to your current setup.
+- [Parcel](https://parceljs.org/recipes/rsc/) (83% support) - Official Parcel support for React Server Components. Framework agnostic.
+- [ReactRouter](https://remix.run/blog/rsc-preview) (83% support) - Experimental version of React Router with RSC support
 
 ## Contribute
 

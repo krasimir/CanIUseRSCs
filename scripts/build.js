@@ -89,7 +89,7 @@ function generateRepoReadme() {
   content = content.replace(/{{NUM_OF_CASES}}/g, cases.length.toString());
 
   let genericInfo = '';
-  genericInfo += APPS.map((a) => `- [${a.name}](${a.site}) (${a.coverage}% support)`).join("\n");
+  genericInfo += APPS.map((a) => `- [${a.name}](${a.site}) (${a.coverage}% support) - ${a.description}`).join("\n");
   content = content.replace(/{{GENERIC_INFO}}/g, genericInfo);
 
   let tableOfSupport = `| Case | Framework / Library |\n`;
