@@ -85,7 +85,7 @@ function generateRepoReadme() {
 
   let tableOfSupport = `| Case | Framework / Library |\n`;
   tableOfSupport += `| ---- | ---- |\n`;
-  tableOfSupport += `| | <img width="300"/> |\n`;
+  tableOfSupport += `| | <img width="450"/> |\n`;
   tableOfSupport += cases
     .map((c) => {
       return `| (${c.id}) [${c.title}](./cases/${c.id})<br />${c.description} | ${APPS.map((a) => {
