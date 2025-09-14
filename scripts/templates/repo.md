@@ -8,13 +8,17 @@ There are **{{NUM_OF_CASES}}** test cases in total. You can see them all in the 
 
 ## Contribute
 
-* Do not edit manually the README.md files. There are templates in `./scripts/templates`.
+* Do not edit manually the README.md files. There are templates in [`./scripts/templates`](./sripts/templates).
 * If you want to update any of the test cases change the files in the `./cases` directory. Then run `npm run build`. This will distribute them across the apps in the `./apps` directory.
-* Some of the frameworks/libraries need slightly different format of the test cases. That's why there are helper functions to prepare the case files in `./scripts/vendors`.
+* Some of the frameworks/libraries need slightly different format of the test cases. That's why there are helper for that in `./scripts/vendors`.
+
+### Edit a test case
+
+Modify the files in the `./cases` diretory and run `npm run build`.
 
 ### Add a new test case
 
-Add a new directory in the `./cases` folder. Make sure there is `case.json` and `Page.tsx` file. Use some of existing ones as a template. Then edit `./app.json` to reflect the support level.
+Add a new directory in the `./cases` folder. Make sure there is `case.json` and `Page.tsx` file. Use some of the existing ones as a template. Then edit `./app.json` to reflect the support level.
 
 ### Add a new framework or a library
 
