@@ -2,8 +2,6 @@
 
 Features support list across different frameworks and libraries.
 
----
-
 There are **12** test cases in total. You can see them all in the table below. Testing against the following frameworks/libraries:
 
 - [Next.js](https://nextjs.org/) (100% support)
