@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap')
+layer(base);
+@import 'tailwindcss';
+
+.case {
+  font-size: 1rem;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+button, input[type="text"] {
+  border: solid 1px #999;
+  padding: 0.25rem 0.5rem;
+}
+button:hover {
+  background: #e8e8e8;
+  cursor: pointer;
+}

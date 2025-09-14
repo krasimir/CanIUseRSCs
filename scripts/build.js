@@ -6,6 +6,7 @@ import { transformForketFile, setupForket } from "./vendors/forket.js";
 import { setupVite } from './vendors/vite.js';
 import { transformParcelFile, setupParcel } from "./vendors/parcel.js";
 import { setupReactRouter } from './vendors/react-router.js'
+import { setupWaku } from './vendors/waku.js'
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -56,6 +57,14 @@ const APPS = [
       fs.copyFileSync(fileFrom, fileTo);
     },
     setup: setupReactRouter
+  },
+  {
+    name: "Waku",
+    appDir: path.join(__dirname, "..", "apps", "waku", "src", "pages", "case", "cases"),
+    processFile(fileFrom, fileTo) {
+      fs.copyFileSync(fileFrom, fileTo);
+    },
+    setup: setupWaku
   }
 ]
   .map((data) => {

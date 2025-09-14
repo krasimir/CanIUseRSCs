@@ -88,5 +88,23 @@
       "11": true,
       "12": false
     }
+  },
+  "Waku": {
+    "site": "https://waku.gg/",
+    "description": "A React framework with first-class support for React Server Components",
+    "cases": {
+      "01": true,
+      "02": true,
+      "03": true,
+      "04": true,
+      "05": true,
+      "06": true,
+      "07": true,
+      "08": true,
+      "09": true,
+      "10": true,
+      "11": true,
+      "12": true
+    }
   }
 }
