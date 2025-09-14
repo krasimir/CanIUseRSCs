@@ -8,7 +8,7 @@ There are **{{NUM_OF_CASES}}** test cases in total. You can see them all in the 
 
 ## Contribute
 
-* Do not edit manually the README.md files. There are templates in [`./scripts/templates`]([./tree/main/scripts/templates](https://github.com/krasimir/CanIUseRSCs/tree/main/scripts/templates)).
+* Do not edit manually the README.md files. There are templates in [`./scripts/templates`](https://github.com/krasimir/CanIUseRSCs/tree/main/scripts/templates).
 * If you want to update any of the test cases change the files in the [`./cases`](https://github.com/krasimir/CanIUseRSCs/tree/main/cases) directory. Then run `npm run build`. This will distribute them across the apps in the [`./apps`](https://github.com/krasimir/CanIUseRSCs/tree/main/scripts/apps) directory.
 * Some of the frameworks/libraries need slightly different format of the test cases. That's why there are helper for that in [`./scripts/vendors`](https://github.com/krasimir/CanIUseRSCs/tree/main/scripts/vendors).
 
