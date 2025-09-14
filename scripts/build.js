@@ -149,15 +149,18 @@ function generateCasesREADME() {
 function buildSite() {
   let template = fs.readFileSync(path.join(__dirname, 'templates', 'site.html'), 'utf-8');
 
+  template = template.replace(/{{NUM_OF_TEST_CASES}}/g, cases.length.toString());
+  template = template.replace(/{{NUM_OF_APPS}}/g, APPS.length.toString());
+
   fs.writeFileSync(path.join(__dirname, '..', 'site', 'index.html'), template);
-    console.log(`Site built successfully.`);
+  console.log(`Site built successfully.`);
 }
 
 (async function () {
   generateRepoReadme();
   generateCasesREADME();
   moveCasesToTheApps();
-  // buildSite();
+  buildSite();
 })();
 
 

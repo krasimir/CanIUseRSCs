@@ -1,11 +1,11 @@
-body {
+body, html {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #1e1e1e;
-  color: #FFF;
+  color: #dadada;
   font-size: 20px;
-  line-height: 2rem;
+  line-height: 1.8rem;
 }
 h1, h2, h3 {
   margin: 0;
@@ -16,8 +16,6 @@ h1, h2, h3 {
 p {
   margin: 0;
   padding: 0;
-  color: #b9b9b9;
-  line-height: 2rem;
 }
 ul {
   margin: 0;
@@ -62,6 +60,9 @@ a:hover {
 .mt1 { margin-top: 1rem; }
 .mt2 { margin-top: 2rem; }
 .mt3 { margin-top: 3rem; }
+.p1 { padding: 1rem; }
+.pl2 { padding-left: 2rem; }
+.op03 { opacity: 0.3; }
 
 .app .grid {
   grid-template-columns: 30% 70%;
@@ -84,9 +85,15 @@ a:hover {
   font-size: 1.4rem;
   font-weight: normal;
 }
+.app ul li {
+  background: #2e2e2e;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-bottom: solid 2px #000;
+}
 
 @media screen and (max-width: 1000px) {
-  body {
+  body, html {
     font-size: 16px;
   }
   main {
