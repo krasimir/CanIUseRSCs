@@ -86,6 +86,7 @@ const APPS = [
       .filter(Boolean).length;
     return {
       ...data,
+      success,
       coverage: ((success / Object.keys(data.cases).length) * 100).toFixed(0)
     };
   })
@@ -148,9 +149,33 @@ function generateCasesREADME() {
 }
 function buildSite() {
   let template = fs.readFileSync(path.join(__dirname, 'templates', 'site.html'), 'utf-8');
+  let appTemplate = fs.readFileSync(path.join(__dirname, 'templates', 'site-app.html'), 'utf-8');
 
   template = template.replace(/{{NUM_OF_TEST_CASES}}/g, cases.length.toString());
   template = template.replace(/{{NUM_OF_APPS}}/g, APPS.length.toString());
+  template = template.replace(/{{APPS}}/g, APPS.map(app => {
+    return appTemplate
+      .replace(/{{APP}}/g, app.name)
+      .replace(/{{LOGO}}/g, app.logo)
+      .replace(/{{DESCRIPTION}}/g, app.description)
+      .replace(/{{COVERAGE}}/g, app.coverage)
+      .replace(/{{COVERAGE_CASES}}/g, `${app.success}/${Object.keys(app.cases).length}`)
+      .replace(
+        /{{LINKS}}/g,
+        [
+          `<a href="${app.site}" target="_blank">Web site</a>`,
+          `<a href="${app.repoLink}" target="_blank">Test application</a>`
+        ].join("<br />")
+      )
+      .replace(
+        /{{TEST_CASES}}/g,
+        cases
+          .map((c) => {
+            return `<li>${app.cases[c.id] ? `✅ ${c.title}` : `❌ ${c.title}`}</li>`;
+          })
+          .join("\n")
+      );
+  }).join("\n"));
 
   fs.writeFileSync(path.join(__dirname, '..', 'site', 'index.html'), template);
   console.log(`Site built successfully.`);

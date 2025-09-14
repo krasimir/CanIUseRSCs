@@ -4,7 +4,7 @@ Features support list across different frameworks and libraries.
 
 There are **12** test cases in total. You can see them all in the table below. Testing against the following frameworks/libraries:
 
-- [Next.js](https://nextjs.org/) (100% support) - Stable version of Next.js with full support for React Server Components.
+- [Next.js](https://nextjs.org/) (100% support) - Probably the most popular React framework
 - [Vite](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-rsc/README.md) (100% support) - Official Vite plugin for React Server Components. Framework agnostic.
 - [Waku](https://waku.gg/) (100% support) - A React framework with first-class support for React Server Components
 - [Forket](https://github.com/krasimir/forket) (83% support) - A framework agnostic library that produces server and client version of your code. Plugable to your current setup.

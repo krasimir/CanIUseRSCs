@@ -64,6 +64,10 @@ a:hover {
 .pl2 { padding-left: 2rem; }
 .op03 { opacity: 0.3; }
 
+.app {
+  border-top: solid 1px #00d8ff;
+  padding: 2rem 0;
+}
 .app .grid {
   grid-template-columns: 30% 70%;
 }
