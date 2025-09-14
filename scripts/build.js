@@ -31,6 +31,13 @@ const APPS = [
     appDir: path.join(__dirname, "..", "apps", "forket", "src", "app", "cases"),
     processFile: transformForketFile,
     setup: setupForket
+  },
+  {
+    name: "@vitejs/plugin-rsc",
+    appDir: path.join(__dirname, "..", "apps", "vite", "src", "cases"),
+    processFile(fileFrom, fileTo) {
+      fs.copyFileSync(fileFrom, fileTo);
+    }
   }
 ].map((data) => ({ ...data, ...APPS_META_DATA[data.name] }));
 
