@@ -60,7 +60,7 @@ function generateRepoReadme() {
       .map((caseId) => app.cases[caseId])
       .filter(Boolean).length;
     return {
-      coverage: ((success / Object.keys(app.cases).length) * 100).toFixed(2),
+      coverage: ((success / Object.keys(app.cases).length) * 100).toFixed(0),
       ...app
     }
   }).sort((a, b) => b.coverage - a.coverage);
