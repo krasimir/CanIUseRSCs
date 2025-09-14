@@ -1,6 +1,6 @@
 # Inlined server action to access variables in the near scope
 
-When we define a inlined server action inside a component, it should be able to access variables in the near scope.
+When we define a inlined server action inside a component, it should be able to access variables in the near scope. This means that the server function is aware of its surrounding context.
 
 ## Code
 

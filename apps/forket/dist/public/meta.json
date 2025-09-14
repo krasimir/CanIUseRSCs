@@ -179,7 +179,7 @@
       "format": "esm"
     },
     "build/client/app/cases/07/UpdateMyName.tsx": {
-      "bytes": 1022,
+      "bytes": 1018,
       "imports": [
         {
           "path": "node_modules/react/index.js",
@@ -331,7 +331,7 @@
       "imports": [],
       "exports": [],
       "inputs": {},
-      "bytes": 895793
+      "bytes": 895789
     },
     "dist/public/bundle.js": {
       "imports": [],
@@ -390,7 +390,7 @@
           "bytesInOutput": 536
         },
         "build/client/app/cases/07/UpdateMyName.tsx": {
-          "bytesInOutput": 583
+          "bytesInOutput": 581
         },
         "build/client/app/cases/06/Button.tsx": {
           "bytesInOutput": 159
@@ -408,7 +408,7 @@
           "bytesInOutput": 96
         }
       },
-      "bytes": 195110
+      "bytes": 195108
     }
   }
 }
