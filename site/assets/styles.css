@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e;
+  color: #FFF;
+  font-size: 20px;
+  line-height: 2rem;
+}
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+  color: #FFF;
+  line-height: 2.8rem;
+}
+p {
+  margin: 0;
+  padding: 0;
+  color: #b9b9b9;
+  line-height: 2rem;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+  max-width: 700px;
+  padding: 3rem 0 4rem 0;
+}
+hr {
+  border: none;
+  border-top: 1px dashed #00d8ff;
+  margin: 2rem 0;
+}
+a {
+  color: #00d8ff;
+  text-decoration: none;
+  border-bottom: 2px dashed #00d8ff;
+  cursor: pointer;
+}
+a:hover {
+  color: #fff;
+  border-bottom: 2px dashed #fff;
+}
+
+.grid { display: grid; }
+.flex { display: flex; }
+.flex-row { display: flex; flex-direction: row; }
+.flex-col { display: flex; flex-direction: column; }
+.flex-vcentered { display: flex; align-items: center; }
+.gap1 { gap: 1rem; }
+.gap2 { gap: 2rem; }
+.mt05 { margin-top: 0.5rem; }
+.mt1 { margin-top: 1rem; }
+.mt2 { margin-top: 2rem; }
+.mt3 { margin-top: 3rem; }
+
+.app .grid {
+  grid-template-columns: 30% 70%;
+}
+.app-logo {
+  display: block;
+  background: #FFF;
+  padding: 0.2rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+}
+.app .result {
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 3rem;
+}
+.app .result small {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    font-size: 16px;
+  }
+  main {
+    padding: 0 1rem;
+  }
+}

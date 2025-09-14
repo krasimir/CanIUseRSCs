@@ -146,11 +146,18 @@ function generateCasesREADME() {
     console.log(`Case ${c.id} README.md generated successfully.`);
   });
 }
+function buildSite() {
+  let template = fs.readFileSync(path.join(__dirname, 'templates', 'site.html'), 'utf-8');
+
+  fs.writeFileSync(path.join(__dirname, '..', 'site', 'index.html'), template);
+    console.log(`Site built successfully.`);
+}
 
 (async function () {
   generateRepoReadme();
   generateCasesREADME();
   moveCasesToTheApps();
+  // buildSite();
 })();
 
 
