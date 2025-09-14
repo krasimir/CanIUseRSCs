@@ -5,6 +5,7 @@ import { fileURLToPath } from "url";
 import { transformForketFile, setupForket } from "./vendors/forket.js";
 import { setupVite } from './vendors/vite.js';
 import { transformParcelFile, setupParcel } from "./vendors/parcel.js";
+import { setupReactRouter } from './vendors/react-router.js'
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -47,6 +48,14 @@ const APPS = [
     appDir: path.join(__dirname, "..", "apps", "parcel", "src", "cases"),
     processFile: transformParcelFile,
     setup: setupParcel
+  },
+  {
+    name: "ReactRouter",
+    appDir: path.join(__dirname, "..", "apps", "react-router", "app", "routes", "cases"),
+    processFile(fileFrom, fileTo) {
+      fs.copyFileSync(fileFrom, fileTo);
+    },
+    setup: setupReactRouter
   }
 ]
   .map((data) => {

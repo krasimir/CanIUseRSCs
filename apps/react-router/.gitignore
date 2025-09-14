@@ -1,0 +1,6 @@
+.DS_Store
+.parcel-cache/
+.react-router/
+.react-router-parcel/
+dist/
+node_modules/
