@@ -55,7 +55,21 @@ function moveCasesToTheApps() {
 function generateRepoReadme() {
   const readmePath = path.join(__dirname, 'templates', 'repo.md');
   let content = fs.readFileSync(readmePath, 'utf-8');
-  content += '\n\n';
+  let appsList = APPS.map(app => {
+    let success = Object.keys(app.cases)
+      .map((caseId) => app.cases[caseId])
+      .filter(Boolean).length;
+    return {
+      coverage: ((success / Object.keys(app.cases).length) * 100).toFixed(2),
+      ...app
+    }
+  }).sort((a, b) => b.coverage - a.coverage);
+
+  let genericInfo = '';
+  genericInfo += `There are **${cases.length}** test cases in total. You can see them all in the table below. Testing against the following frameworks/libraries:\n\n`;
+  genericInfo += appsList.map((a) => `- [${a.name}](${a.site}) (${a.coverage}% support)`).join("\n");
+  content = content.replace(/{{GENERIC_INFO}}/g, genericInfo);
+
   let tableOfSupport = `| Case | Framework / Library |\n`;
   tableOfSupport += `| ---- | ---- |\n`;
   tableOfSupport += cases

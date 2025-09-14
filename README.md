@@ -2,6 +2,16 @@
 
 Features support list across different frameworks and libraries.
 
+---
+
+There are **12** test cases in total. You can see them all in the table below. Testing against the following frameworks/libraries:
+
+- [Next.js](https://nextjs.org/) (100.00% support)
+- [@vitejs/plugin-rsc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-rsc/README.md) (100.00% support)
+- [Forket](https://github.com/krasimir/forket) (83.33% support)
+
+---
+
 | Case | Framework / Library |
 | ---- | ---- |
 | (01) [Rendering async component on the server](./cases/01)<br />Basic example of an async server component. | ✅ [Next.js](https://nextjs.org/)<br />✅ [Forket](https://github.com/krasimir/forket)<br />✅ [@vitejs/plugin-rsc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-rsc/README.md) |
@@ -16,6 +26,4 @@ Features support list across different frameworks and libraries.
 | (10) [Inspirational quote generator app](./cases/10)<br />An app that generates and displays inspirational quotes to motivate users. Little app from [here](https://react.dev/reference/rsc/use-client#how-use-client-marks-client-code).  | ✅ [Next.js](https://nextjs.org/)<br />✅ [Forket](https://github.com/krasimir/forket)<br />✅ [@vitejs/plugin-rsc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-rsc/README.md) |
 | (11) [Nested Client Components](./cases/11)<br />A test case for nested client components | ✅ [Next.js](https://nextjs.org/)<br />❌ [Forket](https://github.com/krasimir/forket)<br />✅ [@vitejs/plugin-rsc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-rsc/README.md) |
 | (12) [Inlined server action to access variables in the near scope](./cases/12)<br />When we define a inlined server action inside a component, it should be able to access variables in the near scope. This means that the server function is aware of its surrounding context. | ✅ [Next.js](https://nextjs.org/)<br />❌ [Forket](https://github.com/krasimir/forket)<br />✅ [@vitejs/plugin-rsc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-rsc/README.md) |
-
-
 
