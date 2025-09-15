@@ -196,7 +196,7 @@ function buildSite() {
     }).join("\n")
   );
 
-  fs.writeFileSync(path.join(__dirname, '..', 'site', 'index.html'), template);
+  fs.writeFileSync(path.join(__dirname, '..', 'site', 'public', 'index.html'), template);
   console.log(`Site built successfully.`);
 }
 

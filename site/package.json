@@ -1,0 +1,13 @@
+{
+  "name": "CanIUseRSCs-site",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node ./server.js",
+    "release": "gcloud builds submit --config cloudbuild.yaml"
+  },
+  "dependencies": {
+    "express": "4.21.2"
+  }
+}

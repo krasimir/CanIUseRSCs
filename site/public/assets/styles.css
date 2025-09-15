@@ -50,6 +50,7 @@ a:hover {
 }
 
 .fz2 { font-size: 1.4rem; }
+.fz8 { font-size: 3rem; }
 .lh1_2 { line-height: 1.2rem !important; }
 .grid { display: grid; }
 .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); }
