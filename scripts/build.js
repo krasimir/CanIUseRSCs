@@ -159,6 +159,7 @@ function buildSite() {
       .replace(/{{LOGO}}/g, app.logo)
       .replace(/{{DESCRIPTION}}/g, app.description)
       .replace(/{{COVERAGE}}/g, app.coverage)
+      .replace(/{{ID}}/g, titleToSlug(app.name))
       .replace(/{{COVERAGE_CASES}}/g, `${app.success}/${Object.keys(app.cases).length}`)
       .replace(
         /{{LINKS}}/g,
@@ -176,6 +177,24 @@ function buildSite() {
           .join("\n")
       );
   }).join("\n"));
+  template = template.replace(
+    /{{APPS_GRID}}/g,
+    APPS.map((app) => {
+      return `
+      <div class="flex-centered" style="padding: 2px;">
+        <a href="#${titleToSlug(app.name)}" class="flex app-link gap1 p1 lh1_2">
+          <img src="{{LOGO}}" alt="{{APP}} Logo" class="app-logo">
+          <span>
+            <span class="fz2">{{APP}}</span>
+            <small class="block op03">${app.coverage}%</small>
+          </span>
+        </a>
+      </div>
+    `
+        .replace(/{{APP}}/g, app.name)
+        .replace(/{{LOGO}}/g, app.logo);
+    }).join("\n")
+  );
 
   fs.writeFileSync(path.join(__dirname, '..', 'site', 'index.html'), template);
   console.log(`Site built successfully.`);
@@ -219,4 +238,10 @@ function getFiles(dir) {
     }
   })(path.resolve(dir));
   return res;
+}
+function titleToSlug(title) {
+  return title
+    .toLowerCase()
+    .replace(/\s+/g, "-")
+    .replace(/[^\w\-]+/g, "");
 }

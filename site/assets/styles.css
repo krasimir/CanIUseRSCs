@@ -49,14 +49,20 @@ a:hover {
   border-bottom: 2px dashed #fff;
 }
 
+.fz2 { font-size: 1.4rem; }
+.lh1_2 { line-height: 1.2rem !important; }
 .grid { display: grid; }
+.grid3 { display: grid; grid-template-columns: repeat(3, 1fr); }
+.block { display: block; }
 .flex { display: flex; }
 .flex-row { display: flex; flex-direction: row; }
 .flex-col { display: flex; flex-direction: column; }
+.flex-centered { display: flex; align-items: center; justify-content: center; }
 .flex-vcentered { display: flex; align-items: center; }
 .gap1 { gap: 1rem; }
 .gap2 { gap: 2rem; }
 .mt05 { margin-top: 0.5rem; }
+.ml05 { margin-left: 0.5rem; }
 .mt1 { margin-top: 1rem; }
 .mt2 { margin-top: 2rem; }
 .mt3 { margin-top: 3rem; }
@@ -78,6 +84,20 @@ a:hover {
   width: 30px;
   height: 30px;
   border-radius: 6px;
+}
+.app-link {
+  width: 100%;
+  border-bottom: none;
+  background: #001e23;
+  color: #fff;
+  cursor: pointer;
+  align-items: start;
+}
+.app-link:hover {
+  background: #00333a;
+}
+.app-link:hover {
+  border-bottom: none;
 }
 .app .result {
   font-weight: bold;
@@ -104,3 +124,22 @@ a:hover {
     padding: 0 1rem;
   }
 }
+@media screen and (max-width: 900px) {
+  .grid2_max900 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 500px) {
+  .nogrid_max500 {
+    display: block;
+  }
+  .p0_max500 {
+    padding: 0 !important;
+  }
+  .mt2_max500 {
+    margin-top: 2rem !important;
+  }
+}
+
+ 

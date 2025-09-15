@@ -23,6 +23,7 @@
     "site": "https://github.com/krasimir/forket",
     "description": "A framework agnostic library that produces server and client version of your code. Plugable to your current setup.",
     "repoLink": "https://github.com/krasimir/CanIUseRSCs/tree/main/apps/forket",
+    "logo": "/assets/forket.png",
     "cases": {
       "01": true,
       "02": true,
@@ -42,6 +43,7 @@
     "site": "https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-rsc/README.md",
     "description": "Official Vite plugin for React Server Components. Framework agnostic.",
     "repoLink": "https://github.com/krasimir/CanIUseRSCs/tree/main/apps/vite",
+    "logo": "/assets/vite.svg",
     "cases": {
       "01": true,
       "02": true,
@@ -61,6 +63,7 @@
     "site": "https://parceljs.org/recipes/rsc/",
     "description": "Official Parcel support for React Server Components. Framework agnostic.",
     "repoLink": "https://github.com/krasimir/CanIUseRSCs/tree/main/apps/parcel",
+    "logo": "/assets/parcel.ico",
     "cases": {
       "01": true,
       "02": true,
@@ -80,6 +83,7 @@
     "site": "https://remix.run/blog/rsc-preview",
     "description": "Experimental version of React Router with RSC support",
     "repoLink": "https://github.com/krasimir/CanIUseRSCs/tree/main/apps/react-router",
+    "logo": "/assets/reactrouter.svg",
     "cases": {
       "01": true,
       "02": true,
@@ -99,6 +103,7 @@
     "site": "https://waku.gg/",
     "description": "A React framework with first-class support for React Server Components",
     "repoLink": "https://github.com/krasimir/CanIUseRSCs/tree/main/apps/waku",
+    "logo": "/assets/waku.png",
     "cases": {
       "01": true,
       "02": true,
@@ -118,6 +123,7 @@
     "site": "https://docs.rwsdk.com/",
     "description": "A full-stack React framework",
     "repoLink": "https://github.com/krasimir/CanIUseRSCs/tree/main/apps/redwood",
+    "logo": "/assets/redwood.png",
     "cases": {
       "01": true,
       "02": true,
