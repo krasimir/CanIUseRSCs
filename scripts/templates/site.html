@@ -5,25 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>React Server Components (RSCs) support across frameworks and libraries</title>
   <link rel="icon" type="image/svg+xml" href="/assets/react.svg" />
-  <link rel="stylesheet" href="/assets/styles.css">
+  <link rel="stylesheet" href="/assets/prism.css">
+  <link rel="stylesheet" href="/assets/styles.min.css">
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="rsc.krasimirtsonev.com/" />
+  <meta property="og:description" content="Can I use React Server Components (RSCs) today. A project that shows the support of RSCs across the frameworks and libraries." />
+  <meta name="twitter:card" content="Can I use React Server Components (RSCs) today. A project that shows the support of RSCs across the frameworks and libraries." />
+  <meta name="twitter:author" content="@KrasimirTsonev" />
+  <meta name="twitter:title" content="React Server Components support" />
+  <meta name="twitter:description" content="Can I use React Server Components (RSCs) today. A project that shows the support of RSCs across the frameworks and libraries." />
+  <meta property="og:image" content="/assets/ogimage.png" />
+  <meta property="og:url" content="https://rsc.krasimirtsonev.com/" />
+  <meta property="og:title" content="React Server Components support" />
+  <meta property="og:description" content="Can I use React Server Components (RSCs) today. A project that shows the support of RSCs across the frameworks and libraries." />
 </head>
 <body>
   <main>
-    <header>
-      <img src="/assets/react.svg" alt="React Logo" width="72" height="72">
-      <h1 class="fz8">Can I use React Server Components (RSCs) today?</h1>
+    <header class="grid nogrid_max500">
+      <div class="flex">
+        <img src="/assets/react.svg" alt="React Logo" width="72" height="72">
+        <h1 class="fz8 fz6_max500 ml05">Can I use React Server Components (RSCs) today?</h1>
+      </div>
+      <nav class="flex-col tar mt2_max500 tal_max500">
+        <ul>
+          <li class="ib_max500 ml05_max500 flex-vcentered gap02 flex-right">
+            <small>✭</small><a href="#frameworks" class="fz2">Frameworks</a>
+          </li>
+          <li class="ib_max500 ml05_max500 flex-vcentered gap02 flex-right">
+            <small>✭</small><a href="#testcases" class="fz2">Test cases</a>
+          </li>
+          <li class="ib_max500 ml05_max500 flex-vcentered gap02 flex-right">
+            <small>✭</small><a href="https://github.com/krasimir/CanIUseRSCs/" target="_blank" class="fz2">Contribution</a>
+          </li>
+          <li class="ib_max500 ml05_max500 flex-vcentered gap02  flex-right">
+            <small>✭</small><a href="https://krasimirtsonev.com/" target="_blank" class="fz2">Author</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <section>
       <div class="grid3 grid2_max900 nogrid_max500">
         {{APPS_GRID}}
       </div>
       <p class="mt2">
-        Frameworks/libraries: <strong>{{NUM_OF_APPS}} | Test cases: <strong>{{NUM_OF_TEST_CASES}}</strong></strong>
+        Frameworks (libraries): <strong class="c-primary">{{NUM_OF_APPS}}</strong> | Test cases: <strong class="c-primary">{{NUM_OF_TEST_CASES}}</strong></strong>
       </p>
-      <div class="mt2">
+      <div class="mt2" id="frameworks">
         {{APPS}}
       </div>
+      <div class="mt2" id="testcases">
+        <h2>Test Cases</h2>
+        <div class="mt2">
+          {{TEST_CASES}}
+        </div>
+      </div>
     </section>
+    <footer class="my4 tac">
+      Build with curiosity and ❤️ by <a href="https://krasimirtsonev.com/" target="_blank">Krasimir Tsonev</a><br />
+      <small><a href="https://github.com/krasimir/CanIUseRSCs" target="_blank">Source code</a></small>
+    </footer>
   </main>
+  <script async src="/assets/prism.js"></script>
 </body>
 </html>

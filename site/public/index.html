@@ -5,98 +5,150 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>React Server Components (RSCs) support across frameworks and libraries</title>
   <link rel="icon" type="image/svg+xml" href="/assets/react.svg" />
-  <link rel="stylesheet" href="/assets/styles.css">
+  <link rel="stylesheet" href="/assets/prism.css">
+  <link rel="stylesheet" href="/assets/styles.min.css">
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="rsc.krasimirtsonev.com/" />
+  <meta property="og:description" content="Can I use React Server Components (RSCs) today. A project that shows the support of RSCs across the frameworks and libraries." />
+  <meta name="twitter:card" content="Can I use React Server Components (RSCs) today. A project that shows the support of RSCs across the frameworks and libraries." />
+  <meta name="twitter:author" content="@KrasimirTsonev" />
+  <meta name="twitter:title" content="React Server Components support" />
+  <meta name="twitter:description" content="Can I use React Server Components (RSCs) today. A project that shows the support of RSCs across the frameworks and libraries." />
+  <meta property="og:image" content="/assets/ogimage.png" />
+  <meta property="og:url" content="https://rsc.krasimirtsonev.com/" />
+  <meta property="og:title" content="React Server Components support" />
+  <meta property="og:description" content="Can I use React Server Components (RSCs) today. A project that shows the support of RSCs across the frameworks and libraries." />
 </head>
 <body>
   <main>
-    <header>
-      <img src="/assets/react.svg" alt="React Logo" width="72" height="72">
-      <h1 class="fz8">Can I use React Server Components (RSCs) today?</h1>
+    <header class="grid nogrid_max500">
+      <div class="flex">
+        <img src="/assets/react.svg" alt="React Logo" width="72" height="72">
+        <h1 class="fz8 fz6_max500 ml05">Can I use React Server Components (RSCs) today?</h1>
+      </div>
+      <nav class="flex-col tar mt2_max500 tal_max500">
+        <ul>
+          <li class="ib_max500 ml05_max500 flex-vcentered gap02 flex-right">
+            <small>✭</small><a href="#frameworks" class="fz2">Frameworks</a>
+          </li>
+          <li class="ib_max500 ml05_max500 flex-vcentered gap02 flex-right">
+            <small>✭</small><a href="#testcases" class="fz2">Test cases</a>
+          </li>
+          <li class="ib_max500 ml05_max500 flex-vcentered gap02 flex-right">
+            <small>✭</small><a href="https://github.com/krasimir/CanIUseRSCs/" target="_blank" class="fz2">Contribution</a>
+          </li>
+          <li class="ib_max500 ml05_max500 flex-vcentered gap02  flex-right">
+            <small>✭</small><a href="https://krasimirtsonev.com/" target="_blank" class="fz2">Author</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <section>
       <div class="grid3 grid2_max900 nogrid_max500">
         
-      <div class="flex-centered" style="padding: 2px;">
+      <div class="flex-centered" style="padding: 6px;">
         <a href="#nextjs" class="flex app-link gap1 p1 lh1_2">
           <img src="/assets/nextjs.png" alt="Next.js Logo" class="app-logo">
-          <span>
+          <span class="block w100p">
             <span class="fz2">Next.js</span>
             <small class="block op03">100%</small>
+            <span class="line mt05">
+              <span style="width:100%"></span>
+            </span>
           </span>
         </a>
       </div>
     
 
-      <div class="flex-centered" style="padding: 2px;">
+      <div class="flex-centered" style="padding: 6px;">
         <a href="#vite" class="flex app-link gap1 p1 lh1_2">
           <img src="/assets/vite.svg" alt="Vite Logo" class="app-logo">
-          <span>
+          <span class="block w100p">
             <span class="fz2">Vite</span>
             <small class="block op03">100%</small>
+            <span class="line mt05">
+              <span style="width:100%"></span>
+            </span>
           </span>
         </a>
       </div>
     
 
-      <div class="flex-centered" style="padding: 2px;">
+      <div class="flex-centered" style="padding: 6px;">
         <a href="#waku" class="flex app-link gap1 p1 lh1_2">
           <img src="/assets/waku.png" alt="Waku Logo" class="app-logo">
-          <span>
+          <span class="block w100p">
             <span class="fz2">Waku</span>
             <small class="block op03">100%</small>
+            <span class="line mt05">
+              <span style="width:100%"></span>
+            </span>
           </span>
         </a>
       </div>
     
 
-      <div class="flex-centered" style="padding: 2px;">
+      <div class="flex-centered" style="padding: 6px;">
         <a href="#forket" class="flex app-link gap1 p1 lh1_2">
           <img src="/assets/forket.png" alt="Forket Logo" class="app-logo">
-          <span>
+          <span class="block w100p">
             <span class="fz2">Forket</span>
             <small class="block op03">83%</small>
+            <span class="line mt05">
+              <span style="width:83%"></span>
+            </span>
           </span>
         </a>
       </div>
     
 
-      <div class="flex-centered" style="padding: 2px;">
+      <div class="flex-centered" style="padding: 6px;">
         <a href="#parcel" class="flex app-link gap1 p1 lh1_2">
           <img src="/assets/parcel.ico" alt="Parcel Logo" class="app-logo">
-          <span>
+          <span class="block w100p">
             <span class="fz2">Parcel</span>
             <small class="block op03">83%</small>
+            <span class="line mt05">
+              <span style="width:83%"></span>
+            </span>
           </span>
         </a>
       </div>
     
 
-      <div class="flex-centered" style="padding: 2px;">
+      <div class="flex-centered" style="padding: 6px;">
         <a href="#reactrouter" class="flex app-link gap1 p1 lh1_2">
           <img src="/assets/reactrouter.svg" alt="ReactRouter Logo" class="app-logo">
-          <span>
+          <span class="block w100p">
             <span class="fz2">ReactRouter</span>
             <small class="block op03">83%</small>
+            <span class="line mt05">
+              <span style="width:83%"></span>
+            </span>
           </span>
         </a>
       </div>
     
 
-      <div class="flex-centered" style="padding: 2px;">
+      <div class="flex-centered" style="padding: 6px;">
         <a href="#redwoodsdk" class="flex app-link gap1 p1 lh1_2">
           <img src="/assets/redwood.png" alt="RedwoodSDK Logo" class="app-logo">
-          <span>
+          <span class="block w100p">
             <span class="fz2">RedwoodSDK</span>
             <small class="block op03">83%</small>
+            <span class="line mt05">
+              <span style="width:83%"></span>
+            </span>
           </span>
         </a>
       </div>
     
       </div>
       <p class="mt2">
-        Frameworks/libraries: <strong>7 | Test cases: <strong>12</strong></strong>
+        Frameworks (libraries): <strong class="c-primary">7</strong> | Test cases: <strong class="c-primary">12</strong></strong>
       </p>
-      <div class="mt2">
+      <div class="mt2" id="frameworks">
         <div class="app" id="nextjs">
   <div class="grid nogrid_max500">
     <div>
@@ -115,18 +167,42 @@
     </div>
     <div class="pl2 p0_max500 mt2_max500">
       <ul>
-        <li>✅ Rendering async component on the server</li>
-<li>✅ Mixing server and client components</li>
-<li>✅ Hydrating client component</li>
-<li>✅ Passing server function to client component</li>
-<li>✅ Client component imports server function</li>
-<li>✅ Inlined server function (inside a server component)</li>
-<li>✅ Server Functions with Actions</li>
-<li>✅ Server Functions with useActionState</li>
-<li>✅ Passing promise from server to client component</li>
-<li>✅ Inspirational quote generator app</li>
-<li>✅ Nested Client Components</li>
-<li>✅ Inlined server action to access variables in the near scope</li>
+        <li>
+              <a href="#case-01" class="no-border">✅ Rendering async component on the server</a>
+            </li>
+<li>
+              <a href="#case-02" class="no-border">✅ Mixing server and client components</a>
+            </li>
+<li>
+              <a href="#case-03" class="no-border">✅ Hydrating client component</a>
+            </li>
+<li>
+              <a href="#case-04" class="no-border">✅ Passing server function to client component</a>
+            </li>
+<li>
+              <a href="#case-05" class="no-border">✅ Client component imports server function</a>
+            </li>
+<li>
+              <a href="#case-06" class="no-border">✅ Inlined server function (inside a server component)</a>
+            </li>
+<li>
+              <a href="#case-07" class="no-border">✅ Server Functions with Actions</a>
+            </li>
+<li>
+              <a href="#case-08" class="no-border">✅ Server Functions with useActionState</a>
+            </li>
+<li>
+              <a href="#case-09" class="no-border">✅ Passing promise from server to client component</a>
+            </li>
+<li>
+              <a href="#case-10" class="no-border">✅ Inspirational quote generator app</a>
+            </li>
+<li>
+              <a href="#case-11" class="no-border">✅ Nested Client Components</a>
+            </li>
+<li>
+              <a href="#case-12" class="no-border">✅ Inlined server action to access variables in the near scope</a>
+            </li>
       </ul>
     </div>
   </div>
@@ -149,18 +225,42 @@
     </div>
     <div class="pl2 p0_max500 mt2_max500">
       <ul>
-        <li>✅ Rendering async component on the server</li>
-<li>✅ Mixing server and client components</li>
-<li>✅ Hydrating client component</li>
-<li>✅ Passing server function to client component</li>
-<li>✅ Client component imports server function</li>
-<li>✅ Inlined server function (inside a server component)</li>
-<li>✅ Server Functions with Actions</li>
-<li>✅ Server Functions with useActionState</li>
-<li>✅ Passing promise from server to client component</li>
-<li>✅ Inspirational quote generator app</li>
-<li>✅ Nested Client Components</li>
-<li>✅ Inlined server action to access variables in the near scope</li>
+        <li>
+              <a href="#case-01" class="no-border">✅ Rendering async component on the server</a>
+            </li>
+<li>
+              <a href="#case-02" class="no-border">✅ Mixing server and client components</a>
+            </li>
+<li>
+              <a href="#case-03" class="no-border">✅ Hydrating client component</a>
+            </li>
+<li>
+              <a href="#case-04" class="no-border">✅ Passing server function to client component</a>
+            </li>
+<li>
+              <a href="#case-05" class="no-border">✅ Client component imports server function</a>
+            </li>
+<li>
+              <a href="#case-06" class="no-border">✅ Inlined server function (inside a server component)</a>
+            </li>
+<li>
+              <a href="#case-07" class="no-border">✅ Server Functions with Actions</a>
+            </li>
+<li>
+              <a href="#case-08" class="no-border">✅ Server Functions with useActionState</a>
+            </li>
+<li>
+              <a href="#case-09" class="no-border">✅ Passing promise from server to client component</a>
+            </li>
+<li>
+              <a href="#case-10" class="no-border">✅ Inspirational quote generator app</a>
+            </li>
+<li>
+              <a href="#case-11" class="no-border">✅ Nested Client Components</a>
+            </li>
+<li>
+              <a href="#case-12" class="no-border">✅ Inlined server action to access variables in the near scope</a>
+            </li>
       </ul>
     </div>
   </div>
@@ -183,18 +283,42 @@
     </div>
     <div class="pl2 p0_max500 mt2_max500">
       <ul>
-        <li>✅ Rendering async component on the server</li>
-<li>✅ Mixing server and client components</li>
-<li>✅ Hydrating client component</li>
-<li>✅ Passing server function to client component</li>
-<li>✅ Client component imports server function</li>
-<li>✅ Inlined server function (inside a server component)</li>
-<li>✅ Server Functions with Actions</li>
-<li>✅ Server Functions with useActionState</li>
-<li>✅ Passing promise from server to client component</li>
-<li>✅ Inspirational quote generator app</li>
-<li>✅ Nested Client Components</li>
-<li>✅ Inlined server action to access variables in the near scope</li>
+        <li>
+              <a href="#case-01" class="no-border">✅ Rendering async component on the server</a>
+            </li>
+<li>
+              <a href="#case-02" class="no-border">✅ Mixing server and client components</a>
+            </li>
+<li>
+              <a href="#case-03" class="no-border">✅ Hydrating client component</a>
+            </li>
+<li>
+              <a href="#case-04" class="no-border">✅ Passing server function to client component</a>
+            </li>
+<li>
+              <a href="#case-05" class="no-border">✅ Client component imports server function</a>
+            </li>
+<li>
+              <a href="#case-06" class="no-border">✅ Inlined server function (inside a server component)</a>
+            </li>
+<li>
+              <a href="#case-07" class="no-border">✅ Server Functions with Actions</a>
+            </li>
+<li>
+              <a href="#case-08" class="no-border">✅ Server Functions with useActionState</a>
+            </li>
+<li>
+              <a href="#case-09" class="no-border">✅ Passing promise from server to client component</a>
+            </li>
+<li>
+              <a href="#case-10" class="no-border">✅ Inspirational quote generator app</a>
+            </li>
+<li>
+              <a href="#case-11" class="no-border">✅ Nested Client Components</a>
+            </li>
+<li>
+              <a href="#case-12" class="no-border">✅ Inlined server action to access variables in the near scope</a>
+            </li>
       </ul>
     </div>
   </div>
@@ -217,18 +341,42 @@
     </div>
     <div class="pl2 p0_max500 mt2_max500">
       <ul>
-        <li>✅ Rendering async component on the server</li>
-<li>✅ Mixing server and client components</li>
-<li>✅ Hydrating client component</li>
-<li>✅ Passing server function to client component</li>
-<li>✅ Client component imports server function</li>
-<li>✅ Inlined server function (inside a server component)</li>
-<li>✅ Server Functions with Actions</li>
-<li>✅ Server Functions with useActionState</li>
-<li>✅ Passing promise from server to client component</li>
-<li>✅ Inspirational quote generator app</li>
-<li>❌ Nested Client Components</li>
-<li>❌ Inlined server action to access variables in the near scope</li>
+        <li>
+              <a href="#case-01" class="no-border">✅ Rendering async component on the server</a>
+            </li>
+<li>
+              <a href="#case-02" class="no-border">✅ Mixing server and client components</a>
+            </li>
+<li>
+              <a href="#case-03" class="no-border">✅ Hydrating client component</a>
+            </li>
+<li>
+              <a href="#case-04" class="no-border">✅ Passing server function to client component</a>
+            </li>
+<li>
+              <a href="#case-05" class="no-border">✅ Client component imports server function</a>
+            </li>
+<li>
+              <a href="#case-06" class="no-border">✅ Inlined server function (inside a server component)</a>
+            </li>
+<li>
+              <a href="#case-07" class="no-border">✅ Server Functions with Actions</a>
+            </li>
+<li>
+              <a href="#case-08" class="no-border">✅ Server Functions with useActionState</a>
+            </li>
+<li>
+              <a href="#case-09" class="no-border">✅ Passing promise from server to client component</a>
+            </li>
+<li>
+              <a href="#case-10" class="no-border">✅ Inspirational quote generator app</a>
+            </li>
+<li>
+              <a href="#case-11" class="no-border">❌ Nested Client Components</a>
+            </li>
+<li>
+              <a href="#case-12" class="no-border">❌ Inlined server action to access variables in the near scope</a>
+            </li>
       </ul>
     </div>
   </div>
@@ -251,18 +399,42 @@
     </div>
     <div class="pl2 p0_max500 mt2_max500">
       <ul>
-        <li>✅ Rendering async component on the server</li>
-<li>✅ Mixing server and client components</li>
-<li>✅ Hydrating client component</li>
-<li>✅ Passing server function to client component</li>
-<li>✅ Client component imports server function</li>
-<li>❌ Inlined server function (inside a server component)</li>
-<li>✅ Server Functions with Actions</li>
-<li>✅ Server Functions with useActionState</li>
-<li>✅ Passing promise from server to client component</li>
-<li>✅ Inspirational quote generator app</li>
-<li>✅ Nested Client Components</li>
-<li>❌ Inlined server action to access variables in the near scope</li>
+        <li>
+              <a href="#case-01" class="no-border">✅ Rendering async component on the server</a>
+            </li>
+<li>
+              <a href="#case-02" class="no-border">✅ Mixing server and client components</a>
+            </li>
+<li>
+              <a href="#case-03" class="no-border">✅ Hydrating client component</a>
+            </li>
+<li>
+              <a href="#case-04" class="no-border">✅ Passing server function to client component</a>
+            </li>
+<li>
+              <a href="#case-05" class="no-border">✅ Client component imports server function</a>
+            </li>
+<li>
+              <a href="#case-06" class="no-border">❌ Inlined server function (inside a server component)</a>
+            </li>
+<li>
+              <a href="#case-07" class="no-border">✅ Server Functions with Actions</a>
+            </li>
+<li>
+              <a href="#case-08" class="no-border">✅ Server Functions with useActionState</a>
+            </li>
+<li>
+              <a href="#case-09" class="no-border">✅ Passing promise from server to client component</a>
+            </li>
+<li>
+              <a href="#case-10" class="no-border">✅ Inspirational quote generator app</a>
+            </li>
+<li>
+              <a href="#case-11" class="no-border">✅ Nested Client Components</a>
+            </li>
+<li>
+              <a href="#case-12" class="no-border">❌ Inlined server action to access variables in the near scope</a>
+            </li>
       </ul>
     </div>
   </div>
@@ -285,18 +457,42 @@
     </div>
     <div class="pl2 p0_max500 mt2_max500">
       <ul>
-        <li>✅ Rendering async component on the server</li>
-<li>✅ Mixing server and client components</li>
-<li>✅ Hydrating client component</li>
-<li>✅ Passing server function to client component</li>
-<li>✅ Client component imports server function</li>
-<li>❌ Inlined server function (inside a server component)</li>
-<li>✅ Server Functions with Actions</li>
-<li>✅ Server Functions with useActionState</li>
-<li>✅ Passing promise from server to client component</li>
-<li>✅ Inspirational quote generator app</li>
-<li>✅ Nested Client Components</li>
-<li>❌ Inlined server action to access variables in the near scope</li>
+        <li>
+              <a href="#case-01" class="no-border">✅ Rendering async component on the server</a>
+            </li>
+<li>
+              <a href="#case-02" class="no-border">✅ Mixing server and client components</a>
+            </li>
+<li>
+              <a href="#case-03" class="no-border">✅ Hydrating client component</a>
+            </li>
+<li>
+              <a href="#case-04" class="no-border">✅ Passing server function to client component</a>
+            </li>
+<li>
+              <a href="#case-05" class="no-border">✅ Client component imports server function</a>
+            </li>
+<li>
+              <a href="#case-06" class="no-border">❌ Inlined server function (inside a server component)</a>
+            </li>
+<li>
+              <a href="#case-07" class="no-border">✅ Server Functions with Actions</a>
+            </li>
+<li>
+              <a href="#case-08" class="no-border">✅ Server Functions with useActionState</a>
+            </li>
+<li>
+              <a href="#case-09" class="no-border">✅ Passing promise from server to client component</a>
+            </li>
+<li>
+              <a href="#case-10" class="no-border">✅ Inspirational quote generator app</a>
+            </li>
+<li>
+              <a href="#case-11" class="no-border">✅ Nested Client Components</a>
+            </li>
+<li>
+              <a href="#case-12" class="no-border">❌ Inlined server action to access variables in the near scope</a>
+            </li>
       </ul>
     </div>
   </div>
@@ -319,24 +515,788 @@
     </div>
     <div class="pl2 p0_max500 mt2_max500">
       <ul>
-        <li>✅ Rendering async component on the server</li>
-<li>✅ Mixing server and client components</li>
-<li>✅ Hydrating client component</li>
-<li>✅ Passing server function to client component</li>
-<li>✅ Client component imports server function</li>
-<li>❌ Inlined server function (inside a server component)</li>
-<li>✅ Server Functions with Actions</li>
-<li>✅ Server Functions with useActionState</li>
-<li>✅ Passing promise from server to client component</li>
-<li>✅ Inspirational quote generator app</li>
-<li>✅ Nested Client Components</li>
-<li>❌ Inlined server action to access variables in the near scope</li>
+        <li>
+              <a href="#case-01" class="no-border">✅ Rendering async component on the server</a>
+            </li>
+<li>
+              <a href="#case-02" class="no-border">✅ Mixing server and client components</a>
+            </li>
+<li>
+              <a href="#case-03" class="no-border">✅ Hydrating client component</a>
+            </li>
+<li>
+              <a href="#case-04" class="no-border">✅ Passing server function to client component</a>
+            </li>
+<li>
+              <a href="#case-05" class="no-border">✅ Client component imports server function</a>
+            </li>
+<li>
+              <a href="#case-06" class="no-border">❌ Inlined server function (inside a server component)</a>
+            </li>
+<li>
+              <a href="#case-07" class="no-border">✅ Server Functions with Actions</a>
+            </li>
+<li>
+              <a href="#case-08" class="no-border">✅ Server Functions with useActionState</a>
+            </li>
+<li>
+              <a href="#case-09" class="no-border">✅ Passing promise from server to client component</a>
+            </li>
+<li>
+              <a href="#case-10" class="no-border">✅ Inspirational quote generator app</a>
+            </li>
+<li>
+              <a href="#case-11" class="no-border">✅ Nested Client Components</a>
+            </li>
+<li>
+              <a href="#case-12" class="no-border">❌ Inlined server action to access variables in the near scope</a>
+            </li>
       </ul>
     </div>
   </div>
 </div>
       </div>
+      <div class="mt2" id="testcases">
+        <h2>Test Cases</h2>
+        <div class="mt2">
+          <div id="case-01" class="mt2">
+    <h3>(01) Rendering async component on the server</h3>
+    <p>Basic example of an async server component.</p>
+    <div class="mt1">
+      <pre><code class="language-typescript">// Page.tsx
+
+import React from &#39;react&#39;;
+
+export default async function Page() {
+  await new Promise((resolve) =&gt; setTimeout(resolve, 1000));
+  return &lt;div&gt;SSR Async Page&lt;/div&gt;;
+}
+</code></pre>
+
+    </div>
+</div>
+<div id="case-02" class="mt2">
+    <h3>(02) Mixing server and client components</h3>
+    <p>Passing server generated data as a child of a client component.</p>
+    <div class="mt1">
+      <pre><code class="language-typescript">// Page.tsx
+
+import React from &quot;react&quot;;
+
+import db from &quot;./db&quot;;
+import Expandable from &quot;./Expandable&quot;;
+
+export default async function Page() {
+  const notes = await db.notes.getAll();
+
+  return (
+    &lt;div&gt;
+      {notes.map((note) =&gt; (
+        &lt;Expandable key={note.id}&gt;
+          &lt;p&gt;{note.content}&lt;/p&gt;
+        &lt;/Expandable&gt;
+      ))}
+    &lt;/div&gt;
+  );
+}
+</code></pre>
+<pre><code class="language-typescript">// Expandable.tsx
+
+&quot;use client&quot;;
+import React from &quot;react&quot;;
+
+export default function Expandable({ key, children }: { key: number; children: React.ReactNode }) {
+  return (
+    &lt;div&gt;
+      {children}
+    &lt;/div&gt;
+  );
+}
+</code></pre>
+<pre><code class="language-typescript">// db.ts
+
+const db = {
+  notes: {
+    getAll: async () =&gt; {
+      await new Promise((resolve) =&gt; setTimeout(resolve, 1000));
+      return [
+        { id: 1, content: &quot;Note 1&quot; },
+        { id: 2, content: &quot;Note 2&quot; },
+        { id: 3, content: &quot;Note 3&quot; }
+      ];
+    }
+  }
+};
+
+export default db;
+</code></pre>
+
+    </div>
+</div>
+<div id="case-03" class="mt2">
+    <h3>(03) Hydrating client component</h3>
+    <p>A client component that is hydrated with children passed from the server component.</p>
+    <div class="mt1">
+      <pre><code class="language-typescript">// Page.tsx
+
+import React from &quot;react&quot;;
+
+import db from &quot;./db&quot;;
+import Expandable from &quot;./Expandable&quot;;
+
+export default async function Page() {
+  const notes = await db.notes.getAll();
+
+  return (
+    &lt;div&gt;
+      {notes.map((note) =&gt; (
+        &lt;Expandable key={note.id}&gt;
+          &lt;p&gt;{note.content}&lt;/p&gt;
+        &lt;/Expandable&gt;
+      ))}
+    &lt;/div&gt;
+  );
+}
+</code></pre>
+<pre><code class="language-typescript">// Expandable.tsx
+
+&quot;use client&quot;;
+import React, { useState } from &quot;react&quot;;
+
+export default function Expandable({ children }) {
+  const [expanded, setExpanded] = useState(false);
+  return (
+    &lt;div&gt;
+      &lt;button onClick={() =&gt; setExpanded(!expanded)}&gt;Toggle&lt;/button&gt;
+      {expanded &amp;&amp; children}
+    &lt;/div&gt;
+  );
+}
+</code></pre>
+<pre><code class="language-typescript">// db.ts
+
+const db = {
+  notes: {
+    getAll: async () =&gt; {
+      await new Promise((resolve) =&gt; setTimeout(resolve, 1000));
+      return [
+        { id: 1, content: &quot;Note 1&quot; },
+        { id: 2, content: &quot;Note 2&quot; },
+        { id: 3, content: &quot;Note 3&quot; }
+      ];
+    }
+  }
+};
+
+export default db;
+</code></pre>
+
+    </div>
+</div>
+<div id="case-04" class="mt2">
+    <h3>(04) Passing server function to client component</h3>
+    <p>A client component receives a server function as a prop and calls it.</p>
+    <div class="mt1">
+      <pre><code class="language-typescript">// Page.tsx
+
+import React from &quot;react&quot;;
+
+import LikeButton from &quot;./LikeButton&quot;;
+import { getLikeCount, incrementLike } from &quot;./actions&quot;;
+
+export default async function Page() {
+  return (
+    &lt;div&gt;
+      &lt;LikeButton initialCount={await getLikeCount()} incrementLike={incrementLike}/&gt;
+    &lt;/div&gt;
+  );
+}
+</code></pre>
+<pre><code class="language-typescript">// LikeButton.tsx
+
+&#39;use client&#39;;
+
+import React, { useState, useTransition } from &quot;react&quot;;
+
+export default function LikeButton({ initialCount, incrementLike }) {
+  const [isPending, startTransition] = useTransition();
+  const [likeCount, setLikeCount] = useState(initialCount);
+
+  const onClick = () =&gt; {
+    startTransition(async () =&gt; {
+      const currentCount = await incrementLike();
+      setLikeCount(currentCount);
+    });
+  };
+
+  return (
+    &lt;&gt;
+      &lt;p&gt;Total Likes: {likeCount}&lt;/p&gt;
+      &lt;button onClick={onClick} disabled={isPending}&gt;
+        Like
+      &lt;/button&gt;
+    &lt;/&gt;
+  );
+}
+</code></pre>
+<pre><code class="language-typescript">// actions.ts
+
+&quot;use server&quot;;
+
+let likeCount = 0;
+export async function incrementLike() {
+  likeCount++;
+  return likeCount;
+}
+export async function getLikeCount() {
+  return likeCount;
+}
+</code></pre>
+
+    </div>
+</div>
+<div id="case-05" class="mt2">
+    <h3>(05) Client component imports server function</h3>
+    <p>A client component imports server function and uses it.</p>
+    <div class="mt1">
+      <pre><code class="language-typescript">// Page.tsx
+
+import React from &quot;react&quot;;
+
+import LikeButton from &quot;./LikeButton&quot;;
+import { getLikeCount } from &quot;./actions&quot;;
+
+export default async function Page() {
+  return (
+    &lt;div&gt;
+      &lt;LikeButton initialCount={await getLikeCount()}/&gt;
+    &lt;/div&gt;
+  );
+}
+</code></pre>
+<pre><code class="language-typescript">// LikeButton.tsx
+
+&#39;use client&#39;;
+
+import React, { useState, useTransition } from &quot;react&quot;;
+import { incrementLike } from &quot;./actions&quot;;
+
+export default function LikeButton({ initialCount }) {
+  const [isPending, startTransition] = useTransition();
+  const [likeCount, setLikeCount] = useState(initialCount);
+
+  const onClick = () =&gt; {
+    startTransition(async () =&gt; {
+      const currentCount = await incrementLike();
+      setLikeCount(currentCount);
+    });
+  };
+
+  return (
+    &lt;&gt;
+      &lt;p&gt;Total Likes: {likeCount}&lt;/p&gt;
+      &lt;button onClick={onClick} disabled={isPending}&gt;
+        Like
+      &lt;/button&gt;
+    &lt;/&gt;
+  );
+}
+</code></pre>
+<pre><code class="language-typescript">// actions.ts
+
+&quot;use server&quot;;
+
+let likeCount = 0;
+export async function incrementLike() {
+  likeCount++;
+  return likeCount;
+}
+export async function getLikeCount() {
+  return likeCount;
+}
+</code></pre>
+
+    </div>
+</div>
+<div id="case-06" class="mt2">
+    <h3>(06) Inlined server function (inside a server component)</h3>
+    <p>Creating a server function and pass it as a prop to client component</p>
+    <div class="mt1">
+      <pre><code class="language-typescript">// Page.tsx
+
+import React from &quot;react&quot;;
+
+import db from &#39;./db&#39;;
+import Button from &quot;./Button&quot;;
+
+export default async function Page() {
+  return (
+    &lt;EmptyNote /&gt;
+  );
+}
+
+function EmptyNote() {
+  async function createNoteAction() {
+    &quot;use server&quot;;
+
+    return await db.notes.create();
+  }
+
+  return &lt;Button onClick={createNoteAction} /&gt;;
+}
+</code></pre>
+<pre><code class="language-typescript">// Button.tsx
+
+&quot;use client&quot;;
+import React from &quot;react&quot;;
+
+export default function Button({ onClick }) {
+  return (
+    &lt;button onClick={() =&gt; {
+      onClick().then(data =&gt; alert(JSON.stringify(data)));
+    }}&gt;
+      Create Empty Note
+    &lt;/button&gt;
+  );
+}
+</code></pre>
+<pre><code class="language-typescript">// db.ts
+
+const db = {
+  notes: {
+    create: async () =&gt; {
+      await new Promise((resolve) =&gt; setTimeout(resolve, 1000));
+      return {
+        ok: true
+      };
+    }
+  }
+}
+
+export default db;
+</code></pre>
+
+    </div>
+</div>
+<div id="case-07" class="mt2">
+    <h3>(07) Server Functions with Actions</h3>
+    <p>A server function is called inside a client component within a form submit handler to demonstrate server-side processing in response to a form submission.</p>
+    <div class="mt1">
+      <pre><code class="language-typescript">// Page.tsx
+
+import React from &quot;react&quot;;
+
+import UpdateMyName from &quot;./UpdateMyName&quot;;
+
+export default async function Page() {
+  return &lt;UpdateMyName /&gt;;
+}
+</code></pre>
+<pre><code class="language-typescript">// UpdateMyName.tsx
+
+&quot;use client&quot;;
+import React, { useState, useTransition } from &quot;react&quot;;
+
+import { updateMyName } from &quot;./actions&quot;;
+
+export default function UpdateMyName() {
+  const [name, setName] = useState(&quot;&quot;);
+  const [error, setError] = useState(null);
+
+  const [isPending, startTransition] = useTransition();
+
+  const submitAction = async () =&gt; {
+    startTransition(async () =&gt; {
+      const response = await updateMyName(name);
+      alert(&quot;Response from updateName:&quot; + JSON.stringify(response));
+      if (response.error) {
+        setError(response.error);
+      } else {
+        setError(null);
+        setName(&quot;&quot;);
+      }
+    });
+  };
+
+  return (
+    &lt;form action={submitAction}&gt;
+      &lt;input
+        type=&quot;text&quot;
+        name=&quot;name&quot;
+        disabled={isPending}
+        value={name}
+        onChange={(e) =&gt; setName(e.target.value)}
+        placeholder=&quot;type your name here&quot;
+      /&gt;
+      {error &amp;&amp; &lt;p&gt;Failed: {error}&lt;/p&gt;}
+    &lt;/form&gt;
+  );
+}
+</code></pre>
+<pre><code class="language-typescript">// actions.ts
+
+&quot;use server&quot;;
+
+import db from &#39;./db&#39;;
+
+export async function updateMyName(name) {
+  if (!name) {
+    return { error: &quot;Name is required&quot; };
+  }
+  return await db.users.updateName(name);
+}
+</code></pre>
+<pre><code class="language-typescript">// db.ts
+
+const db = {
+  users: {
+    updateName: async (name) =&gt; {
+      await new Promise((resolve) =&gt; setTimeout(resolve, 2000));
+      return {
+        ok: true
+      };
+    }
+  }
+}
+
+export default db;
+</code></pre>
+
+    </div>
+</div>
+<div id="case-08" class="mt2">
+    <h3>(08) Server Functions with useActionState</h3>
+    <p>A server function is used as the action for a form to demonstrate server-side processing in response to a form submission.</p>
+    <div class="mt1">
+      <pre><code class="language-typescript">// Page.tsx
+
+import React from &quot;react&quot;;
+
+import UpdateName from &quot;./UpdateName&quot;;
+
+export default async function Page() {
+  return (
+    &lt;div&gt;
+      &lt;UpdateName /&gt;
+    &lt;/div&gt;
+  );
+}
+</code></pre>
+<pre><code class="language-typescript">// UpdateName.tsx
+
+&quot;use client&quot;;
+import React, { useState, useActionState } from &quot;react&quot;;
+
+import { updateUsername } from &quot;./actions&quot;;
+
+export default function UpdateName() {
+  const [name, setName] = useState(&quot;&quot;);
+  const [state, submitAction, isPending] = useActionState(updateUsername, { error: null });
+  return (
+    &lt;form action={submitAction}&gt;
+      {!state.ok ? (
+        &lt;input
+          type=&quot;text&quot;
+          name=&quot;name&quot;
+          disabled={isPending}
+          value={name}
+          onChange={(e) =&gt; setName(e.target.value)}
+          placeholder=&quot;type your name here&quot;
+        /&gt;
+      ) : &lt;p&gt;Name saved successfully&lt;/p&gt;}
+      &lt;p style={{ marginTop: &#39;2rem&#39; }}&gt;{JSON.stringify(state)}&lt;/p&gt;
+    &lt;/form&gt;
+  );
+}
+</code></pre>
+<pre><code class="language-typescript">// actions.ts
+
+&quot;use server&quot;;
+
+import db from &#39;./db&#39;;
+
+export async function updateUsername(currentState, formData) {
+  if (!formData.get(&quot;name&quot;)) {
+    return { error: &quot;Name is required&quot; };
+  }
+  return await db.users.updateName(formData.get(&quot;name&quot;));
+}
+</code></pre>
+<pre><code class="language-typescript">// db.ts
+
+const db = {
+  users: {
+    updateName: async (name) =&gt; {
+      await new Promise((resolve) =&gt; setTimeout(resolve, 2000));
+      return {
+        ok: true
+      };
+    }
+  }
+}
+
+export default db;
+</code></pre>
+
+    </div>
+</div>
+<div id="case-09" class="mt2">
+    <h3>(09) Passing promise from server to client component</h3>
+    <p>A server component passes a promise to a client component which "awaits" it and renders the result.</p>
+    <div class="mt1">
+      <pre><code class="language-typescript">// Page.tsx
+
+import React, { Suspense } from &quot;react&quot;;
+
+import db from &#39;./db&#39;;
+import Comments from &quot;./Comments&quot;
+
+export default async function Page() {
+  const note = await db.notes.get(42);
+
+  const commentsPromise = db.comments.get(note.id);
+  return (
+    &lt;div&gt;
+      {note.title}
+      &lt;Suspense fallback={&lt;p&gt;Loading Comments...&lt;/p&gt;}&gt;
+        &lt;Comments commentsPromise={commentsPromise} /&gt;
+      &lt;/Suspense&gt;
+    &lt;/div&gt;
+  );
+}
+</code></pre>
+<pre><code class="language-typescript">// Comments.tsx
+
+&quot;use client&quot;;
+import React, { use } from &quot;react&quot;;
+
+export default function Comments({ commentsPromise }) {
+  const comments = use(commentsPromise);
+  return comments.map(({ id, content }) =&gt; &lt;p key={id}&gt;Comment: {content}&lt;/p&gt;);
+}
+</code></pre>
+<pre><code class="language-typescript">// db.ts
+
+const db = {
+  notes: {
+    async get(id) {
+      await new Promise((r) =&gt; setTimeout(r, 1000));
+      return { id, title: &quot;Some note&quot; };
+    }
+  },
+  comments: {
+    async get(id) {
+      await new Promise((r) =&gt; setTimeout(r, 1000));
+      return [
+        { id: 1, noteId: id, content: &quot;First comment&quot; },
+        { id: 2, noteId: id, content: &quot;Second comment&quot; }
+      ];
+    }
+  }
+}
+
+export default db;
+</code></pre>
+
+    </div>
+</div>
+<div id="case-10" class="mt2">
+    <h3>(10) Inspirational quote generator app</h3>
+    <p>An app that generates and displays inspirational quotes to motivate users. Little app from [here](https://react.dev/reference/rsc/use-client#how-use-client-marks-client-code). </p>
+    <div class="mt1">
+      <pre><code class="language-typescript">// Page.tsx
+
+import React from &quot;react&quot;;
+
+import FancyText from &quot;./FancyText&quot;;
+import InspirationGenerator from &quot;./InspirationGenerator&quot;;
+import Copyright from &quot;./Copyright&quot;;
+
+export default async function Page() {
+  return (
+    &lt;div&gt;
+      &lt;FancyText title text=&quot;Get Inspired App&quot; /&gt;
+      &lt;InspirationGenerator&gt;
+        &lt;Copyright year={2025} /&gt;
+      &lt;/InspirationGenerator&gt;
+    &lt;/div&gt;
+  );
+}
+</code></pre>
+<pre><code class="language-typescript">// Copyright.tsx
+
+import React from &#39;react&#39;;
+
+export default function Copyright({ year }) {
+  return &lt;p className=&quot;small&quot;&gt;&amp;copy; {year}&lt;/p&gt;;
+}
+</code></pre>
+<pre><code class="language-typescript">// FancyText.tsx
+
+import React from &#39;react&#39;;
+
+export default function FancyText({ title, text }: { title?: boolean; text: string }) {
+  return title ? &lt;h1 className=&quot;fancy title&quot;&gt;{text}&lt;/h1&gt; : &lt;h3 className=&quot;fancy cursive&quot;&gt;{text}&lt;/h3&gt;;
+}
+</code></pre>
+<pre><code class="language-typescript">// InspirationGenerator.tsx
+
+&quot;use client&quot;;
+
+import React, { useState } from &quot;react&quot;;
+import inspirations from &quot;./inspirations&quot;;
+import FancyText from &quot;./FancyText&quot;;
+
+export default function InspirationGenerator({ children }) {
+  const [index, setIndex] = useState(0);
+  const quote = inspirations[index];
+  const next = () =&gt; setIndex((index + 1) % inspirations.length);
+
+  return (
+    &lt;&gt;
+      &lt;p&gt;Your inspirational quote is:&lt;/p&gt;
+      &lt;FancyText text={quote} /&gt;
+      &lt;button onClick={next}&gt;Inspire me again&lt;/button&gt;
+      {children}
+    &lt;/&gt;
+  );
+}
+</code></pre>
+<pre><code class="language-typescript">// inspirations.ts
+
+export default [
+  &quot;Don&#39;t let yesterday take up too much of today.&quot;,
+  &quot;Ambition is putting a ladder against the sky.&quot;,
+  &quot;A joy that&#39;s shared is a joy made double.&quot;
+];
+</code></pre>
+
+    </div>
+</div>
+<div id="case-11" class="mt2">
+    <h3>(11) Nested Client Components</h3>
+    <p>A test case for nested client components</p>
+    <div class="mt1">
+      <pre><code class="language-typescript">// Page.tsx
+
+import React from &#39;react&#39;;
+
+import Player from &#39;./Player&#39;;
+import Controls from &#39;./Controls&#39;;
+
+function getTracks() {
+  return new Promise((resolve) =&gt;
+    setTimeout(() =&gt; resolve([&#39;Track 1&#39;, &#39;Track 2&#39;, &#39;Track 3&#39;]), 1000)
+  );
+}
+
+export default async function Page() {
+  const tracks = await getTracks();
+  return &lt;Player tracks={tracks}&gt;&lt;Controls /&gt;&lt;/Player&gt;;
+}
+</code></pre>
+<pre><code class="language-typescript">// Controls.tsx
+
+&quot;use client&quot;;
+
+import React, { useState } from &quot;react&quot;;
+
+export default function Controls() {
+  const [status, setStatus] = useState(&quot;idle&quot;);
+
+  return (
+    &lt;div&gt;
+      &lt;button onClick={() =&gt; setStatus(&quot;play&quot;)}&gt;Play&lt;/button&gt;
+      &lt;button onClick={() =&gt; setStatus(&quot;pause&quot;)}&gt;Pause&lt;/button&gt;
+      &lt;button onClick={() =&gt; setStatus(&quot;next&quot;)}&gt;Next&lt;/button&gt;
+      &lt;button onClick={() =&gt; setStatus(&quot;previous&quot;)}&gt;Previous&lt;/button&gt;
+      &lt;div&gt;{status}&lt;/div&gt;
+    &lt;/div&gt;
+  );
+}
+</code></pre>
+<pre><code class="language-typescript">// Player.tsx
+
+&quot;use client&quot;;
+
+import React, { useState } from &#39;react&#39;;
+
+export default function Player({ tracks, children }) {
+  return (
+    &lt;div&gt;
+      &lt;h1&gt;Music Player&lt;/h1&gt;
+      &lt;ul&gt;
+        {tracks.map((track, index) =&gt; (
+          &lt;li key={index}&gt;{track}&lt;/li&gt;
+        ))}
+      &lt;/ul&gt;
+      {children}
+    &lt;/div&gt;
+  );
+}
+</code></pre>
+
+    </div>
+</div>
+<div id="case-12" class="mt2">
+    <h3>(12) Inlined server action to access variables in the near scope</h3>
+    <p>When we define an inlined server action inside a component, it should be able to access variables in the near scope. This means that the server function is aware of its surrounding context.</p>
+    <div class="mt1">
+      <pre><code class="language-typescript">// Page.tsx
+
+import React from &#39;react&#39;;
+
+import Player from &#39;./Player&#39;;
+
+function getTracks() {
+  return new Promise((resolve) =&gt;
+    setTimeout(() =&gt; resolve([&#39;Track 1&#39;, &#39;Track 2&#39;, &#39;Track 3&#39;]), 1000)
+  );
+}
+
+export default async function Page() {
+  const tracks = await getTracks();
+  async function saveSelectedTrack(currentTrack) {
+    &quot;use server&quot;;
+    console.log(`Selected track: ${currentTrack}/${tracks.length}`);
+  }
+  return &lt;Player tracks={tracks} saveSelectedTrack={saveSelectedTrack}/&gt;;
+}
+</code></pre>
+<pre><code class="language-typescript">// Player.tsx
+
+&quot;use client&quot;;
+
+import React, { useState } from &#39;react&#39;;
+
+export default function Player({ tracks, saveSelectedTrack }) {
+  const [currentTrack, setCurrentTrack] = useState();
+  return (
+    &lt;div&gt;
+      &lt;h1&gt;Music Player {currentTrack ? `(${currentTrack})` : &quot;&quot;}&lt;/h1&gt;
+      {tracks.map((track, index) =&gt; (
+        &lt;button key={index} onClick={() =&gt; setCurrentTrack(index + 1)}&gt;
+          {track}
+        &lt;/button&gt;
+      ))}
+      &lt;div&gt;
+        {currentTrack &amp;&amp; &lt;button onClick={() =&gt; saveSelectedTrack(currentTrack)}&gt;Save current track&lt;/button&gt;}
+      &lt;/div&gt;
+    &lt;/div&gt;
+  );
+}
+</code></pre>
+
+    </div>
+</div>
+        </div>
+      </div>
     </section>
+    <footer class="my4 tac">
+      Build with curiosity and ❤️ by <a href="https://krasimirtsonev.com/" target="_blank">Krasimir Tsonev</a><br />
+      <small><a href="https://github.com/krasimir/CanIUseRSCs" target="_blank">Source code</a></small>
+    </footer>
   </main>
+  <script async src="/assets/prism.js"></script>
 </body>
 </html>

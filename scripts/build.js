@@ -1,6 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from "url";
+import { marked } from "marked";
+import CleanCSS from "clean-css";
 
 import { transformForketFile, setupForket } from "./vendors/forket.js";
 import { setupVite } from './vendors/vite.js';
@@ -132,20 +134,24 @@ function generateCasesREADME() {
   let defaultContent = fs.readFileSync(readmePath, "utf-8");
   cases.forEach(c => {
     const caseDir = path.join(__dirname, "..", "cases", c.id);
-    const files = getFiles(caseDir).filter(f => !f.endsWith("case.json") && !f.endsWith("README.md"));
     let content = defaultContent.replace(/{{TITLE}}/g, c.title);
     content = content.replace(/{{DESCRIPTION}}/g, c.description);
-    content = content.replace(/{{CODE}}/g, files
-      .sort(f => f.endsWith("Page.tsx") ? -1 : 1)
-      .map(f => {
-        const fileContent = fs.readFileSync(f, "utf-8");
-        return "```typescript\n// " + f.replace(caseDir + '/' , "") + "\n\n" + fileContent + "\n```";
-      })
-      .join('\n\n'));
+    content = content.replace(/{{CODE}}/g, getTestCasesSourceCodeInMD(c));
 
     fs.writeFileSync(path.join(caseDir, "README.md"), content);
     console.log(`Case ${c.id} README.md generated successfully.`);
   });
+}
+function getTestCasesSourceCodeInMD(c) {
+  const caseDir = path.join(__dirname, "..", "cases", c.id);
+  const files = getFiles(caseDir).filter(f => !f.endsWith("case.json") && !f.endsWith("README.md"));
+  return files
+    .sort(f => f.endsWith("Page.tsx") ? -1 : 1)
+    .map(f => {
+      const fileContent = fs.readFileSync(f, "utf-8");
+      return "```typescript\n// " + f.replace(caseDir + '/' , "") + "\n\n" + fileContent + "\n```";
+    })
+    .join('\n\n');
 }
 function buildSite() {
   let template = fs.readFileSync(path.join(__dirname, 'templates', 'site.html'), 'utf-8');
@@ -172,7 +178,9 @@ function buildSite() {
         /{{TEST_CASES}}/g,
         cases
           .map((c) => {
-            return `<li>${app.cases[c.id] ? `✅ ${c.title}` : `❌ ${c.title}`}</li>`;
+            return `<li>
+              <a href="#case-${c.id}" class="no-border">${app.cases[c.id] ? `✅ ${c.title}` : `❌ ${c.title}`}</a>
+            </li>`;
           })
           .join("\n")
       );
@@ -181,12 +189,15 @@ function buildSite() {
     /{{APPS_GRID}}/g,
     APPS.map((app) => {
       return `
-      <div class="flex-centered" style="padding: 2px;">
+      <div class="flex-centered" style="padding: 6px;">
         <a href="#${titleToSlug(app.name)}" class="flex app-link gap1 p1 lh1_2">
           <img src="{{LOGO}}" alt="{{APP}} Logo" class="app-logo">
-          <span>
+          <span class="block w100p">
             <span class="fz2">{{APP}}</span>
             <small class="block op03">${app.coverage}%</small>
+            <span class="line mt05">
+              <span style="width:${app.coverage}%"></span>
+            </span>
           </span>
         </a>
       </div>
@@ -195,9 +206,22 @@ function buildSite() {
         .replace(/{{LOGO}}/g, app.logo);
     }).join("\n")
   );
+  template = template.replace(/{{TEST_CASES}}/g, cases.map(c => {
+    return `<div id="case-${c.id}" class="mt2">
+    <h3>(${c.id}) ${c.title}</h3>
+    <p>${c.description}</p>
+    <div class="mt1">
+      ${marked.parse(getTestCasesSourceCodeInMD(c))}
+    </div>
+</div>`;
+  }).join('\n'));
 
   fs.writeFileSync(path.join(__dirname, '..', 'site', 'public', 'index.html'), template);
   console.log(`Site built successfully.`);
+
+  const css = fs.readFileSync(path.join(__dirname, '..', 'site', 'public', 'assets', 'styles.css'), 'utf-8');
+  const minified = new CleanCSS().minify(css).styles;
+  fs.writeFileSync(path.join(__dirname, '..', 'site', 'public', 'assets', 'styles.min.css'), minified);
 }
 
 (async function () {

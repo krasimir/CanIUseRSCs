@@ -16,6 +16,8 @@
   "dependencies": {
     "@swc/cli": "0.7.7",
     "@swc/core": "1.12.1",
+    "clean-css": "^5.3.3",
+    "marked": "^16.2.1",
     "react": "19.1.1"
   },
   "devDependencies": {

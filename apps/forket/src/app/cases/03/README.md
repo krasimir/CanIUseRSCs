@@ -1,6 +1,6 @@
 # Hydrating client component
 
-A client component that is hydrated on top of server-side rendered data.
+A client component that is hydrated with children passed from the server component.
 
 ## Code
 
