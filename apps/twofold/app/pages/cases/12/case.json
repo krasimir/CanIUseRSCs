@@ -1,0 +1,4 @@
+{
+  "title": "Inlined server action to access variables in the near scope",
+  "description": "When we define an inlined server action inside a component, it should be able to access variables in the near scope. This means that the server function is aware of its surrounding context."
+}
