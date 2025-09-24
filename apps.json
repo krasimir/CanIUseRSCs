@@ -143,7 +143,7 @@
     "site": "https://twofoldframework.com/",
     "description": "A framework for building projects with React Server Components, Tailwind, and TypeScript.",
     "repoLink": "https://github.com/krasimir/CanIUseRSCs/tree/main/apps/twofold",
-    "logo": "/assets/twofold.png",
+    "logo": "/assets/twofold.jpg",
     "cases": {
       "01": true,
       "02": true,
