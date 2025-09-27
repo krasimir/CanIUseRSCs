@@ -1,0 +1,10 @@
+{
+  "name": "react-server-example",
+  "private": true,
+  "dependencies": {
+    "@lazarv/react-server": "^0.0.0-experimental-ebd3d13-20250925-5a529438"
+  },
+  "scripts": {
+    "dev": "react-server"
+  }
+}

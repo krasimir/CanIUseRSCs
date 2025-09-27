@@ -1,0 +1,4 @@
+{
+  "title": "Passing promise from server to client component",
+  "description": "A server component passes a promise to a client component which \"awaits\" it and renders the result."
+}

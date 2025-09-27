@@ -11,6 +11,7 @@ import { setupReactRouter } from './vendors/react-router.js'
 import { setupWaku } from './vendors/waku.js'
 import { setupRedwood } from './vendors/redwood.js'
 import { setupTwofold } from './vendors/twofold.js'
+import { setupReactServer } from "./vendors/react-server.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -85,6 +86,14 @@ const APPS = [
       fs.copyFileSync(fileFrom, fileTo);
     },
     setup: setupTwofold
+  },
+  {
+    name: "react-server",
+    appDir: path.join(__dirname, "..", "apps", "react-server", "src", "case", "cases"),
+    processFile(fileFrom, fileTo) {
+      fs.copyFileSync(fileFrom, fileTo);
+    },
+    setup: setupReactServer
   }
 ]
   .map((data) => {

@@ -158,5 +158,25 @@
       "11": true,
       "12": true
     }
+  },
+  "react-server": {
+    "site": "https://react-server.dev/",
+    "description": "The easiest way to build React apps with server-side rendering",
+    "repoLink": "https://github.com/krasimir/CanIUseRSCs/tree/main/apps/react-server",
+    "logo": "/assets/react-server.jpg",
+    "cases": {
+      "01": true,
+      "02": true,
+      "03": true,
+      "04": true,
+      "05": false,
+      "06": true,
+      "07": false,
+      "08": false,
+      "09": true,
+      "10": true,
+      "11": true,
+      "12": true
+    }
   }
 }
