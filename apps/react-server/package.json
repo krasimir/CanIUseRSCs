@@ -2,9 +2,11 @@
   "name": "react-server-example",
   "private": true,
   "dependencies": {
-    "@lazarv/react-server": "^0.0.0-experimental-ebd3d13-20250925-5a529438"
+    "@lazarv/react-server": "^0.0.0-experimental-ec43ff6-20250927-f1dac9ef"
   },
   "scripts": {
-    "dev": "react-server"
+    "dev": "react-server",
+    "build": "react-server build",
+    "start": "react-server start"
   }
 }
